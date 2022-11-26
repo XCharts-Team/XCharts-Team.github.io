@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://XCharts-Team.github.io/blog</id>
+    <title>XCharts Blog</title>
+    <updated>2022-02-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://XCharts-Team.github.io/blog"/>
+    <subtitle>XCharts Blog</subtitle>
+    <icon>http://XCharts-Team.github.io/img/black_or_white.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Why a New Programming Language]]></title>
+        <id>why-a-new-programming-language</id>
+        <link href="http://XCharts-Team.github.io/blog/why-a-new-programming-language"/>
+        <updated>2022-02-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Imagine you'd like to write a new particle-based fluid algorithm. You started simple, didn't spend much time before finding a reference C++/]]></summary>
+        <content type="html"><![CDATA[<p>Imagine you'd like to write a new particle-based fluid algorithm. You started simple, didn't spend much time before finding a reference C++/</p><p>测试</p>]]></content>
+        <author>
+            <name>monitor1394</name>
+            <uri>https://github.com/monitor1394</uri>
+        </author>
+        <category label="beginner" term="beginner"/>
+        <category label="XCharts" term="XCharts"/>
+    </entry>
+</feed>

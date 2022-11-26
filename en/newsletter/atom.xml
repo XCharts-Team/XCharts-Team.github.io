@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://XCharts-Team.github.io/en/newsletter</id>
+    <title>XCharts Blog</title>
+    <updated>2022-10-31T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://XCharts-Team.github.io/en/newsletter"/>
+    <subtitle>XCharts Blog</subtitle>
+    <icon>http://XCharts-Team.github.io/en/img/black_or_white.png</icon>
+    <entry>
+        <title type="html"><![CDATA[XCharts Newsletter for October]]></title>
+        <id>/10/newsletter_for_october</id>
+        <link href="http://XCharts-Team.github.io/en/newsletter/10/newsletter_for_october"/>
+        <updated>2022-10-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[📌 Highlights\n XCharts launched v3.5.0\n Weekly triage meeting notes went online\n XCharts users unleash creativity for DEM simulation]]></summary>
+        <content type="html"><![CDATA[<div class="alert--warning alert alert-no-border"><h2 class="anchor anchorWithStickyNavbar_WyjW" id="-highlights">📌 Highlights<a class="hash-link" title="Direct link to heading"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.646 2.292a5 5 0 0 1 7.07 7.07l-.01.01-2.5 2.5a5 5 0 0 1-7.54-.54.833.833 0 0 1 1.335-.998 3.334 3.334 0 0 0 5.026.36L16.522 8.2a3.333 3.333 0 0 0-4.714-4.712l-1.429 1.42a.833.833 0 0 1-1.175-1.181L10.637 2.3l.01-.009Z" fill="#4CBDC7"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.583 6.978a5 5 0 0 1 5.751 1.69.833.833 0 0 1-1.335.998 3.333 3.333 0 0 0-5.026-.36L3.478 11.8a3.334 3.334 0 0 0 4.713 4.713l1.42-1.42a.833.833 0 1 1 1.178 1.179l-1.425 1.425-.01.01a5 5 0 0 1-7.07-7.07l.01-.01 2.5-2.5a5 5 0 0 1 1.789-1.15Z" fill="#4CBDC7"></path></svg></a><span class="anchorCopiedText_WhhR"></span></h2><ul><li>XCharts launched <!-- -->[v3.5.0]</li></ul></div>]]></content>
+    </entry>
+</feed>

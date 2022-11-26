@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>XCharts Blog</title>
+        <link>http://XCharts-Team.github.io/blog</link>
+        <description>XCharts Blog</description>
+        <lastBuildDate>Fri, 18 Feb 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Why a New Programming Language]]></title>
+            <link>http://XCharts-Team.github.io/blog/why-a-new-programming-language</link>
+            <guid>why-a-new-programming-language</guid>
+            <pubDate>Fri, 18 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Imagine you'd like to write a new particle-based fluid algorithm. You started simple, didn't spend much time before finding a reference C++/]]></description>
+            <content:encoded><![CDATA[<p>Imagine you'd like to write a new particle-based fluid algorithm. You started simple, didn't spend much time before finding a reference C++/</p><p>测试</p>]]></content:encoded>
+            <category>beginner</category>
+            <category>XCharts</category>
+        </item>
+    </channel>
+</rss>

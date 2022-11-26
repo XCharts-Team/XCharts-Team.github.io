@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8507],{2074:function(e){e.exports=JSON.parse('{"allTagsPath":"/en/blog/tags","slug":"/en/blog/tags/advanced","name":"advanced","count":1,"permalink":"/en/blog/tags/advanced"}')}}]);

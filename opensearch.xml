@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>XCharts</ShortName>
+  <Description>Search XCharts</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">http://XCharts-Team.github.io/img/black_or_white.png</Image>
+  <Url type="text/html" method="get" template="http://XCharts-Team.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="http://XCharts-Team.github.io/opensearch.xml" />
+  <moz:SearchForm>http://XCharts-Team.github.io/</moz:SearchForm>
+</OpenSearchDescription>
