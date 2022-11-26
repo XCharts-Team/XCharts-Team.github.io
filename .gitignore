@@ -24,4 +24,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+sync_build_to_pages.sh
+
 # website/src/pages/api/
