@@ -126,27 +126,6 @@ const MobileUserStories = (props) => {
           </h4>
         </div>
       </div>
-      <div className="bg-brand-cyan-dark px-4 pt-8 pb-6 relative">
-        <div className="absolute top-0 right-0">
-        </div>
-        <div>
-          <h3 className="mb-4 font-bold">Challenges</h3>
-          <ul className="list-disc pl-4">
-            <li>
-              The bar to parallel programming is set high: Few students have
-              previous experience with CUDA.
-            </li>
-            <li>
-              The language must provide rich utilities, such as 3D
-              visualization, to facilitate development.
-            </li>
-            <li>
-              Run the same parallel programming projects from different
-              computing platforms.
-            </li>
-          </ul>
-        </div>
-      </div>
       <div className="px-4 space-y-6">
         <div className="flex justify-between items-end">
           <h3 className={clsx('text-brand-cyan-gradients font-bold')}>为什么使用XCharts</h3>
