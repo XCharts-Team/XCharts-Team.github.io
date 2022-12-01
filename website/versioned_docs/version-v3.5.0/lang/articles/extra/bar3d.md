@@ -24,6 +24,13 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ## 日志
 
+### v3.5.0
+
+* (2022.11.29) 增加`Serie`的`barMaxWidth`的支持
+* (2022.11.27) 增加`Serie`的`ItemStyle`的`backgroundColor`的支持
+* (2022.11.27) 增加`Serie`的`colorBy`的支持
+* (2022.11.27) 更新文档
+
 ### v3.4.0
 
 * (2022.11.01) 支持`Animation`的`unscaledTime`

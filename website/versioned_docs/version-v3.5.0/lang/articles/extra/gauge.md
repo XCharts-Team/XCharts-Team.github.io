@@ -26,6 +26,11 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### master
 
+### v3.5.0
+
+* (2022.12.01) 发布`v3.5.0`版本
+* (2022.11.27) 调整`Documentation`文档结构
+
 ### v3.4.0
 
 * (2022.10.05) 增加`GaugeAxisLine`的`stageGradient`支持设置阶段渐变色过渡
