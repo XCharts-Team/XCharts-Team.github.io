@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8169],{4970:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"XCharts \u5341\u4e8c\u6708\u793e\u533a\u6708\u62a5","permalink":"/newsletter/2022/12/newsletter12"}]}')}}]);

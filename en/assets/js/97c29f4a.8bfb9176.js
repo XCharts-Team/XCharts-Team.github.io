@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8169],{4970:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"XCharts Newsletter for December","permalink":"/en/newsletter/2022/12/newsletter2212"}]}')}}]);
