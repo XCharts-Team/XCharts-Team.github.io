@@ -118,16 +118,6 @@ yarn --cwd=website build
 yarn --cwd=website serve
 ```
 
-## 多版本
-
-该站点采用了 docusaurus 提供的多版本机制, 要了解更多细节, 请访问 docusaurus [关于多版本的文档](https://docusaurus.io/docs/versioning).
-
-## 部署
-
-该站点目前部署在 [Netlify](netlify.com) 上.
-
-部署动作会在 Pull Requests 被合并到 `master` 分之后自动执行. 如需在合并前预览你的 PR 的效果, 可使用 Netlify 的预览特性.
-
 ## 鸣谢
 
 该站点基于 Docusaurus 和其它很棒的开源项目构建, 感谢所有这些项目的贡献者们!
