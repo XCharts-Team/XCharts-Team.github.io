@@ -79,7 +79,7 @@ def _copy_extention_docs2(xchartsPath, websitePath, prefixPath):
 
     categoryPath = os.path.join(extraPath, "_category_.json")
     util.fileWrite(
-        categoryPath, "{0}\n\t\"label\": \"扩展图表\",\n\t\"position\": 6\n{1}".format("{", "}"))
+        categoryPath, "{0}\n\t\"label\": \"扩展图表\",\n\t\"position\": 71\n{1}".format("{", "}"))
 
     for dir in os.listdir(srcPath):
         dirPath = os.path.join(srcPath, dir)

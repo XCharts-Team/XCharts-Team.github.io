@@ -253,7 +253,7 @@ var serieData = chart.AddData(0, 20);
 //var serieData = serie.GetSerieData(0); //从已有数据中获取
 serieData.radius = 10;
 
-var itemStyle = serieData.GetOrAddComponent<ItemStyle>(); //给数据项添加ItemStyle组件
+var itemStyle = serieData.EnsureComponent<ItemStyle>(); //给数据项添加ItemStyle组件
 itemStyle.color = Color.blue;
 
 ```
