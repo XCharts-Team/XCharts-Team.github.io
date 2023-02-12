@@ -1,6 +1,6 @@
 ---
 title: 入门教程：5分钟上手 XCharts 3.0
-sidebar_position: 1
+sidebar_position: 11
 slug: /tutorial01
 ---
 
