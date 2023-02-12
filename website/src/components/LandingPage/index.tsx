@@ -157,6 +157,7 @@ const MobileUserStories = (props) => {
           <ul className="list-disc pl-4">
             <li>完善图表编辑体验，让非开发人员也能轻松制作图表。</li>
             <li>增强图表数据展示能力，支持更多图表类型。</li>
+            <li>增加大屏支持。</li>
             <li>增加地图支持。</li>
             <li>增加AR/VR支持。</li>
           </ul>

@@ -18,18 +18,18 @@ slug: /api
 |[CoordOptionsAttribute](#coordoptionsattribute)|[DataZoomContext](#datazoomcontext)|[DataZoomHelper](#datazoomhelper)|
 |[DateTimeUtil](#datetimeutil)|[DefaultAnimationAttribute](#defaultanimationattribute)|[DefineSymbolsUtil](#definesymbolsutil)|
 |[FormatterHelper](#formatterhelper)|[GridCoordContext](#gridcoordcontext)|[HeatmapChart](#heatmapchart)|
-|[IgnoreDoc](#ignoredoc)|[InteractData](#interactdata)|[LayerHelper](#layerhelper)|
-|[LegendContext](#legendcontext)|[LegendHelper](#legendhelper)|[LegendItem](#legenditem)|
-|[LineChart](#linechart)|[ListFor](#listfor)|[ListForComponent](#listforcomponent)|
-|[ListForSerie](#listforserie)|[MainComponentContext](#maincomponentcontext)|[MainComponentHandler](#maincomponenthandler)|
-|[MainComponentHandler&lt;T&gt;](#maincomponenthandlert)|[MathUtil](#mathutil)|[Painter](#painter)|
-|[ParallelChart](#parallelchart)|[ParallelCoordContext](#parallelcoordcontext)|[PieChart](#piechart)|
-|[PolarChart](#polarchart)|[PolarCoordContext](#polarcoordcontext)|[ProgressBar](#progressbar)|
+|[IgnoreDoc](#ignoredoc)|[InputHelper](#inputhelper)|[InteractData](#interactdata)|
+|[LayerHelper](#layerhelper)|[LegendContext](#legendcontext)|[LegendHelper](#legendhelper)|
+|[LegendItem](#legenditem)|[LineChart](#linechart)|[ListFor](#listfor)|
+|[ListForComponent](#listforcomponent)|[ListForSerie](#listforserie)|[MainComponentContext](#maincomponentcontext)|
+|[MainComponentHandler](#maincomponenthandler)|[MainComponentHandler&lt;T&gt;](#maincomponenthandlert)|[MathUtil](#mathutil)|
+|[Painter](#painter)|[ParallelChart](#parallelchart)|[ParallelCoordContext](#parallelcoordcontext)|
+|[PieChart](#piechart)|[PolarChart](#polarchart)|[PolarCoordContext](#polarcoordcontext)|
 |[PropertyUtil](#propertyutil)|[RadarChart](#radarchart)|[RadarCoordContext](#radarcoordcontext)|
 |[ReflectionUtil](#reflectionutil)|[RequireChartComponentAttribute](#requirechartcomponentattribute)|[RingChart](#ringchart)|
-|[RuntimeUtil](#runtimeutil)|[ScatterChart](#scatterchart)|[SerieContext](#seriecontext)|
-|[SerieConvertAttribute](#serieconvertattribute)|[SerieDataContext](#seriedatacontext)|[SerieDataExtraComponentAttribute](#seriedataextracomponentattribute)|
-|[SerieDataExtraFieldAttribute](#seriedataextrafieldattribute)|[SerieExtraComponentAttribute](#serieextracomponentattribute)|[SerieHandler](#seriehandler)|
+|[RuntimeUtil](#runtimeutil)|[ScatterChart](#scatterchart)|[SerieComponentAttribute](#seriecomponentattribute)|
+|[SerieContext](#seriecontext)|[SerieConvertAttribute](#serieconvertattribute)|[SerieDataComponentAttribute](#seriedatacomponentattribute)|
+|[SerieDataContext](#seriedatacontext)|[SerieDataExtraFieldAttribute](#seriedataextrafieldattribute)|[SerieHandler](#seriehandler)|
 |[SerieHandler&lt;T&gt;](#seriehandlert)|[SerieHandlerAttribute](#seriehandlerattribute)|[SerieHelper](#seriehelper)|
 |[SerieLabelHelper](#serielabelhelper)|[SerieLabelPool](#serielabelpool)|[SerieParams](#serieparams)|
 |[SeriesHelper](#serieshelper)|[SimplifiedBarChart](#simplifiedbarchart)|[SimplifiedCandlestickChart](#simplifiedcandlestickchart)|
@@ -130,9 +130,10 @@ Inherits or Implemented: [BaseGraph](#basegraph),[ISerializationCallbackReceiver
 | ClearData() |public virtual void ClearData()<br/>清空所有组件和Serie的数据。注意：Serie只是清空数据，不会移除Serie。 |
 | ClearSerieData() |public virtual void ClearSerieData()<br/>清空所有serie的数据。 |
 | ClickLegendButton() |public void ClickLegendButton(int legendIndex, string legendName, bool show)<br/>点击图例按钮 |
-| CovertSerie() |public bool CovertSerie(Serie serie, Type type)|
-| CovertSerie&lt;T&gt;() |public bool CovertSerie&lt;T&gt;(Serie serie) where T : Serie|
-| CovertXYAxis() |public void CovertXYAxis(int index)<br/>转换X轴和Y轴的配置 |
+| ConvertSerie() |public bool ConvertSerie(Serie serie, Type type)|
+| ConvertSerie&lt;T&gt;() |public bool ConvertSerie&lt;T&gt;(Serie serie) where T : Serie|
+| ConvertXYAxis() |public void ConvertXYAxis(int index)<br/>转换X轴和Y轴的配置 |
+| EnsureChartComponent&lt;T&gt;() |public T EnsureChartComponent&lt;T&gt;() where T : MainComponent<br/>确保图表有该组件，如果没有则添加。注意：有可能添加不成功。 |
 | GenerateDefaultSerieName() |public string GenerateDefaultSerieName()|
 | GetAllSerieDataCount() |public int GetAllSerieDataCount()|
 | GetChartBackgroundColor() |public Color32 GetChartBackgroundColor()|
@@ -228,7 +229,6 @@ Inherits or Implemented: [BaseGraph](#basegraph),[ISerializationCallbackReceiver
 | RemoveSerie&lt;T&gt;() |public void RemoveSerie&lt;T&gt;() where T : Serie|
 | ReplaceSerie() |public bool ReplaceSerie(Serie oldSerie, Serie newSerie)|
 | ResetDataIndex() |public bool ResetDataIndex(int serieIndex)<br/>重置serie的数据项索引。避免数据项索引异常。 |
-| SaveAsImage() |public void SaveAsImage(string imageType = "png", string savePath = "")<br/>保存图表为图片。 |
 | SetBasePainterMaterial() |public void SetBasePainterMaterial(Material material)<br/>设置Base Painter的材质球 |
 | SetMaxCache() |public void SetMaxCache(int maxCache)<br/>设置可缓存的最大数据量。当数据量超过该值时，会自动删除第一个值再加入最新值。 |
 | SetPainterActive() |public void SetPainterActive(int index, bool flag)|
@@ -277,6 +277,7 @@ Inherits or Implemented: [MaskableGraphic](#maskablegraphic),[IPointerDownHandle
 | RebuildChartObject() |public void RebuildChartObject()<br/>移除并重新创建所有图表的Object。 |
 | RefreshAllComponent() |public void RefreshAllComponent()|
 | RefreshGraph() |public virtual void RefreshGraph()<br/>在下一帧刷新图形。 |
+| SaveAsImage() |public void SaveAsImage(string imageType = "png", string savePath = "")<br/>保存图表为图片。 |
 | ScreenPointToChartPoint() |public bool ScreenPointToChartPoint(Vector2 screenPoint, out Vector2 chartPoint)|
 | SetPainterDirty() |public void SetPainterDirty()<br/>重新初始化Painter |
 | SetSize() |public virtual void SetSize(float width, float height)<br/>设置图形的宽高（在非stretch pivot下才有效，其他情况需要自己调整RectTransform） |
@@ -313,14 +314,13 @@ Inherits or Implemented: [BaseChart](#basechart)
 | CopyList&lt;T&gt;() |public static bool CopyList&lt;T&gt;(List&lt;T&gt; toList, List&lt;T&gt; fromList)|
 | DestoryGameObject() |public static void DestoryGameObject(GameObject go)|
 | DestoryGameObject() |public static void DestoryGameObject(Transform parent, string childName)|
-| DestoryGameObjectByMatch() |public static void DestoryGameObjectByMatch(Transform parent, string match)|
+| DestoryGameObjectByMatch() |public static void DestoryGameObjectByMatch(Transform parent, string containString)|
 | DestroyAllChildren() |public static void DestroyAllChildren(Transform parent)|
 | GetActualValue() |public static float GetActualValue(float valueOrRate, float total, float maxRate = 1.5f)|
 | GetAngle360() |public static float GetAngle360(Vector2 from, Vector2 to)<br/>获得0-360的角度（12点钟方向为0度） |
 | GetBlurColor() |public static Color32 GetBlurColor(Color32 color, float a = 0.3f)|
 | GetColor() |public static Color32 GetColor(string hexColorStr)|
 | GetDire() |public static Vector3 GetDire(float angle, bool isDegree = false)|
-| GetFloatAccuracy() |public static int GetFloatAccuracy(double value)|
 | GetFullName() |public static string GetFullName(Transform transform)|
 | GetHighlightColor() |public static Color32 GetHighlightColor(Color32 color, float rate = 0.8f)|
 | GetLastValue() |public static Vector3 GetLastValue(List&lt;Vector3&gt; list)|
@@ -375,6 +375,7 @@ Inherits or Implemented: [Image](#image)
 | GetTextHeight() |public float GetTextHeight()|
 | GetTextWidth() |public float GetTextWidth()|
 | GetWidth() |public float GetWidth()|
+| IsActive() |public override bool IsActive()|
 | SetActive() |public void SetActive(bool flag)|
 | SetIcon() |public void SetIcon(Image image)|
 | SetIconActive() |public void SetIconActive(bool flag)|
@@ -501,6 +502,13 @@ Inherits or Implemented: [Attribute](#attribute)
 |--|--|
 | IgnoreDoc() |public IgnoreDoc()|
 
+## InputHelper
+
+|public method|description|
+|--|--|
+| GetKeyDown() |public static bool GetKeyDown(KeyCode keyCode)|
+| GetTouch() |public static Touch GetTouch(int v)|
+
 ## InteractData
 
 |public method|description|
@@ -626,6 +634,8 @@ Inherits or Implemented: [MainComponentHandler](#maincomponenthandler)
 | Approximately() |public static bool Approximately(double a, double b)|
 | Clamp() |public static double Clamp(double d, double min, double max)|
 | Clamp01() |public static double Clamp01(double value)|
+| GetPrecision() |public static int GetPrecision(double value)|
+| IsInteger() |public static bool IsInteger(double value)|
 | Lerp() |public static double Lerp(double a, double b, double t)|
 
 ## ObjectPool&lt;T&gt; where T
@@ -646,6 +656,7 @@ Inherits or Implemented: [MaskableGraphic](#maskablegraphic)
 
 |public method|description|
 |--|--|
+| CheckRefresh() |public void CheckRefresh()|
 | Init() |public void Init()|
 | Refresh() |public void Refresh()|
 | SetActive() |public void SetActive(bool flag, bool isDebugMode = false)|
@@ -669,10 +680,6 @@ Inherits or Implemented: [BaseChart](#basechart)
 ## PolarCoordContext
 
 Inherits or Implemented: [MainComponentContext](#maincomponentcontext)
-
-## ProgressBar
-
-Inherits or Implemented: [BaseChart](#basechart)
 
 ## PropertyUtil
 
@@ -731,6 +738,23 @@ Inherits or Implemented: [BaseChart](#basechart)
 
 Inherits or Implemented: [BaseChart](#basechart)
 
+## SerieComponentAttribute
+
+Inherits or Implemented: [Attribute](#attribute)
+
+|public method|description|
+|--|--|
+| Contains() |public bool Contains(Type type)|
+| Contains&lt;T&gt;() |public bool Contains&lt;T&gt;() where T : ISerieComponent|
+| SerieComponentAttribute() |public SerieComponentAttribute()|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2, Type type3)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2, Type type3, Type type4)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6)|
+| SerieComponentAttribute() |public SerieComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6, Type type7)|
+
 ## SerieContext
 
 ## SerieConvertAttribute
@@ -746,28 +770,28 @@ Inherits or Implemented: [Attribute](#attribute)
 | SerieConvertAttribute() |public SerieConvertAttribute(Type serie, Type serie2, Type serie3)|
 | SerieConvertAttribute() |public SerieConvertAttribute(Type serie, Type serie2, Type serie3, Type serie4)|
 
-## SerieDataContext
-
-|public method|description|
-|--|--|
-| Reset() |public void Reset()|
-
-## SerieDataExtraComponentAttribute
+## SerieDataComponentAttribute
 
 Inherits or Implemented: [Attribute](#attribute)
 
 |public method|description|
 |--|--|
 | Contains() |public bool Contains(Type type)|
-| Contains&lt;T&gt;() |public bool Contains&lt;T&gt;() where T : ISerieExtraComponent|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute()|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2, Type type3)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6)|
-| SerieDataExtraComponentAttribute() |public SerieDataExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6, Type type7)|
+| Contains&lt;T&gt;() |public bool Contains&lt;T&gt;() where T : ISerieComponent|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute()|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2, Type type3)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2, Type type3, Type type4)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6)|
+| SerieDataComponentAttribute() |public SerieDataComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6, Type type7)|
+
+## SerieDataContext
+
+|public method|description|
+|--|--|
+| Reset() |public void Reset()|
 
 ## SerieDataExtraFieldAttribute
 
@@ -784,23 +808,6 @@ Inherits or Implemented: [Attribute](#attribute)
 | SerieDataExtraFieldAttribute() |public SerieDataExtraFieldAttribute(string field1, string field2, string field3, string field4, string field5)|
 | SerieDataExtraFieldAttribute() |public SerieDataExtraFieldAttribute(string field1, string field2, string field3, string field4, string field5, string field6)|
 | SerieDataExtraFieldAttribute() |public SerieDataExtraFieldAttribute(string field1, string field2, string field3, string field4, string field5, string field6, string field7)|
-
-## SerieExtraComponentAttribute
-
-Inherits or Implemented: [Attribute](#attribute)
-
-|public method|description|
-|--|--|
-| Contains() |public bool Contains(Type type)|
-| Contains&lt;T&gt;() |public bool Contains&lt;T&gt;() where T : ISerieExtraComponent|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute()|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2, Type type3)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6)|
-| SerieExtraComponentAttribute() |public SerieExtraComponentAttribute(Type type1, Type type2, Type type3, Type type4, Type type5, Type type6, Type type7)|
 
 ## SerieHandler
 
@@ -1087,15 +1094,11 @@ Inherits or Implemented: [MainComponentContext](#maincomponentcontext)
 | AddChart() |public static void AddChart(BaseChart chart)|
 | ContainsChart() |public static bool ContainsChart(BaseChart chart)|
 | ContainsChart() |public static bool ContainsChart(string chartName)|
-| DisableTextMeshPro() |public static void DisableTextMeshPro()|
-| EnableTextMeshPro() |public static void EnableTextMeshPro()|
 | GetChart() |public static BaseChart GetChart(string chartName)|
 | GetCharts() |public static List&lt;BaseChart&gt; GetCharts(string chartName)|
 | GetPackageFullPath() |public static string GetPackageFullPath()|
 | GetRepeatChartNameInfo() |public static string GetRepeatChartNameInfo(BaseChart chart, string chartName)|
-| IsExistTMPAssembly() |public static bool IsExistTMPAssembly()|
 | IsRepeatChartName() |public static bool IsRepeatChartName(BaseChart chart, string chartName = null)|
-| ModifyTMPRefence() |public static bool ModifyTMPRefence(bool removeTMP = false)|
 | RemoveAllChartObject() |public static void RemoveAllChartObject()|
 | RemoveChart() |public static void RemoveChart(string chartName)|
 

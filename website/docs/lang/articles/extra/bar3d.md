@@ -86,4 +86,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 |sideColorRate|0.7f||方形柱侧边相对正面的颜色比例。
 |cubeDire|Vector3(1, 1)||方形柱形成3D效果的方向。
 |cylinderRate|0.5f|v3.1.0|圆柱的顶部椭圆比列。
+|topColor||v3.5.1|
+|bottomColor||v3.5.1|
+|sideColor||v3.5.1|
 

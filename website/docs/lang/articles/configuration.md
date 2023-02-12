@@ -54,7 +54,7 @@ slug: /configuration
 |[TitleStyle](#titlestyle)|[TitleTheme](#titletheme)|[TooltipTheme](#tooltiptheme)|[VisualMapRange](#visualmaprange)|
 |[VisualMapTheme](#visualmaptheme)|
 
-## ISerieExtraComponent 系列的额外组件
+## ISerieComponent 可添加到Serie的组件
 
 |||||
 |--|--|--|--|
@@ -62,7 +62,7 @@ slug: /configuration
 |[LabelLine](#labelline)|[LabelStyle](#labelstyle)|[LineArrow](#linearrow)|[SelectStyle](#selectstyle)|
 |[TitleStyle](#titlestyle)|
 
-## ISerieDataComponent 数据项的额外组件
+## ISerieDataComponent 可添加到SerieData的组件
 
 |||||
 |--|--|--|--|
@@ -116,7 +116,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 
 ## AreaStyle
 
-Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 区域填充样式。
 
@@ -128,6 +128,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent
 |toColor|||渐变色的终点颜色。
 |opacity|0.6f||图形透明度。支持从 0 到 1 的数字，为 0 时不绘制该图形。
 |innerFill||v3.2.0|是否只填充多边形区域。目前只支持凸多边形。
+|toTop|true|v3.6.0|渐变色是到顶部还是到实际位置。默认为true到顶部。
 
 ## ArrowStyle
 
@@ -354,7 +355,7 @@ Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontai
 
 ## BlurStyle
 
-Inherits or Implemented: [StateStyle](#statestyle),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [StateStyle](#statestyle),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 > 从 `v3.2.0` 开始支持
 
@@ -473,6 +474,8 @@ DataZoom 组件 用于区域缩放，从而能自由关注细节的数据信息�
 |lineStyle|||阴影线条样式。 [LineStyle](#linestyle)|
 |areaStyle|||阴影填充样式。 [AreaStyle](#areastyle)|
 |marqueeStyle||v3.5.0|选取框样式。 [MarqueeStyle](#marqueestyle)|
+|startLock||v3.6.0|固定起始值，不让改变。
+|endLock||v3.6.0|固定结束值，不让改变。
 
 ## DataZoomTheme
 
@@ -505,7 +508,7 @@ Inherits or Implemented: [BaseScatter](#basescatter)
 
 ## EmphasisStyle
 
-Inherits or Implemented: [StateStyle](#statestyle),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [StateStyle](#statestyle),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 > 从 `v3.2.0` 开始支持
 
@@ -567,7 +570,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 
 ## ImageStyle
 
-Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -622,6 +625,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieDataComponent]
 |color0|||数据项颜色。
 |toColor|||渐变色的颜色1。
 |toColor2|||渐变色的颜色2。只在折线图中有效。
+|markColor||v3.6.0|Serie的标识颜色。仅用于Legend和Tooltip的展示，不影响绘制颜色，默认为clear。
 |backgroundColor|||数据项背景颜色。
 |backgroundWidth|||数据项背景宽度。
 |centerColor|||中心区域颜色。
@@ -639,7 +643,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieDataComponent]
 
 ## LabelLine
 
-Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 标签的引导线
 
@@ -658,7 +662,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent
 
 ## LabelStyle
 
-Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 图形上的文本标签，可用于说明图形的一些数据信息，比如值，名称等。
 
@@ -753,7 +757,7 @@ Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontai
 
 ## LineArrow
 
-Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieExtraComponent](#iserieextracomponent)
+Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#iseriecomponent)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -986,7 +990,7 @@ Inherits or Implemented: [BaseScatter](#basescatter)
 
 ## SelectStyle
 
-Inherits or Implemented: [StateStyle](#statestyle),[ISerieExtraComponent](#iserieextracomponent),[ISerieDataComponent](#iseriedatacomponent)
+Inherits or Implemented: [StateStyle](#statestyle),[ISerieComponent](#iseriecomponent),[ISerieDataComponent](#iseriedatacomponent)
 
 > 从 `v3.2.0` 开始支持
 
@@ -1008,7 +1012,6 @@ Inherits or Implemented: [BaseSerie](#baseserie),[IComparable](#icomparable)
 |serieName|||系列名称，用于 tooltip 的显示，legend 的图例筛选。
 |state||v3.2.0|系列的默认状态。<br/>`SerieState`:<br/>- `Normal`: 正常状态。<br/>- `Emphasis`: 高亮状态。<br/>- `Blur`: 淡出状态。<br/>- `Select`: 选中状态。<br/>- `Auto`: 自动保持和父节点一致。一般用在SerieData。<br/>|
 |colorBy||v3.2.0|从主题中取色的策略。<br/>`SerieColorBy`:<br/>- `Default`: 默认策略。每种Serie都有自己的默认的取颜色策略。比如Line默认是Series策略，Pie默认是Data策略<br/>- `Serie`: 按照系列分配调色盘中的颜色，同一系列中的所有数据都是用相同的颜色。<br/>- `Data`: 按照数据项分配调色盘中的颜色，每个数据项都使用不同的颜色。<br/>|
-|markColor||v3.4.0|Serie的标识颜色。仅用于Legend和Tooltip的展示，不影响绘制颜色，默认为clear。
 |stack|||数据堆叠，同个类目轴上系列配置相同的stack值后，后一个系列的值会在前一个系列的值上相加。
 |xAxisIndex|0||使用X轴的index。
 |yAxisIndex|0||使用Y轴的index。
@@ -1341,7 +1344,7 @@ Inherits or Implemented: [MainComponent](#maincomponent),[IPropertyChanged](#ipr
 
 ## TitleStyle
 
-Inherits or Implemented: [LabelStyle](#labelstyle),[ISerieDataComponent](#iseriedatacomponent),[ISerieExtraComponent](#iserieextracomponent)
+Inherits or Implemented: [LabelStyle](#labelstyle),[ISerieDataComponent](#iseriedatacomponent),[ISerieComponent](#iseriecomponent)
 
 标题相关设置。
 
@@ -1364,7 +1367,7 @@ Inherits or Implemented: [MainComponent](#maincomponent)
 |trigger|||触发类型。<br/>`Tooltip.Trigger`:<br/>- `Item`: 数据项图形触发，主要在散点图，饼图等无类目轴的图表中使用。<br/>- `Axis`: 坐标轴触发，主要在柱状图，折线图等会使用类目轴的图表中使用。<br/>- `None`: 什么都不触发。<br/>|
 |position||v3.3.0|显示位置类型。<br/>`Tooltip.Position`:<br/>- `Auto`: 自适应。移动平台靠顶部显示，非移动平台跟随鼠标位置。<br/>- `Custom`: 自定义。完全自定义显示位置(x,y)。<br/>- `FixedX`: 只固定坐标X。Y跟随鼠标位置。<br/>- `FixedY`: <br/>|
 |itemFormatter|||提示框单个serie或数据项内容的字符串模版格式器。支持用 \n 换行。用
-|titleFormatter|||提示框标题内容的字符串模版格式器。支持用 \n 换行。可以单独设置占位符{i}表示忽略不显示title。 模板变量有{.}、{a}、{b}、{c}、{d}、{e}、{f}、{g}。<br/> {.}为当前所指示或index为0的serie的对应颜色的圆点。<br/> {a}为当前所指示或index为0的serie的系列名name。<br/> {b}为当前所指示或index为0的serie的数据项serieData的name，或者类目值（如折线图的X轴）。<br/> {c}为当前所指示或index为0的serie的y维（dimesion为1）的数值。<br/> {d}为当前所指示或index为0的serie的y维（dimesion为1）百分比值，注意不带%号。<br/> {e}为当前所指示或index为0的serie的数据项serieData的name。<br/> {f}为数据总和。<br/> {g}为数据总个数。<br/> {.1}表示指定index为1的serie对应颜色的圆点。<br/> {a1}、{b1}、{c1}中的1表示指定index为1的serie。<br/> {c1:2}表示索引为1的serie的当前指示数据项的第3个数据（一个数据项有多个数据，index为2表示第3个数据）。<br/> {c1:2-2}表示索引为1的serie的第3个数据项的第3个数据（也就是要指定第几个数据项时必须要指定第几个数据）。<br/> {d1:2:f2}表示单独指定了数值的格式化字符串为f2（不指定时用numericFormatter）。<br/> {d:0.##} 表示单独指定了数值的格式化字符串为 0.## （用于百分比，保留2位有效数同时又能避免使用 f2 而出现的类似于"100.00%"的情况 ）。<br/> 示例："{a}:{c}"、"{a1}:{c1:f1}"、"{a1}:{c1:0:f1}"、"{a1}:{c1:1-1:f1}"
+|titleFormatter|||提示框标题内容的字符串模版格式器。支持用 \n 换行。可以单独设置占位符{i}表示忽略不显示title。 模板变量有{.}、{a}、{b}、{c}、{d}、{e}、{f}、{g}。<br/> {.}为当前所指示或index为0的serie的对应颜色的圆点。<br/> {a}为当前所指示或index为0的serie的系列名name。<br/> {b}为当前所指示或index为0的serie的数据项serieData的name，或者类目值（如折线图的X轴）。<br/> {c}为当前所指示或index为0的serie的y维（dimesion为1）的数值。<br/> {d}为当前所指示或index为0的serie的y维（dimesion为1）百分比值，注意不带%号。<br/> {e}为当前所指示或index为0的serie的数据项serieData的name。<br/> {h}为当前所指示或index为0的serie的数据项serieData的十六进制颜色值。<br/> {f}为数据总和。<br/> {g}为数据总个数。<br/> {.1}表示指定index为1的serie对应颜色的圆点。<br/> {a1}、{b1}、{c1}中的1表示指定index为1的serie。<br/> {c1:2}表示索引为1的serie的当前指示数据项的第3个数据（一个数据项有多个数据，index为2表示第3个数据）。<br/> {c1:2-2}表示索引为1的serie的第3个数据项的第3个数据（也就是要指定第几个数据项时必须要指定第几个数据）。<br/> {d1:2:f2}表示单独指定了数值的格式化字符串为f2（不指定时用numericFormatter）。<br/> {d:0.##} 表示单独指定了数值的格式化字符串为 0.## （用于百分比，保留2位有效数同时又能避免使用 f2 而出现的类似于"100.00%"的情况 ）。<br/> 示例："{a}:{c}"、"{a1}:{c1:f1}"、"{a1}:{c1:0:f1}"、"{a1}:{c1:1-1:f1}"
 |marker|||serie的符号标志。
 |fixedWidth|0||固定宽度。比 minWidth 优先。
 |fixedHeight|0||固定高度。比 minHeight 优先。
