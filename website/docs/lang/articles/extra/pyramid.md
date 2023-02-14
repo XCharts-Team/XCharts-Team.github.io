@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /pyramid
 ---
 
-# 金字塔
+# PyramidChart 金字塔
 
 XCharts付费扩展图表 - 金字塔。
 
@@ -24,6 +24,10 @@ XCharts付费扩展图表 - 金字塔。
 
 ## 日志
 
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
+
 ### v3.5.0
 
 * (2022.12.01) 发布`v3.5.0`版本
@@ -38,13 +42,13 @@ XCharts付费扩展图表 - 金字塔。
 
 ### PyramidChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Pyramid
 
-Inherits or Implemented: [Serie](#serie)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -52,7 +56,7 @@ Inherits or Implemented: [Serie](#serie)
 
 ### PyramidStyle
 
-Inherits or Implemented: [ChildComponent](#childcomponent)
+Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 |field|default|since|comment|
 |--|--|--|--|

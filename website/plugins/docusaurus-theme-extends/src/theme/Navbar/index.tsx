@@ -208,7 +208,7 @@ function Navbar(props): JSX.Element {
         </div>
       </div>
       <ul className="hidden desktop:flex items-center">
-        <li className="pr-6 border-r navitem">
+        <li className="pr-6 navitem">
           <WithLocalLink
             href="/docs/"
             label={translate({
@@ -218,56 +218,23 @@ function Navbar(props): JSX.Element {
             matchPath="/docs"
           />
         </li>
-        <li className="px-6 border-r navitem">
+        <li className="pr-6 navitem">
           <NavLink href="https://xcharts-team.github.io/demo" label={translate({
               id: 'theme.text.onlinedemo',
               message: 'Online Demo',
             })}/>
         </li>
-        <li className="px-6 border-r navitem">
-          <SimpleDropdown
-            labelNode={
-              <div className="cursor-pointer hover:text-brand-cyan p-[6px]">
-                {translate({
-                  id: 'theme.text.resources',
-                  message: 'Resources',
-                })}
-              </div>
-            }
-            description={
-              <>
-                <div className="pb-4">
-                  {translate({
-                    id: 'theme.navbar.resourceinfo',
-                    message:
-                      "Get inspired by XCharts's users stories, blogs, and Graphics courses.",
-                  })}
-                </div>
-                <WithLocalLink
-                  className="text-h4 flex justify-between items-center text-black hover:text-white"
-                  href="/blog"
-                  label={
-                    <>
-                      {translate({
-                        id: 'theme.text.learnmore',
-                        message: 'Learn more',
-                      })}
-                      <ArrowRightIcon />
-                    </>
-                  }
-                />
-                {/* <ArrowRightIcon /> */}
-                {/* </h4> */}
-              </>
-            }
+        <li className="pr-6 navitem">
+          <WithLocalLink
+            href="/blog/"
             label={translate({
-              id: 'theme.text.resources',
-              message: 'Resources',
+              id: 'theme.text.blog',
+              message: 'Blog',
             })}
-            items={resourceswithactive}
+            matchPath="/blog"
           />
         </li>
-        <li className="px-6 border-r">
+        <li className="pr-6">
           <SimpleDropdown
             labelNode={
               <div className="cursor-pointer hover:text-brand-cyan p-[6px]">
@@ -304,13 +271,13 @@ function Navbar(props): JSX.Element {
             items={communities}
           />
         </li>
-        <li className="ml-6">
+        <li className="mr-6">
           <VersionDropdownNavbarItem />
         </li>
-        <li className="ml-6">
+        <li className="mr-6">
           <LocaleDropdownNavbarItem />
         </li>
-        <li className="ml-6">
+        <li className="mr-6">
           <Toggle
             checked={colorModeToggle.isDarkTheme}
             onChange={colorModeToggle.toggle}

@@ -3,7 +3,7 @@
     "message": "文档总览"
   },
   "theme.text.dochome": {
-    "message": "文档首页"
+    "message": "文档"
   },
   "theme.docs.docHome.slogan": {
     "message": "优雅开发"
@@ -24,10 +24,10 @@
     "message": "各类资源"
   },
   "theme.text.onlinedemo": {
-    "message": "在线Demo"
+    "message": "示例"
   },
   "theme.text.community": {
-    "message": "开发者社区"
+    "message": "联系我们"
   },
   "theme.text.learnmore": {
     "message": "了解更多"

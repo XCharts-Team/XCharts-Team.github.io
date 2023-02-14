@@ -67,46 +67,6 @@ const LandingPageView = (props) => {
             message: 'Doc Home',
           })}
         </div>
-        <div className="flex justify-between flex-col desktop:flex-row desktop:space-x-5 desktop:mb-5">
-          <div className="relative flex-1 h-32 overflow-hidden brand-blue-gradients rounded-sm mb-4">
-            <div className="absolute left-[181px] inset-y-0">
-              <NormalUserBg />
-            </div>
-          </div>
-          <div className="relative flex-1 h-32 overflow-hidden brand-cyan-gradients rounded-sm mb-4">
-            <div className="absolute left-[181px] inset-y-0">
-              <DeveloperUserBg />
-            </div>
-          </div>
-        </div>
-        <Link href="/docs/api" className="relative block h-24 rounded-sm bg-black desktop:mb-10 mb-6">
-          <div className="absolute right-0 flex items-center inset-y-0 overflow-hidden">
-            {/* <AsyncImage src={AnotherWorldGif} /> */}
-          </div>
-          <div className="flex relative flex-col h-full text-white justify-between px-4 py-3">
-            <div className="flex justify-between">
-              <div className="text-caption">
-                {translate({
-                  id: 'theme.docs.docHome.slogan',
-                  message: 'Develop elegantly.',
-                })}
-              </div>
-              {/* <div className="text-caption hidden font-light desktop:block">
-                Image by <span className="font-normal">peng-bo</span> in Voxel
-                Challenge 2022
-              </div> */}
-            </div>
-              <div className="flex justify-between font-bold">
-                <div className="text-h4 text-brand-cyan-gradients">
-                  {translate({
-                    id: 'theme.docs.docHome.gotoapi',
-                    message: 'XCharts’s API reference here',
-                  })}
-                </div>
-                <ArrowRight />
-              </div>
-          </div>
-        </Link>
         <div className="space-y-4 md:space-y-5">
           <div className="text-h2 font-bold">
             {translate({

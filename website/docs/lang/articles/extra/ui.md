@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /ui
 ---
 
-# XCharts-UI
+# XCharts-UI UI组件
 
 `XCharts`的扩展UI组件，`VIP`订阅用户专有。
 

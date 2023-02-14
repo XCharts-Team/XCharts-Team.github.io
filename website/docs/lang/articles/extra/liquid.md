@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /liquid
 ---
 
-# 水位图
+# LiquidChart 水位图
 
 XCharts的付费扩展图表 - 水位图。
 
@@ -24,6 +24,10 @@ XCharts的付费扩展图表 - 水位图。
 
 ## 日志
 
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
+
 ### v3.5.0
 
 * (2022.12.01) 发布`v3.5.0`版本
@@ -43,17 +47,17 @@ XCharts的付费扩展图表 - 水位图。
 
 ### LiquidChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ### VesselContext
 
-Inherits or Implemented: [MainComponentContext](#maincomponentcontext)
+Inherits or Implemented: [MainComponentContext](https://xcharts-team.github.io/docs/api#maincomponentcontext)
 
 ## 配置项手册
 
 ### Liquid
 
-Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontainer)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -64,7 +68,7 @@ Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontai
 
 ### Vessel
 
-Inherits or Implemented: [MainComponent](#maincomponent),[ISerieContainer](#iseriecontainer),[IUpdateRuntimeData](#iupdateruntimedata)
+Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent),[ISerieContainer](#iseriecontainer),[IUpdateRuntimeData](#iupdateruntimedata)
 
 容器组件。 一般用于LiquidChart。一个Chart中可以有多个Vessel，Serie中用vesselIndex来对应。
 

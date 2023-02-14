@@ -19,58 +19,11 @@ def _copy_xcharts_docs(xchartsPath, websitePath, prefixPath):
     util.fileReplaceContent(dstReadmePath, "Documentation~/zh/", "")
     util.fileReplaceContent(dstReadmePath, "README-en.md", "")
 
-
-def _copy_extention_docs(xchartsPath, websitePath, prefixPath):
+def _copy_extra_docs(xchartsPath, websitePath, prefixPath):
     srcPath = os.path.realpath(xchartsPath + "/../")
     dstPath = os.path.realpath(
         "{0}/{1}/lang/articles".format(websitePath, prefixPath))
 
-    position = 7
-    for dir in os.listdir(srcPath):
-        dirPath = os.path.join(srcPath, dir)
-        if os.path.isdir(dirPath) and dir.startswith("XCharts-") and dir != "XCharts-Extra":
-            chartname = dir.split("-")[1].lower().replace("chart", "")
-            dstFolder = "extra_"+chartname
-            print("dir", chartname)
-
-            srcReadmePath = os.path.join(dirPath, "README.md")
-            dstReadmePath = os.path.join(dstPath, dstFolder, chartname+".md")
-            util.mkdir(os.path.join(dstPath, dstFolder))
-            util.fileCopy(srcReadmePath, dstReadmePath)
-            util.fileReplaceContent(dstReadmePath, "Documentation~/zh/", "")
-            util.fileInsertHead(
-                dstReadmePath, "---\nsidebar_position: 0\nslug: /{0}\n---\n\n".format(chartname))
-
-            srcApiPath = os.path.join(dirPath, "Documentation~/zh/api.md")
-            dstApiPath = os.path.join(dstPath, dstFolder, "api.md")
-            util.fileCopy(srcApiPath, dstApiPath)
-            util.fileReplaceContent(
-                dstApiPath, "/api", "/{0}_api".format(chartname))
-
-            srcConfigPath = os.path.join(
-                dirPath, "Documentation~/zh/configuration.md")
-            dstConfigPath = os.path.join(
-                dstPath, dstFolder, "configuration.md")
-            util.fileCopy(srcConfigPath, dstConfigPath)
-            util.fileReplaceContent(
-                dstConfigPath, "/configuration", "/{0}_configuration".format(chartname))
-
-            categoryName = util.fileFindLine(
-                srcReadmePath, "#").split("#")[1].strip()
-            categoryPath = os.path.join(
-                dstPath, dstFolder, "_category_.json")
-            util.fileWrite(categoryPath, "{0}\n\t\"label\": \"扩展图表-{1}\",\n\t\"position\": {2}\n{3}".format(
-                "{", categoryName, position, "}"))
-
-            position += 1
-
-
-def _copy_extention_docs2(xchartsPath, websitePath, prefixPath):
-    srcPath = os.path.realpath(xchartsPath + "/../")
-    dstPath = os.path.realpath(
-        "{0}/{1}/lang/articles".format(websitePath, prefixPath))
-
-    position = 7
     extraPath = os.path.join(dstPath, "extra")
     util.mkdir(extraPath)
 
@@ -83,7 +36,7 @@ def _copy_extention_docs2(xchartsPath, websitePath, prefixPath):
 
     for dir in os.listdir(srcPath):
         dirPath = os.path.join(srcPath, dir)
-        if os.path.isdir(dirPath) and dir.startswith("XCharts-") and dir != "XCharts-Extra":
+        if os.path.isdir(dirPath) and dir.startswith("XCharts-") and dir != "XCharts-UI":
             chartname = dir.split("-")[1].lower().replace("chart", "")
             filename = chartname+".md"
 
@@ -121,7 +74,7 @@ def sync_version(xchartsPath, websitePath, version):
     if version == "master":
         prefixPath = "docs"
         _copy_xcharts_docs(xchartsPath, websitePath, prefixPath)
-        _copy_extention_docs2(xchartsPath, websitePath, prefixPath)
+        _copy_extra_docs(xchartsPath, websitePath, prefixPath)
     else:
         prefixPath = "versioned_docs/version-{0}".format(version)
         srcPath = websitePath + "/docs"

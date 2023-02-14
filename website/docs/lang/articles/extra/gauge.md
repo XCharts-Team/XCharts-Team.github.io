@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /gauge
 ---
 
-# 仪表盘
+# GaugeChart 仪表盘
 
 XCharts付费扩展图表 - 仪表盘。
 
@@ -25,6 +25,10 @@ XCharts付费扩展图表 - 仪表盘。
 ## 日志
 
 ### master
+
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
 
 ### v3.5.0
 
@@ -51,13 +55,13 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugeChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Gauge
 
-Inherits or Implemented: [Serie](#serie)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -67,7 +71,7 @@ Inherits or Implemented: [Serie](#serie)
 
 ### GaugeAnchor
 
-Inherits or Implemented: [ChildComponent](#childcomponent)
+Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -83,7 +87,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 
 ### GaugeAxis
 
-Inherits or Implemented: [ChildComponent](#childcomponent)
+Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘轴线相关设置。
 
@@ -101,7 +105,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 
 ### GaugeAxisLine
 
-Inherits or Implemented: [BaseLine](#baseline)
+Inherits or Implemented: [BaseLine](https://xcharts-team.github.io/docs/configuration#baseline)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -111,7 +115,7 @@ Inherits or Implemented: [BaseLine](#baseline)
 
 ### GaugePointer
 
-Inherits or Implemented: [ChildComponent](#childcomponent)
+Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘指针相关设置。
 

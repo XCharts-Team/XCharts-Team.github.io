@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /funnel
 ---
 
-# 漏斗图
+# FunnelChart 漏斗图
 
 XCharts的付费扩展图表 - 漏斗图。
 
@@ -24,6 +24,10 @@ XCharts的付费扩展图表 - 漏斗图。
 
 ## 日志
 
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
+
 ### v3.5.0
 
 * (2022.12.01) 发布`v3.5.0`版本
@@ -43,13 +47,13 @@ XCharts的付费扩展图表 - 漏斗图。
 
 ### FunnelChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Funnel
 
-Inherits or Implemented: [Serie](#serie)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 |field|default|since|comment|
 |--|--|--|--|

@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /bar3d
 ---
 
-# 3D柱图
+# Bar3DChart 3D柱图
 
 XCharts的付费扩展图表 - 3D柱图。
 
@@ -24,10 +24,15 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ## 日志
 
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
+* (2023.02.14) 增加`Bar3DStyle`的`topColor`、`bottomColor`和`sideColor`参数支持
+
 ### v3.5.0
 
-* (2022.11.29) 增加`Serie`的`barMaxWidth`的支持
-* (2022.11.27) 增加`Serie`的`ItemStyle`的`backgroundColor`的支持
+* (2022.11.29) 增加`Serie`的`barMaxWidth`参数支持
+* (2022.11.27) 增加`Serie`的`ItemStyle`的`backgroundColor`参数支持
 * (2022.11.27) 增加`Serie`的`colorBy`的支持
 * (2022.11.27) 更新文档
 
@@ -54,13 +59,13 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ### Bar3DChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Bar3D
 
-Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontainer)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
 
 3D柱图。支持立方柱和圆柱。可水平排列和垂直排列。
 
@@ -71,7 +76,7 @@ Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontai
 
 ### Bar3DStyle
 
-Inherits or Implemented: [ChildComponent](#childcomponent)
+Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -86,7 +91,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent)
 |sideColorRate|0.7f||方形柱侧边相对正面的颜色比例。
 |cubeDire|Vector3(1, 1)||方形柱形成3D效果的方向。
 |cylinderRate|0.5f|v3.1.0|圆柱的顶部椭圆比列。
-|topColor||v3.5.1|
-|bottomColor||v3.5.1|
-|sideColor||v3.5.1|
+|topColor||v3.6.0|
+|bottomColor||v3.6.0|
+|sideColor||v3.6.0|
 

@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /gantt
 ---
 
-# 甘特图
+# GanttChart 甘特图
 
 XCharts付费扩展图表 - 甘特图。
 
@@ -25,6 +25,10 @@ XCharts付费扩展图表 - 甘特图。
 
 ## 日志
 
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
+
 ### v3.5.0
 
 * (2022.12.01) 发布`v3.5.0`版本
@@ -39,7 +43,7 @@ XCharts付费扩展图表 - 甘特图。
 
 ### GanttChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 |public method|description|
 |--|--|
@@ -54,7 +58,7 @@ Inherits or Implemented: [BaseChart](#basechart)
 
 ### Gantt
 
-Inherits or Implemented: [Serie](#serie)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -62,7 +66,7 @@ Inherits or Implemented: [Serie](#serie)
 
 ### GanttStyle
 
-Inherits or Implemented: [MainComponent](#maincomponent)
+Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
 
 |field|default|since|comment|
 |--|--|--|--|

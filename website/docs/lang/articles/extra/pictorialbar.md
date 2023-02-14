@@ -3,7 +3,7 @@ sidebar_position: 0
 slug: /pictorialbar
 ---
 
-# 象形柱图
+# PictorialBarChart 象形柱图
 
 XCharts付费扩展图表 - 象形柱图。
 
@@ -23,6 +23,10 @@ XCharts付费扩展图表 - 象形柱图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.6.0
+
+* (2023.02.14) 同步`XCharts v3.6.0`
 
 ### v3.5.0
 
@@ -46,12 +50,12 @@ XCharts付费扩展图表 - 象形柱图。
 
 ### PictorialBarChart
 
-Inherits or Implemented: [BaseChart](#basechart)
+Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### PictorialBar
 
-Inherits or Implemented: [Serie](#serie),[INeedSerieContainer](#ineedseriecontainer)
+Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
 
 
