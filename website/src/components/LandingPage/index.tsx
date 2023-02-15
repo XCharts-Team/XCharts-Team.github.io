@@ -33,7 +33,7 @@ const DesktopUserStories = (props) => {
       </div>
       <div className="mx-auto max-w-[908px] mt-12">
         <div className="text-brand-cyan flex items-center max-w-[908px]">
-          <button className="bg-brand-cyan py-2 px-3 rounded font-bold text-white hover:bg-brand-cyan-dark" 
+          <button className="bg-brand-cyan py-2 px-3 rounded font-bold text-white hover:bg-brand-cyan-dark"
           >
             <h3><a href="/docs">Get Started</a></h3>
           </button>
@@ -69,11 +69,9 @@ const DesktopUserStories = (props) => {
               Unity上最好用的免费开源图表插件，5分钟即可上手。
             </li>
             <li>
-              支持折线图、柱状图、饼图、雷达图、散点图、热力图、环形图、K线图、极坐标、平行坐标等十多种常见的图表。另有多种扩展组件和扩展图表。
+              支持折线图、柱状图、饼图、雷达图、散点图、热力图、环形图、K线图、极坐标、平行坐标等十多种常见的图表。
             </li>
-            <li>
-              提供扩展定制支持等服务，满足用户个性化需求。
-            </li>
+            <li>支持多种扩展组件和扩展图表。提供扩展定制服务，满足用户个性化需求。</li>
             <li>
               持续维护和更新；稳定；可靠。
             </li>
