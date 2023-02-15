@@ -19,6 +19,7 @@ def _copy_xcharts_docs(xchartsPath, websitePath, prefixPath):
     util.fileReplaceContent(dstReadmePath, "Documentation~/zh/", "")
     util.fileReplaceContent(dstReadmePath, "README-en.md", "")
 
+
 def _copy_extra_docs(xchartsPath, websitePath, prefixPath):
     srcPath = os.path.realpath(xchartsPath + "/../")
     dstPath = os.path.realpath(
@@ -70,11 +71,52 @@ def _copy_extra_docs(xchartsPath, websitePath, prefixPath):
             util.fileInsertTail(dstReadmePath, content)
 
 
+def _copy_ui_docs(xchartsPath, websitePath, prefixPath):
+    srcPath = os.path.realpath(xchartsPath + "/../")
+    dstPath = os.path.realpath(
+        "{0}/{1}/lang/articles".format(websitePath, prefixPath))
+
+    extraPath = os.path.join(dstPath, "ui")
+    util.mkdir(extraPath)
+
+    extraImgPath = os.path.join(extraPath, "img")
+    util.mkdir(extraImgPath)
+
+    categoryPath = os.path.join(extraPath, "_category_.json")
+    util.fileWrite(
+        categoryPath, "{0}\n\t\"label\": \"扩展组件\",\n\t\"position\": 70\n{1}".format("{", "}"))
+
+    dirPath = os.path.join(srcPath, "XCharts-UI")
+    if os.path.isdir(dirPath):
+        chartname = "ui"
+        filename = chartname+".md"
+
+        srcReadmePath = os.path.join(dirPath, "README.md")
+        dstReadmePath = os.path.join(extraPath, filename)
+        util.fileCopy(srcReadmePath, dstReadmePath)
+        util.fileReplaceContent(
+            dstReadmePath, "Documentation~/zh/", "")
+        util.fileInsertHead(
+            dstReadmePath, "---\nsidebar_position: 0\nslug: /{0}\n---\n\n".format(chartname))
+
+        util.copyDir(os.path.join(
+            dirPath, "Documentation~/zh/img"), extraImgPath)
+
+        docPath = dirPath + "/Documentation~/zh"
+        for dirpath, dirnames, filenames in os.walk(docPath):
+            for filename in filenames:
+                if filename.endswith(".md") and filename.startswith("ui_"):
+                    srcPath = os.path.join(dirpath, filename)
+                    dstPath = os.path.join(extraPath, filename)
+                    util.fileCopy(srcPath, dstPath)
+
+
 def sync_version(xchartsPath, websitePath, version):
     if version == "master":
         prefixPath = "docs"
         _copy_xcharts_docs(xchartsPath, websitePath, prefixPath)
         _copy_extra_docs(xchartsPath, websitePath, prefixPath)
+        _copy_ui_docs(xchartsPath, websitePath, prefixPath)
     else:
         prefixPath = "versioned_docs/version-{0}".format(version)
         srcPath = websitePath + "/docs"
