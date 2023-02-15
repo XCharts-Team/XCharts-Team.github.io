@@ -129,6 +129,10 @@ def sync_version(xchartsPath, websitePath, version):
             "/versioned_sidebars/version-{0}-sidebars.json".format(version)
         util.fileCopy(srcPath, dstPath)
 
+        srcPath = websitePath + "/src/pages/api/master"
+        dstPath = websitePath + "/src/pages/api/{0}".format(version)
+        util.copyDir(srcPath, dstPath)
+
 
 if __name__ == "__main__":
     xchartsPath = os.path.realpath(sys.argv[1].replace("\\", ""))
