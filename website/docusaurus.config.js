@@ -158,15 +158,6 @@ module.exports = {
   },
   themeConfig: {
     hideableSidebar: true,
-    // Optional banner
-    // announcementBar: {
-    //   id: 'under-construction-banner',
-    //   content:
-    //     'Please help us by contributing documentation, corrections and translations! Thank you 😃',
-    //   backgroundColor: '#0891b2',
-    //   textColor: '#E5E7EB',
-    //   isCloseable: false,
-    // },
     prism: {
       defaultLanguage: 'python',
       theme: require('prism-react-renderer/themes/github'),
@@ -230,17 +221,7 @@ module.exports = {
           ],
           dropdownActiveClassDisabled: true,
           docsPluginId: 'default',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-          dropdownItemsAfter: [
-            {
-              to: '/help-us-translate',
-              label: 'Help us translate',
-            },
-          ],
-        },
+        }
       ],
     },
     footer: {

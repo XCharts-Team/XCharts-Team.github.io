@@ -76,7 +76,7 @@ const communities = [
     }),
     href: 'https://github.com/XCharts-Team/XCharts/discussions',
     // popover: <AsyncImage src={WebchatImg} />
-  },,
+  },
   {
     label: translate({
       id: 'theme.text.qq',
@@ -187,7 +187,7 @@ function Navbar(props): JSX.Element {
     let matchpath = item.href
     if (defaultLocale !== currentLocale) matchpath = '/' + currentLocale + matchpath
     const active = pathname.startsWith(matchpath)
-    return {...item, active }
+    return { ...item, active }
   })
 
   return (
@@ -218,6 +218,17 @@ function Navbar(props): JSX.Element {
             matchPath="/docs"
           />
         </li>
+        
+        {/* <li className="pr-6 navitem">
+          <WithLocalLink
+            href="/demo/"
+            label={translate({
+              id: 'theme.text.onlinedemo',
+              message: 'Demo',
+            })}
+            matchPath="/demo"
+          />
+        </li> */}
         <li className="pr-6 navitem">
           <NavLink href="https://xcharts-team.github.io/demo" label={translate({
               id: 'theme.text.onlinedemo',
@@ -234,6 +245,17 @@ function Navbar(props): JSX.Element {
             matchPath="/blog"
           />
         </li>
+        
+        {/* <li className="pr-6 navitem">
+          <WithLocalLink
+            href="/contact-us/"
+            label={translate({
+              id: 'theme.text.contactus',
+              message: 'Contact Us',
+            })}
+            matchPath="/contact-us"
+          />
+        </li> */}
         <li className="pr-6">
           <SimpleDropdown
             labelNode={

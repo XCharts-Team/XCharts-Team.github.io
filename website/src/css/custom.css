@@ -510,3 +510,24 @@ reference: https://gist.github.com/uditalias/3969a20ef759bf3a8757499429b30063
 .pagination-nav__item .pagination-nav__link:hover {
   border-color: var(--xcharts-brand-cyan);
 }
+
+.writeincsstitle_dmMY {
+  font-size: 3.5em;
+  font-weight: 900;
+  line-height: 1;
+  text-align: left;
+}
+
+.myrow_J5ak {
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+
+.codeblock_s721 {
+  background-color: #333;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 16px;
+}

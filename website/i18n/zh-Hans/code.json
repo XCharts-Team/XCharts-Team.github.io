@@ -26,8 +26,11 @@
   "theme.text.onlinedemo": {
     "message": "示例"
   },
-  "theme.text.community": {
+  "theme.text.contactus": {
     "message": "联系我们"
+  },
+  "theme.text.community": {
+    "message": "社区"
   },
   "theme.text.learnmore": {
     "message": "了解更多"

@@ -21,31 +21,30 @@ const DesktopUserStories = (props) => {
     <div className="flex-1 pb-16">
       <div className="mx-auto max-w-[908px] mt-12 ">
         <div className="text-brand-cyan flex items-center max-w-[908px] ">
-          <h1 className={clsx('text-brand-cyan-gradients font-bold')}>
+          <h1 className={clsx('text-brand-cyan-gradients font-bold writeincsstitle_dmMY')}>
             A charting and data visualization library for Unity.
           </h1>
         </div>
-        <div className="text-brand-cyan flex items-center max-w-[908px]">
-          <h1 className={clsx('text-brand-cyan-gradients font-bold')}>
+        <div className="text-brand-cyan flex items-center max-w-[908px] mt-2">
+          <h1 className={clsx('text-brand-cyan-gradients font-bold writeincsstitle_dmMY')}>
             Unity数据可视化图表插件。
           </h1>
         </div>
-      </div>
-      <div className="mx-auto max-w-[908px] mt-12">
-        <div className="text-brand-cyan flex items-center max-w-[908px]">
-          <button className="bg-brand-cyan py-2 px-3 rounded font-bold text-white hover:bg-brand-cyan-dark"
-          >
-            <h3><a href="/docs">Get Started</a></h3>
-          </button>
+        {/* <iframe src="https://ghbtns.com/github-btn.html?user=XCharts-Team&amp;repo=XCharts&amp;type=star&amp;count=true&amp;size=large" width="160" height="30" title="GitHub Stars"></iframe> */}
+        <div className='myrow_J5ak mt-10'>
+            <button className="bg-brand-cyan py-2 px-3 rounded font-bold text-white hover:bg-brand-cyan-dar">
+                <h3><a href="/docs">快速入门</a></h3>
+            </button>
         </div>
       </div>
-      <div className="mx-auto max-w-[908px] mt-12">
+
+      <div className="mx-auto max-w-[908px] mt-0">
         <div className="flex items-center space-x-6">
           <div>
             <div className="mb-6">
-              <h3 className={clsx('text-brand-cyan-gradients font-bold')}>
+              <h1 className={clsx('text-brand-cyan-gradients font-bold')}>
                 目标
-              </h3>
+              </h1>
             </div>
             <h4>
               XCharts致力于为Unity开发人员和创意人员提供一套强大易用的图表库，能快速的通过Unity实现和定制各种图表展示。
@@ -60,9 +59,9 @@ const DesktopUserStories = (props) => {
         <ProgressIcon />
         <div className="max-w-[560px]">
           <div className="mb-6">
-            <h3 className={clsx('text-brand-cyan-gradients font-bold')}>
+            <h1 className={clsx('text-brand-cyan-gradients font-bold')}>
               为什么用XCharts
-            </h3>
+            </h1>
           </div>
           <ul className="list-disc pl-4">
             <li>
@@ -82,9 +81,9 @@ const DesktopUserStories = (props) => {
 
       <div className={clsx(styles.cardContainer)}>
         <div className="max-w-[560px]">
-          <h3 className="mb-6 text-brand-cyan-gradients font-bold">
+          <h1 className="mb-6 text-brand-cyan-gradients font-bold">
             将来
-          </h3>
+          </h1>
           <ul className="list-disc pl-4">
             <li>完善图表编辑体验，让非开发人员也能轻松制作图表。</li>
             <li>增强图表数据展示能力，增强图表效果。</li>
