@@ -219,7 +219,7 @@ function Navbar(props): JSX.Element {
           />
         </li>
         
-        {/* <li className="pr-6 navitem">
+        {<li className="pr-6 navitem">
           <WithLocalLink
             href="/demo/"
             label={translate({
@@ -228,13 +228,7 @@ function Navbar(props): JSX.Element {
             })}
             matchPath="/demo"
           />
-        </li> */}
-        <li className="pr-6 navitem">
-          <NavLink href="https://xcharts-team.github.io/demo" label={translate({
-              id: 'theme.text.onlinedemo',
-              message: 'Online Demo',
-            })}/>
-        </li>
+        </li> }
         <li className="pr-6 navitem">
           <WithLocalLink
             href="/blog/"
