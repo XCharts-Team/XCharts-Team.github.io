@@ -1,12 +1,19 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import './style.css';
+
 
 export class App extends React.Component{
   componentDidMount(){
-    createScript('TemplateData/style.css',()=>{});
+    let data = localStorage.getItem("Xcharts-Demo-Version");
+    if (!data && typeof(data)!="undefined" && data!=0) {
+      data = document.getElementsByClassName('mr-3')[0].textContent;
+    }else{
+    document.getElementsByClassName('mr-3')[0].innerHTML = data;
+    }
     createScript('TemplateData/UnityProgress.js',()=>{});
-    createScript('Build/UnityLoader.js', ()=>{
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+    createScript(data+'/Build/UnityLoader.js', ()=>{
+      var unityInstance = UnityLoader.instantiate("unityContainer", data+"/Build/WebGL.json", {onProgress: UnityProgress});
       var fullscreen = document.getElementsByClassName("fullscreen")[0];
       fullscreen.onclick = function(){
         unityInstance.SetFullscreen(1);

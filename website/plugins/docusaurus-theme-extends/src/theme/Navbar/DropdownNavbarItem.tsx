@@ -242,6 +242,11 @@ export const VersionDropdownNavbarItem: React.FC<{
   const dropdownVersion =
     activeContext.activeVersion ?? preferredVersion ?? latestVersion; // Mobile dropdown is handled a bit differently
 
+
+    if(typeof activeContext.activeVersion?.label != "undefined"){
+      localStorage.setItem("Xcharts-Demo-Version", activeContext.activeVersion?.label);
+    }
+
   const items = getItems();
   return (
     <SimpleDropdown
