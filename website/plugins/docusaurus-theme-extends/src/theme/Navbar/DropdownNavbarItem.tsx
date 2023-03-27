@@ -11,11 +11,11 @@ import DropdownBg from './dropdown-bg.svg';
 import DropdownIcon from './dropdown.svg';
 import ArrowRightIcon from '../icons/arrow-right.svg';
 import clsx from 'clsx';
-
-import { useGlobalActiveContext } from '../NavbarItem/useApiContext';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import {
   useVersions,
-  useLatestVersion,
+  useActiveDocContext,
+  useLatestVersion
 } from '@docusaurus/plugin-content-docs/client';
 import { WithLocalLink } from './WithVersionUrl';
 import Link from '@docusaurus/Link';
@@ -212,10 +212,13 @@ export const LocaleDropdownNavbarItem: React.FC<{
 const getVersionMainDoc = (version) =>
   version.docs.find((doc) => doc.id === version.mainDocId);
 
+
+ 
+
 export const VersionDropdownNavbarItem: React.FC<{
   position?: 'top' | 'bottom';
 }> = ({ position }) => {
-  const activeContext = useGlobalActiveContext();
+  const activeContext = useActiveDocContext();
 
   const versions = useVersions();
   const latestVersion = useLatestVersion();
@@ -238,21 +241,33 @@ export const VersionDropdownNavbarItem: React.FC<{
     });
     return versionLinks;
   }
+  let dropdownVersion =
+  activeContext.activeVersion ?? preferredVersion ?? latestVersion;
+   // Mobile dropdown is handled a bit differently
 
-  const dropdownVersion =
-    activeContext.activeVersion ?? preferredVersion ?? latestVersion; // Mobile dropdown is handled a bit differently
-
-
-    if(typeof activeContext.activeVersion?.label != "undefined"){
-      localStorage.setItem("Xcharts-Demo-Version", activeContext.activeVersion?.label);
-    }
+   let isSet = false;
+   let setActiveContext;
+   if(typeof activeContext.activeVersion?.label != "undefined"){
+    setActiveContext = activeContext;
+    isSet = true;
+  }
 
   const items = getItems();
   return (
+    <>
     <SimpleDropdown
       position={position}
       items={items}
       label={dropdownVersion.label}
     />
+    <BrowserOnly>
+              {() => {
+                if(isSet){
+                  localStorage.setItem("Xcharts-Demo-Version", setActiveContext.activeVersion?.label);
+                }
+                return <></>
+              }}
+    </BrowserOnly>
+    </>
   );
 };

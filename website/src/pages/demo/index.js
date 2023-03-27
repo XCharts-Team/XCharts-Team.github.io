@@ -1,54 +1,56 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import './style.css';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
+let data;
+const UntiyComponent = (props) => {
+  if (!props.data && typeof(props.data)!="undefined" && props.data!=0) {
+    props.data = document.getElementsByClassName('mr-3')[0].textContent;
+  }else{
+  document.getElementsByClassName('mr-3')[0].innerHTML = props.data;
+  }
+  createScript('TemplateData/UnityProgress.js',()=>{});
+  createScript(props.data+'/Build/UnityLoader.js', ()=>{
+    var unityInstance = UnityLoader.instantiate("unityContainer", props.data+"/Build/WebGL.json", {onProgress: UnityProgress});
+    var fullscreen = document.getElementsByClassName("fullscreen")[0];
+    fullscreen.onclick = function(){
+      unityInstance.SetFullscreen(1);
+    }
+    });
+  function createScript(url, callback){
+    var oScript = document.createElement('script');
+    oScript.type = 'text/javascript';
+    oScript.async = true;
+    oScript.src = url;
+    var isIE = !-[1,];
+    if(isIE){
+    alert('IE')
+    oScript.onreadystatechange = function(){
+    if(this.readyState == 'loaded' || this.readyState == 'complete'){
+    callback();
+    }
+    }
+    } else {
+    oScript.onload = function(){
+    callback();
+    }
+    }
+    document.body.appendChild(oScript);
+    }
+  return (
+    <>
+    </>
+  );
+};
 
 export class App extends React.Component{
   componentDidMount(){
-    let data = localStorage.getItem("Xcharts-Demo-Version");
     if (!data && typeof(data)!="undefined" && data!=0) {
       data = document.getElementsByClassName('mr-3')[0].textContent;
     }else{
     document.getElementsByClassName('mr-3')[0].innerHTML = data;
     }
-    createScript('TemplateData/UnityProgress.js',()=>{});
-    createScript(data+'/Build/UnityLoader.js', ()=>{
-      var unityInstance = UnityLoader.instantiate("unityContainer", data+"/Build/WebGL.json", {onProgress: UnityProgress});
-      var fullscreen = document.getElementsByClassName("fullscreen")[0];
-      fullscreen.onclick = function(){
-        unityInstance.SetFullscreen(1);
-      }
-      });
-    function createScript(url, callback){
-      var oScript = document.createElement('script');
-      oScript.type = 'text/javascript';
-      oScript.async = true;
-      oScript.src = url;
-      /*
-      ** script标签的onload和onreadystatechange事件
-      ** IE6/7/8支持onreadystatechange事件
-      ** IE9/10支持onreadystatechange和onload事件
-      ** Firefox/Chrome/Opera支持onload事件
-      */
-      
-      // 判断IE8及以下浏览器
-      var isIE = !-[1,];
-      if(isIE){
-      alert('IE')
-      oScript.onreadystatechange = function(){
-      if(this.readyState == 'loaded' || this.readyState == 'complete'){
-      callback();
-      }
-      }
-      } else {
-      // IE9及以上浏览器，Firefox，Chrome，Opera
-      oScript.onload = function(){
-      callback();
-      }
-      }
-      document.body.appendChild(oScript);
-      }
-
   }
   render(){
     return (
@@ -62,6 +64,17 @@ export class App extends React.Component{
             <div className="title">XCharts</div>
           </div>
           </div>
+          <BrowserOnly>
+              {() => {
+                var bool = window.location.href.indexOf("demo");
+                if(bool>0){
+                  data = localStorage.getItem("Xcharts-Demo-Version");
+                  return <UntiyComponent data={data}/>
+                }else{
+                  return <></>
+                }
+              }}
+          </BrowserOnly>
         </>
       </Layout>
     );
