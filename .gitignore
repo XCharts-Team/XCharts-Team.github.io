@@ -1,6 +1,8 @@
 # IDEs
 .vscode
 
+build/
+
 # Node
 node_modules/
 
