@@ -111,12 +111,22 @@ def _copy_ui_docs(xchartsPath, websitePath, prefixPath):
                     util.fileCopy(srcPath, dstPath)
 
 
-def sync_version(xchartsPath, websitePath, version):
+def _copy_demo(websitePath, demoPath, version):
+    verionPath = websitePath+"/static/demo/"+version
+    if not os.path.exists(verionPath):
+        util.mkdir(verionPath)
+        util.mkdir(verionPath+"/Build")
+    util.copyDir(demoPath + "/Build", websitePath +
+                 "/static/demo/"+version+"/Build")
+
+
+def sync_version(xchartsPath, websitePath, demoPath, version):
     if version == "master":
         prefixPath = "docs"
         _copy_xcharts_docs(xchartsPath, websitePath, prefixPath)
         _copy_extra_docs(xchartsPath, websitePath, prefixPath)
         _copy_ui_docs(xchartsPath, websitePath, prefixPath)
+        _copy_demo(websitePath, demoPath, "develop")
     else:
         prefixPath = "versioned_docs/version-{0}".format(version)
         srcPath = websitePath + "/docs"
@@ -133,12 +143,15 @@ def sync_version(xchartsPath, websitePath, version):
         dstPath = websitePath + "/src/pages/api/{0}".format(version)
         util.copyDir(srcPath, dstPath)
 
+        _copy_demo(websitePath, demoPath, version)
 
 if __name__ == "__main__":
     xchartsPath = os.path.realpath(sys.argv[1].replace("\\", ""))
     websitePath = os.path.realpath(sys.argv[2].replace("\\", ""))
-    version = sys.argv[3]
+    demoPath = os.path.realpath(sys.argv[3].replace("\\", ""))
+    version = sys.argv[4]
     print("xchartsPath", xchartsPath)
     print("websitePath", websitePath)
+    print("demoPath", websitePath)
     print("version", version)
-    sync_version(xchartsPath, websitePath, version)
+    sync_version(xchartsPath, websitePath, demoPath, version)

@@ -45,14 +45,14 @@ XCharts付费扩展图表 - 甘特图。
 
 Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
-|public method|description|
-|--|--|
-| GetSeriesMinMaxValue() |public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)|
-| InitAxisRuntimeData() |public override void InitAxisRuntimeData(Axis axis)|
-| OnBeginDrag() |public override void OnBeginDrag(PointerEventData eventData)|
-| OnDrag() |public override void OnDrag(PointerEventData eventData)|
-| OnEndDrag() |public override void OnEndDrag(PointerEventData eventData)|
-| OnPointerClick() |public override void OnPointerClick(PointerEventData eventData)|
+|public method|since|description|
+|--|--|--|
+|GetSeriesMinMaxValue()||public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)|
+|InitAxisRuntimeData()||public override void InitAxisRuntimeData(Axis axis)|
+|OnBeginDrag()||public override void OnBeginDrag(PointerEventData eventData)|
+|OnDrag()||public override void OnDrag(PointerEventData eventData)|
+|OnEndDrag()||public override void OnEndDrag(PointerEventData eventData)|
+|OnPointerClick()||public override void OnPointerClick(PointerEventData eventData)|
 
 ## 配置项手册
 

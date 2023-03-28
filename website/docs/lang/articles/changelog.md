@@ -65,6 +65,16 @@ slug: /changelog
 
 ## master
 
+* (2023.03.14) 修复`Tooltip`的`titleFormater`设置`{b}`可能不生效的问题
+* (2023.03.14) 修复`BarChart`在数据为0时不绘制柱条背景的问题 (#250) (by __Ambitroc__)
+* (2023.03.12) 增加`LabelStyle`的`autoRotate`可设置有角度的竖版文本的自动旋转
+* (2023.03.10) 增加`VR`等其他非鼠标输入方式的Point位置获取 (#248) (by __Ambitroc__)
+* (2023.03.09) 增加`Chart`的`onSerieClick`，`onSerieDown`，`onSerieEnter`和`onSerieExit`回调
+* (2023.03.09) 修复`Pie`的点击选中偏移不生效的问题
+* (2023.03.04) 增加`Legend`的`Positions`可自定义图例的位置
+* (2023.03.03) 修复`Animation`变更动画可能无效的问题
+* (2023.02.28) 修复`Legend`点击时`Serie`的`Label`不刷新的问题
+* (2023.02.26) 增加`DataZoom`的`startEndFunction`委托
 * (2023.02.12) 重构`Component`相关代码，调整API接口
 * (2023.02.10) 修复`Axis`在`Log`轴时某些情况下最小值不正确的问题
 * (2023.02.10) 优化`Axis`的数值`Label`的默认显示格式
