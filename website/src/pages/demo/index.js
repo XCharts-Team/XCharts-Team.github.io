@@ -7,12 +7,13 @@ let data;
 const UntiyComponent = (props) => {
   if (!props.data && typeof(props.data)!="undefined" && props.data!=0) {
     props.data = document.getElementsByClassName('mr-3')[0].textContent;
+    props.data = 'v3.6.0';
   }else{
   document.getElementsByClassName('mr-3')[0].innerHTML = props.data;
   }
-  createScript('TemplateData/UnityProgress.js',()=>{});
-  createScript(props.data+'/Build/UnityLoader.js', ()=>{
-    var unityInstance = UnityLoader.instantiate("unityContainer", props.data+"/Build/WebGL.json", {onProgress: UnityProgress});
+  createScript('demo/TemplateData/UnityProgress.js',()=>{});
+  createScript('demo/'+props.data+'/Build/UnityLoader.js', ()=>{
+    var unityInstance = UnityLoader.instantiate("unityContainer",'demo/'+ props.data+"/Build/WebGL.json", {onProgress: UnityProgress});
     var fullscreen = document.getElementsByClassName("fullscreen")[0];
     fullscreen.onclick = function(){
       unityInstance.SetFullscreen(1);
