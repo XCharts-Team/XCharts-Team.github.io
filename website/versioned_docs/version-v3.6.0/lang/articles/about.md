@@ -85,7 +85,7 @@ slug: /about
 
 ![扩展图表](img/readme_extendchart.png)
 
-XCharts不再内置Demo，Demo已独立出单独的仓库 [XCharts-Demo](https://github.com/XCharts-Team/XCharts-Demo)，也可以在浏览器查看`WebGL`下的运行效果 [在线Demo](https://xcharts-team.github.io/demo/) 。
+XCharts不再内置Demo，Demo已独立出单独的仓库 [XCharts-Demo](https://github.com/XCharts-Team/XCharts-Demo)，也可以在浏览器查看`WebGL`下的运行效果 [在线Demo](https://xcharts-team.github.io/examples/) 。
 
 ## `XCharts3.0`
 

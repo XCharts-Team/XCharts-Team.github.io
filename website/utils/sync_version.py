@@ -112,12 +112,12 @@ def _copy_ui_docs(xchartsPath, websitePath, prefixPath):
 
 
 def _copy_demo(websitePath, demoPath, version):
-    verionPath = websitePath+"/static/demo/"+version
+    verionPath = websitePath+"/static/examples/"+version
     if not os.path.exists(verionPath):
         util.mkdir(verionPath)
         util.mkdir(verionPath+"/Build")
     util.copyDir(demoPath + "/Build", websitePath +
-                 "/static/demo/"+version+"/Build")
+                 "/static/examples/"+version+"/Build")
 
 
 def sync_version(xchartsPath, websitePath, demoPath, version):

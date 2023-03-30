@@ -221,12 +221,12 @@ function Navbar(props): JSX.Element {
         
         {<li className="pr-6 navitem">
           <WithLocalLink
-            href="/demo/"
+            href="/examples/"
             label={translate({
               id: 'theme.text.onlinedemo',
               message: 'Demo',
             })}
-            matchPath="/demo"
+            matchPath="/examples"
           />
         </li> }
         <li className="pr-6 navitem">
