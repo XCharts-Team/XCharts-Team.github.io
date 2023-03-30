@@ -28,6 +28,13 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### v3.6.0
 
+* (2023.03.17) 增加`Gauge`的`rangeDataMode`可设置是否使用范围数据模式
+* (2023.03.17) 增加`Gauge`的`loop`可设置是否循环数据，用于时钟甘特图
+* (2023.03.17) 增加`GaugePointer`的`value`可设置指针位置
+* (2023.03.17) 增加`Clock`时钟仪表盘支持
+* (2023.03.13) 增加`GaugePointer`的`nowTime`可设置指针指向当前时间
+* (2023.03.13) 增加`GaugePointer`的`value`可设置当前指针位置
+* (2023.03.13) 增加`Clock`类型的甘特图支持
 * (2023.02.14) 同步`XCharts v3.6.0`
 
 ### v3.5.0
@@ -65,6 +72,8 @@ Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configurati
 
 |field|default|since|comment|
 |--|--|--|--|
+|rangeDataMode|false|v3.6.0|数值是否为范围数据。启用该模式后，data中的每个值都是一个数组，数组中的第一个值为起始值，第二个值为结束值。指针只有一个，数据绘制为环形。
+|loop|false|v3.6.0|数值是否循环。可用在钟表图。
 |gaugeAxis|||仪表盘轴线。 [GaugeAxis](#gaugeaxis)|
 |gaugePointer|||仪表盘指针。 [GaugePointer](#gaugepointer)|
 |gaugeAnchor|||仪表盘指针固定点。 [GaugeAnchor](#gaugeanchor)|
@@ -135,4 +144,5 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |color|||
 |toColor|||
 |cornerRadius|||圆角半径。用数组分别指定4个圆角半径（顺时针左上，右上，右下，左下）。
+|value||v3.6.0|指针的值。当为时钟仪表盘时，可通过指定value值来控制指针的位置。
 

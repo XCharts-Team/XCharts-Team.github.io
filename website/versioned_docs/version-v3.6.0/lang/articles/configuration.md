@@ -1,5 +1,5 @@
 ---
-sidebar_position: 21
+sidebar_position: 31
 slug: /configuration
 ---
 
@@ -41,6 +41,7 @@ slug: /configuration
 - [ThemeStyle](#themestyle)
 - [TitleTheme](#titletheme)
 - [TooltipTheme](#tooltiptheme)
+- [UIComponentTheme](#uicomponenttheme)
 - [VisualMapTheme](#visualmaptheme)
 
 
@@ -129,6 +130,7 @@ slug: /configuration
 - [TitleStyle](#titlestyle)
 - [TitleTheme](#titletheme)
 - [TooltipTheme](#tooltiptheme)
+- [UIComponentTheme](#uicomponenttheme)
 - [VisualMapRange](#visualmaprange)
 - [VisualMapTheme](#visualmaptheme)
 
@@ -771,6 +773,7 @@ Inherits or Implemented: [ChildComponent](#childcomponent),[ISerieComponent](#is
 |autoOffset|false||是否开启自动偏移。当开启时，Y的偏移会自动判断曲线的开口来决定向上还是向下偏移。
 |offset|||距离图形元素的偏移
 |rotate|||文本的旋转。
+|autoRotate|false|v3.6.0|是否自动旋转。
 |distance|||距离轴线的距离。
 |formatter|||标签内容字符串模版格式器。支持用 \n 换行。 模板变量有： {.}：圆点标记。 {a}：系列名。 {a}：系列名。 {b}：类目值或数据名。 {c}：数据值。 {d}：百分比。 {e}：数据名。 {f}：数据和。 示例：“{b}:{c}”
 |numericFormatter|||标准数字格式字符串。用于将数值格式化显示为字符串。 使用Axx的形式：A是格式说明符的单字符，支持C货币、D十进制、E指数、F定点数、G常规、N数字、P百分比、R往返、X十六进制的。xx是精度说明，从0-99。 参考：https://docs.microsoft.com/zh-cn/dotnet/standard/base-types/standard-numeric-format-strings
@@ -820,6 +823,7 @@ Inherits or Implemented: [MainComponent](#maincomponent),[IPropertyChanged](#ipr
 |colors|||图例标记的颜色列表。
 |background||v3.1.0|背景图样式。 [ImageStyle](#imagestyle)|
 |padding||v3.1.0|图例标记和背景的间距。 [Padding](#padding)|
+|positions||v3.6.0|图例标记的自定义位置列表。
 
 ## LegendTheme
 
@@ -1504,6 +1508,16 @@ Inherits or Implemented: [ComponentTheme](#componenttheme)
 |areaColor|||区域指示的颜色。
 |labelTextColor|||十字指示器坐标轴标签的文本颜色。
 |labelBackgroundColor|||十字指示器坐标轴标签的背景颜色。
+
+## UIComponentTheme
+
+Inherits or Implemented: [ChildComponent](#childcomponent)
+
+|field|default|since|comment|
+|--|--|--|--|
+|show|true||
+|sharedTheme|||主题配置。 [Theme](#theme)|
+|transparentBackground|false||
 
 ## VisualMap
 

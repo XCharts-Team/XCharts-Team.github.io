@@ -26,6 +26,7 @@ XCharts的付费扩展图表 - 3D饼图。
 
 ### v3.6.0
 
+* (2023.03.09) 支持`onSerieClick` `onSerieDown` `onSerieEnter`和`onSerieExit`回调
 * (2023.02.14) 同步`XCharts v3.6.0`
 
 ### v3.5.0
@@ -55,15 +56,15 @@ Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#bas
 
 ### Pie3DSlice
 
-|public method|description|
-|--|--|
-| Contains() |public bool Contains(float angle)|
-| IsInPolygon() |public bool IsInPolygon(Vector2 p)|
-| IsInSidePolygon() |public bool IsInSidePolygon(Vector2 p)|
-| IsInStartOrEndSide() |public bool IsInStartOrEndSide(Vector2 p)|
-| IsInTopPolygon() |public bool IsInTopPolygon(Vector2 p)|
-| Pie3DSlice() |public Pie3DSlice()|
-| UpdateValue() |public void UpdateValue(int index, float start, float end, bool startSide, bool endSide, float maxHig)|
+|public method|since|description|
+|--|--|--|
+|Contains()||public bool Contains(float angle)|
+|IsInPolygon()||public bool IsInPolygon(Vector2 p)|
+|IsInSidePolygon()||public bool IsInSidePolygon(Vector2 p)|
+|IsInStartOrEndSide()||public bool IsInStartOrEndSide(Vector2 p)|
+|IsInTopPolygon()||public bool IsInTopPolygon(Vector2 p)|
+|Pie3DSlice()||public Pie3DSlice()|
+|UpdateValue()||public void UpdateValue(int index, float start, float end, bool startSide, bool endSide, float maxHig)|
 
 ## 配置项手册
 
