@@ -1,13 +1,12 @@
 # IDEs
 .vscode
 
-build/
+/website/build/
 
 # Node
 node_modules/
 
 # Production
-build
 
 # Generated files
 .docusaurus
