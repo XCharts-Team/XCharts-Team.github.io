@@ -1,0 +1,24 @@
+.apiTable {
+    font-size: small;
+  }
+  
+  .apiTable tbody tr {
+    transition: box-shadow 0.2s;
+    scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+  }
+
+  .apiTable thead {
+    height: var(--ifm-navbar-height);
+  }
+
+  .apiTable tbody tr:focus,
+  .apiTable tbody tr:hover {
+    outline: none;
+    box-shadow: 0 0 7px 0 inset var(--ifm-color-warning);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+
+
+
+
