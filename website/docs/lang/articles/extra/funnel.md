@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /funnel
 ---
+import APITable from '@site/src/components/APITable';
 
 # FunnelChart 漏斗图
 
@@ -49,16 +50,25 @@ XCharts的付费扩展图表 - 漏斗图。
 
 ### FunnelChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Funnels.FunnelChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Funnel
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Funnels.Funnel : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Funnel">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
 |rectEnd||v3.3.0|是否最后以矩形结束。默认false以三角形结束。
 |dynamicHeight||v3.3.0|是否映射为动态高度。当设置为 'true' 时，漏斗图每个条目（图表元素）的高度和 y 轴字段对应数值成正比。
+
+```mdx-code-block
+</APITable>
+```
 

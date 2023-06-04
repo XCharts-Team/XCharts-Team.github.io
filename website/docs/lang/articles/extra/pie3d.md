@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /pie3d
 ---
+import APITable from '@site/src/components/APITable';
 
 # Pie3DChart 3D饼图
 
@@ -23,6 +24,10 @@ XCharts的付费扩展图表 - 3D饼图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.6.1
+
+* (2023.05.21) 增加`avoidLabelOverlap`支持
 
 ### v3.6.0
 
@@ -53,9 +58,13 @@ XCharts的付费扩展图表 - 3D饼图。
 
 ### Pie3DChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Pie3Ds.Pie3DChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+3D饼图。
 
 ### Pie3DSlice
+
+> XCharts.Runtime.Pie3Ds.Pie3DSlice
+3D饼图的切块。
 
 |public method|since|description|
 |--|--|--|
@@ -71,17 +80,31 @@ Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#bas
 
 ### Pie3D
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Pie3Ds.Pie3D : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Pie3D">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
 |pie3DStyle||| [Pie3DStyle](#pie3dstyle)|
 
+```mdx-code-block
+</APITable>
+```
+
 ### Pie3DStyle
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Pie3Ds.Pie3DStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 3D饼图样式。
+
+```mdx-code-block
+<APITable name="Pie3DStyle">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -93,4 +116,8 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |peripherySideColorRate|0.8f||饼图切块的侧面颜色。
 |startSideColorRate|0.7f||饼图切块的起始面颜色（顺时针）。
 |endSideColorRate|0.65f||饼图切块的结束面颜色（顺时针）。
+
+```mdx-code-block
+</APITable>
+```
 

@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /liquid
 ---
+import APITable from '@site/src/components/APITable';
 
 # LiquidChart 水位图
 
@@ -48,17 +49,23 @@ XCharts的付费扩展图表 - 水位图。
 
 ### LiquidChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Liquids.LiquidChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+水位图
 
 ### VesselContext
 
-Inherits or Implemented: [MainComponentContext](https://xcharts-team.github.io/docs/api#maincomponentcontext)
+> XCharts.Runtime.Liquids.VesselContext : [MainComponentContext](https://xcharts-team.github.io/docs/api#maincomponentcontext)
 
 ## 配置项手册
 
 ### Liquid
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
+> XCharts.Runtime.Liquids.Liquid : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
+
+```mdx-code-block
+<APITable name="Liquid">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -67,11 +74,20 @@ Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configurati
 |waveSpeed|5f||波速。正数时左移，负数时右移。
 |waveOffset|0f||波偏移。
 
+```mdx-code-block
+</APITable>
+```
+
 ### Vessel
 
-Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent),[ISerieContainer](#iseriecontainer),[IUpdateRuntimeData](#iupdateruntimedata)
+> XCharts.Runtime.Liquids.Vessel : [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent), [ISerieContainer](https://xcharts-team.github.io/docs/configuration#iseriecontainer), [IUpdateRuntimeData](https://xcharts-team.github.io/docs/configuration#iupdateruntimedata)
 
 容器组件。 一般用于LiquidChart。一个Chart中可以有多个Vessel，Serie中用vesselIndex来对应。
+
+```mdx-code-block
+<APITable name="Vessel">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -90,4 +106,8 @@ Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/con
 |borderWidth|0f||内壁边框。
 |borderColor|Color32(70, 70, 240, 255)||容器内壁边框颜色。默认和serie一致。
 |cornerRadius|||容器的圆角半径。用数组分别指定4个圆角半径（顺时针左上，右上，右下，左下）。shape为Rect时有效。
+
+```mdx-code-block
+</APITable>
+```
 

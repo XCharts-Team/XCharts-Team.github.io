@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /gauge
 ---
+import APITable from '@site/src/components/APITable';
 
 # GaugeChart 仪表盘
 
@@ -63,13 +64,18 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugeChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Gauges.GaugeChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Gauge
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Gauges.Gauge : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Gauge">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -79,9 +85,18 @@ Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configurati
 |gaugePointer|||仪表盘指针。 [GaugePointer](#gaugepointer)|
 |gaugeAnchor|||仪表盘指针固定点。 [GaugeAnchor](#gaugeanchor)|
 
+```mdx-code-block
+</APITable>
+```
+
 ### GaugeAnchor
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Gauges.GaugeAnchor : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+
+```mdx-code-block
+<APITable name="GaugeAnchor">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -95,11 +110,20 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |offsetCenter|Vector2(0, 0)||相对于中心的偏移位置。
 |itemStyle|||图形样式。
 
+```mdx-code-block
+</APITable>
+```
+
 ### GaugeAxis
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Gauges.GaugeAxis : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘轴线相关设置。
+
+```mdx-code-block
+<APITable name="GaugeAxis">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -113,9 +137,18 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |axisLabel|||文本标签。
 |axisLabelText|||自定义Label的内容。
 
+```mdx-code-block
+</APITable>
+```
+
 ### GaugeAxisLine
 
-Inherits or Implemented: [BaseLine](https://xcharts-team.github.io/docs/configuration#baseline)
+> XCharts.Runtime.Gauges.GaugeAxisLine : [BaseLine](https://xcharts-team.github.io/docs/configuration#baseline)
+
+```mdx-code-block
+<APITable name="GaugeAxisLine">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -123,11 +156,20 @@ Inherits or Implemented: [BaseLine](https://xcharts-team.github.io/docs/configur
 |stageColor|||阶段颜色。
 |stageGradient||v3.4.0|阶段颜色是否渐变过渡。
 
+```mdx-code-block
+</APITable>
+```
+
 ### GaugePointer
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Gauges.GaugePointer : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘指针相关设置。
+
+```mdx-code-block
+<APITable name="GaugePointer">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -146,4 +188,8 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |toColor|||
 |cornerRadius|||圆角半径。用数组分别指定4个圆角半径（顺时针左上，右上，右下，左下）。
 |value||v3.6.0|指针的值。当为时钟仪表盘时，可通过指定value值来控制指针的位置。
+
+```mdx-code-block
+</APITable>
+```
 

@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /treemap
 ---
+import APITable from '@site/src/components/APITable';
 
 # TreemapChart 矩形树图
 
@@ -44,13 +45,18 @@ XCharts付费扩展图表 - 矩形树图。
 
 ### TreemapChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Treemaps.TreemapChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Treemap
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Treemaps.Treemap : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Treemap">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -60,4 +66,8 @@ Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configurati
 |customGoUpLevelButton|||自定义返回上一层按钮，自定义的按钮需要自己处理点击事件，调用GoUpALevel()接口。
 |upperLabel|||父节点标签。show为true时表示显示父节点标签，margin参数设置子节点和父节点的间距。
 |levelStyle|||
+
+```mdx-code-block
+</APITable>
+```
 

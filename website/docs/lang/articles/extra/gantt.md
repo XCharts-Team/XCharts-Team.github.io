@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /gantt
 ---
+import APITable from '@site/src/components/APITable';
 
 # GanttChart 甘特图
 
@@ -44,7 +45,7 @@ XCharts付费扩展图表 - 甘特图。
 
 ### GanttChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Gantts.GanttChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 |public method|since|description|
 |--|--|--|
@@ -59,15 +60,29 @@ Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#bas
 
 ### Gantt
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Gantts.Gantt : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Gantt">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
 |disableDrag|||
 
+```mdx-code-block
+</APITable>
+```
+
 ### GanttStyle
 
-Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
+> XCharts.Runtime.Gantts.GanttStyle : [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
+
+```mdx-code-block
+<APITable name="GanttStyle">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -83,4 +98,8 @@ Inherits or Implemented: [MainComponent](https://xcharts-team.github.io/docs/con
 |showAlignlineRange|10f||显示对齐线的范围。
 |aliginLine|||对齐线样式。
 |splitArea|||
+
+```mdx-code-block
+</APITable>
+```
 

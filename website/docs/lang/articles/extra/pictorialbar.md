@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /pictorialbar
 ---
+import APITable from '@site/src/components/APITable';
 
 # PictorialBarChart 象形柱图
 
@@ -52,12 +53,11 @@ XCharts付费扩展图表 - 象形柱图。
 
 ### PictorialBarChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.PictorialBars.PictorialBarChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### PictorialBar
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
-
+> XCharts.Runtime.PictorialBars.PictorialBar : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
 

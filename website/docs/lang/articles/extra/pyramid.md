@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /pyramid
 ---
+import APITable from '@site/src/components/APITable';
 
 # PyramidChart 金字塔
 
@@ -44,21 +45,35 @@ XCharts付费扩展图表 - 金字塔。
 
 ### PyramidChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Pyramids.PyramidChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Pyramid
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> XCharts.Runtime.Pyramids.Pyramid : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+```mdx-code-block
+<APITable name="Pyramid">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
 |pyramidStyle||| [PyramidStyle](#pyramidstyle)|
 
+```mdx-code-block
+</APITable>
+```
+
 ### PyramidStyle
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Pyramids.PyramidStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+
+```mdx-code-block
+<APITable name="PyramidStyle">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -72,4 +87,8 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |rightColorOpacity|0.7f||3D模式下，金字塔右边的颜色透明度
 |topColorOpacity|0.99f||3D模式下，金字塔顶部的颜色透明度
 |labelLineMargin|10f||Label标签距离右边的距离
+
+```mdx-code-block
+</APITable>
+```
 

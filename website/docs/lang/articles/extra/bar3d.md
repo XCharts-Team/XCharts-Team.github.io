@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /bar3d
 ---
+import APITable from '@site/src/components/APITable';
 
 # Bar3DChart 3D柱图
 
@@ -61,24 +62,38 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ### Bar3DChart
 
-Inherits or Implemented: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> XCharts.Runtime.Bar3Ds.Bar3DChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### Bar3D
 
-Inherits or Implemented: [Serie](https://xcharts-team.github.io/docs/configuration#serie),[INeedSerieContainer](#ineedseriecontainer)
+> XCharts.Runtime.Bar3Ds.Bar3D : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
 
 3D柱图。支持立方柱和圆柱。可水平排列和垂直排列。
+
+```mdx-code-block
+<APITable name="Bar3D">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
 |bar3DType||v3.1.0|<br/>`Bar3DType`:<br/>- `Cube`: 立方柱。<br/>- `Cylinder`: 圆柱。<br/>|
 |bar3DStyle||| [Bar3DStyle](#bar3dstyle)|
 
+```mdx-code-block
+</APITable>
+```
+
 ### Bar3DStyle
 
-Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> XCharts.Runtime.Bar3Ds.Bar3DStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+
+```mdx-code-block
+<APITable name="Bar3DStyle">
+```
+
 
 |field|default|since|comment|
 |--|--|--|--|
@@ -96,4 +111,8 @@ Inherits or Implemented: [ChildComponent](https://xcharts-team.github.io/docs/co
 |topColor||v3.6.0|
 |bottomColor||v3.6.0|
 |sideColor||v3.6.0|
+
+```mdx-code-block
+</APITable>
+```
 
