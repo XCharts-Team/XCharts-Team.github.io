@@ -53,7 +53,7 @@ def _copy_extra_docs(xchartsPath, websitePath, prefixPath):
             util.fileReplaceContent(
                 dstReadmePath, "\<p align=\"center\"\>", "<p align=\"center\" className=\"flex items-center\">")
             util.fileInsertHead(
-                dstReadmePath, "---\nsidebar_position: 0\nslug: /{0}\n---\n\n".format(chartname))
+                dstReadmePath, "---\nsidebar_position: 0\nslug: /{0}\n---\nimport APITable from '@site/src/components/APITable';\n\n".format(chartname))
 
             util.copyDir(os.path.join(
                 dirPath, "Documentation~/zh/img"), extraImgPath)
