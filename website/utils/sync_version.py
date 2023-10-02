@@ -4,6 +4,7 @@ import sys
 import shutil
 import util
 
+g_filter_repo = ["XCharts-UI", "XCharts-Daemon"]
 
 def _copy_xcharts_docs(xchartsPath, websitePath, prefixPath):
     srcPath = os.path.realpath(xchartsPath + "/Documentation~/zh/")
@@ -37,7 +38,7 @@ def _copy_extra_docs(xchartsPath, websitePath, prefixPath):
 
     for dir in os.listdir(srcPath):
         dirPath = os.path.join(srcPath, dir)
-        if os.path.isdir(dirPath) and dir.startswith("XCharts-") and dir != "XCharts-UI":
+        if os.path.isdir(dirPath) and dir.startswith("XCharts-") and (dir not in g_filter_repo):
             chartname = dir.split("-")[1].lower().replace("chart", "")
             filename = chartname+".md"
 
