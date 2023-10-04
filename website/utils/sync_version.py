@@ -127,7 +127,7 @@ def sync_version(xchartsPath, websitePath, demoPath, version):
         _copy_xcharts_docs(xchartsPath, websitePath, prefixPath)
         _copy_extra_docs(xchartsPath, websitePath, prefixPath)
         _copy_ui_docs(xchartsPath, websitePath, prefixPath)
-        _copy_demo(websitePath, demoPath, "develop")
+        _copy_demo(websitePath, demoPath, "master")
     else:
         prefixPath = "versioned_docs/version-{0}".format(version)
         srcPath = websitePath + "/docs"

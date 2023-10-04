@@ -85,7 +85,7 @@ module.exports = function (context, options) {
         return {
           docs: groupversions[key],
           name: key,
-          label: key === 'current' ? 'develop' : key,
+          label: key === 'current' ? 'master' : key,
           isLast: key === defaultVersion,
           mainDocId: '',
           path: key === defaultVersion ? normalizeUrl([baseUrl, options.route]) : normalizeUrl([baseUrl, options.route, version])

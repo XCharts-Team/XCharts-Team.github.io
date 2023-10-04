@@ -116,7 +116,7 @@ module.exports = {
         showLastUpdateTime: true,
         versions: {
           current: {
-            label: 'develop',
+            label: 'master',
             path: 'master',
           },
         },
