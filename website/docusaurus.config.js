@@ -278,9 +278,9 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} XCharts Technology, Inc.`,
     },
     algolia: {
-      appId: '6NDEOARB8Z',
-      apiKey: '423ce169fbf3df5464895dc686a697b0',
-      indexName: 'XCharts',
+      appId: '6YGEX22RUU',
+      apiKey: '15066da00423facdeb39bd6e082db68c',
+      indexName: 'xcharts-teamio',
       // See https://docusaurus.io/docs/search#contextual-search
       contextualSearch: true,
       // searchParameters: {
