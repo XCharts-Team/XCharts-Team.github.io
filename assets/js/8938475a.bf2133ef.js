@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7201],{36112:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/x-charts","name":"XCharts","count":1,"permalink":"/blog/tags/x-charts"}')}}]);
