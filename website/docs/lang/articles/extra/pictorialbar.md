@@ -8,7 +8,11 @@ import APITable from '@site/src/components/APITable';
 
 XCharts付费扩展图表 - 象形柱图。
 
-![pictorialbar](img/pictorialbar.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![PictorialBar01](img/PictorialBar01.png) |![PictorialBar02](img/PictorialBar02.png) |![PictorialBar03](img/PictorialBar03.png) |![PictorialBar04](img/PictorialBar04.png) |
 
 ## 许可
 

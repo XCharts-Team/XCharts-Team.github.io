@@ -8,7 +8,11 @@ import APITable from '@site/src/components/APITable';
 
 XCharts付费扩展图表 - 矩形树图。
 
-![treemap](img/treemap.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Treemap01](img/Treemap01.png) |![Treemap02](img/Treemap02.png) |![Treemap03](img/Treemap03.png) |![Treemap04](img/Treemap04.png) |
 
 ## 许可
 

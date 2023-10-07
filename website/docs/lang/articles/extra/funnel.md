@@ -8,7 +8,12 @@ import APITable from '@site/src/components/APITable';
 
 XCharts的付费扩展图表 - 漏斗图。
 
-![funnel](img/funnel.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Funnel01](img/Funnel01.png) |![Funnel02](img/Funnel02.png) |![Funnel03](img/Funnel03.png) |![Funnel04](img/Funnel04.png) |![Funnel05](img/Funnel05.png) |![Funnel06](img/Funnel06.png) |
+|![Funnel07](img/Funnel07.png) |![Funnel08](img/Funnel08.png) |![Funnel09](img/Funnel09.png) |
 
 ## 许可
 

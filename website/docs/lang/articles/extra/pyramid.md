@@ -8,7 +8,11 @@ import APITable from '@site/src/components/APITable';
 
 XCharts付费扩展图表 - 金字塔。
 
-![pyramid](img/pyramid.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Pyramid01](img/Pyramid01.png) |![Pyramid02](img/Pyramid02.png) |![Pyramid03](img/Pyramid03.png) |
 
 ## 许可
 
