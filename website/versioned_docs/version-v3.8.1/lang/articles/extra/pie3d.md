@@ -8,7 +8,12 @@ import APITable from '@site/src/components/APITable';
 
 XCharts的付费扩展图表 - 3D饼图。
 
-![pie3d](img/pie3d.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Pie3D01](img/Pie3D01.png) |![Pie3D02](img/Pie3D02.png) |![Pie3D03](img/Pie3D03.png) |![Pie3D04](img/Pie3D04.png) |![Pie3D05](img/Pie3D05.png) |![Pie3D06](img/Pie3D06.png) |
+|![Pie3D07](img/Pie3D07.png) |![Pie3D08](img/Pie3D08.png) |
 
 ## 许可
 

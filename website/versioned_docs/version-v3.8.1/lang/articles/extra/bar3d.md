@@ -8,7 +8,12 @@ import APITable from '@site/src/components/APITable';
 
 XCharts的付费扩展图表 - 3D柱图。
 
-![bar3d](img/bar3d.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Bar3D01](img/Bar3D01.png) |![Bar3D02](img/Bar3D02.png) |![Bar3D03](img/Bar3D03.png) |![Bar3D04](img/Bar3D04.png) |![Bar3D05](img/Bar3D05.png) |![Bar3D06](img/Bar3D06.png) |
+|![Bar3D07](img/Bar3D07.png) |![Bar3D08](img/Bar3D08.png) |![Bar3D09](img/Bar3D09.png) |![Bar3D10](img/Bar3D10.png) |
 
 ## 许可
 

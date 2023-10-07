@@ -8,8 +8,12 @@ import APITable from '@site/src/components/APITable';
 
 XCharts付费扩展图表 - 甘特图。
 
-![gantt](img/gantt.png)
+## 截图
 
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Gantt01](img/Gantt01.png) |![Gantt02](img/Gantt02.png) |![Gantt03](img/Gantt03.png) |![Gantt04](img/Gantt04.png) |![Gantt05](img/Gantt05.png) |![Gantt06](img/Gantt06.png) |
+|![Gantt07](img/Gantt07.png) |
 
 ## 许可
 

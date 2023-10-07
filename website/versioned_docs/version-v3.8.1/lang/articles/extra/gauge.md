@@ -8,7 +8,13 @@ import APITable from '@site/src/components/APITable';
 
 XCharts付费扩展图表 - 仪表盘。
 
-![gauge](img/gauge.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Gauge01](img/Gauge01.png) |![Gauge02](img/Gauge02.png) |![Gauge03](img/Gauge03.png) |![Gauge04](img/Gauge04.png) |![Gauge05](img/Gauge05.png) |![Gauge06](img/Gauge06.png) |
+|![Gauge07](img/Gauge07.png) |![Gauge08](img/Gauge08.png) |![Gauge09](img/Gauge09.png) |![Gauge10](img/Gauge10.png) |![Gauge11](img/Gauge11.png) |
+|![Gauge12](img/Gauge12.png) |![Gauge13](img/Gauge13.png) |![Gauge14](img/Gauge14.png) |
 
 ## 许可
 

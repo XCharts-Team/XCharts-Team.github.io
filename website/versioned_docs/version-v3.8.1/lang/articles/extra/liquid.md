@@ -8,7 +8,12 @@ import APITable from '@site/src/components/APITable';
 
 XCharts的付费扩展图表 - 水位图。
 
-![liquid](img/liquid.png)
+## 截图
+
+||||||
+| :--: | :--: | :--: | :--: | :--: |
+|![Liquid01](img/Liquid01.png) |![Liquid02](img/Liquid02.png) |![Liquid03](img/Liquid03.png) |![Liquid04](img/Liquid04.png) |![Liquid05](img/Liquid05.png) |![Liquid06](img/Liquid06.png) |
+|![Liquid07](img/Liquid07.png) |![Liquid08](img/Liquid08.png) |
 
 ## 许可
 
