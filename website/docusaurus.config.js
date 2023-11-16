@@ -159,9 +159,10 @@ module.exports = {
   themeConfig: {
     hideableSidebar: true,
     prism: {
-      defaultLanguage: 'python',
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/palenight'),
+      defaultLanguage: 'csharp',
+      additionalLanguages:['csharp'],
+      theme: require('prism-react-renderer/themes/vsLight'),
+      darkTheme: require('prism-react-renderer/themes/vsDark'),
     },
     hotjar: {
       siteId: '2765142',
