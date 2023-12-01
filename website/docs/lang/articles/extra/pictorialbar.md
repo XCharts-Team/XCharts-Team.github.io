@@ -68,13 +68,24 @@ XCharts付费扩展图表 - 象形柱图。
 
 ## API
 
+### PictorialBar
+
+> class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie),[INeedSerieContainer](https://xcharts-team.github.io/docs/api#ineedseriecontainer)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+|ConvertSerie()||public static PictorialBar ConvertSerie(Serie serie)|
+
 ### PictorialBarChart
 
-> XCharts.Runtime.PictorialBars.PictorialBarChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.PictorialBars / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
 
 ## 配置项手册
 
 ### PictorialBar
 
-> XCharts.Runtime.PictorialBars.PictorialBar : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
+> class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
 

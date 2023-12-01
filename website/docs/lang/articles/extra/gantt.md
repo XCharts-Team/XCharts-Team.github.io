@@ -56,11 +56,21 @@ XCharts付费扩展图表 - 甘特图。
 
 ## API
 
+### Gantt
+
+> class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+
 ### GanttChart
 
-> XCharts.Runtime.Gantts.GanttChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Gantts / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
-|public method|since|description|
+
+|方法|版本|描述|
 |--|--|--|
 |GetSeriesMinMaxValue()||public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)|
 |InitAxisRuntimeData()||public override void InitAxisRuntimeData(Axis axis)|
@@ -69,18 +79,22 @@ XCharts付费扩展图表 - 甘特图。
 |OnEndDrag()||public override void OnEndDrag(PointerEventData eventData)|
 |OnPointerClick()||public override void OnPointerClick(PointerEventData eventData)|
 
+### GanttStyle
+
+> class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/api#maincomponent)
+
+
 ## 配置项手册
 
 ### Gantt
 
-> XCharts.Runtime.Gantts.Gantt : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Gantt">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |disableDrag|||
 
@@ -90,14 +104,13 @@ XCharts付费扩展图表 - 甘特图。
 
 ### GanttStyle
 
-> XCharts.Runtime.Gantts.GanttStyle : [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
+> class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
 
 ```mdx-code-block
 <APITable name="GanttStyle">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||
 |ganttType|||甘特图类型。<br/>`GanttType`:<br/>- `Monomial`: 单项甘特图。每个数据项都是单独的一条进度。<br/>- `Multinomial`: 多项甘特图。每个数据项只是一条进度里的一段。<br/>|

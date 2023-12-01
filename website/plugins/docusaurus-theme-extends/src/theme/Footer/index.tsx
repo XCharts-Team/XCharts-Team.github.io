@@ -192,14 +192,7 @@ function Footer(): JSX.Element | null {
 
   return (
     <footer className="bg-grey-4 dark:bg-grey-0 text-white">
-      <div className="mx-auto my-6 desktop:mt-5 desktop:mb-5 px-4 max-w-docmain">
-        <div className="border-b border-b-white pb-3 flex items-center justify-between">
-          {/* <Logo /> */}
-          <h3>XCharts</h3>
-          {/* <div className="hidden desktop:inline-block text-caption text-light-grey-3 desktop:w-[328px]">
-            {copyright}
-          </div> */}
-        </div>
+      <div className="mx-auto my-6 desktop:mt-1 desktop:mb-1 px-1 max-w-docmain">
         <div className="mt-4 flex justify-between flex-wrap mb-1">
           <div className="flex-1">
             <div className="desktop:w-10/12 flex flex-wrap mb-2">

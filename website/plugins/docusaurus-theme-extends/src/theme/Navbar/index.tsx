@@ -118,7 +118,7 @@ function NavbarMobileSidebar({
         <div className="flex items-center space-x-3">
           <a href="/">
             {/* <LogoIcon width={120} /> */}
-            XCharts
+            <h1>XCharts</h1>
           </a>
           <GithubStars />
         </div>
@@ -194,7 +194,7 @@ function Navbar(props): JSX.Element {
     <nav
       id="header-nav"
       className={clsx(
-        'bg-grey-0 border-b border-grey-3 flex items-center justify-between sticky top-0 desktop:h-20 h-16 z-30 px-3 desktop:px-8',
+        'bg-grey-0 border-b border-grey-3 flex items-center justify-between sticky top-0 desktop:h-14 h-18 z-30 px-3 desktop:px-8',
         { 'navbar-sidebar--show': mobileSidebar.shown }
       )}
     >
@@ -203,11 +203,15 @@ function Navbar(props): JSX.Element {
           {/* <LogoIcon /> */}
           <h1>XCharts</h1>
         </a>
-        <div className="hidden desktop:inline-block">
+        {/* <div className="hidden desktop:inline-block">
           <GithubStars />
-        </div>
+        </div> */}
       </div>
       <ul className="hidden desktop:flex items-center">
+        <li className="pr-6 navitem">
+          <GithubStars />
+        </li>
+        
         <li className="pr-6 navitem">
           <WithLocalLink
             href="/docs/"
@@ -287,18 +291,19 @@ function Navbar(props): JSX.Element {
             items={communities}
           />
         </li>
-        <li className="mr-6">
+        <li className="mr-4">
           <VersionDropdownNavbarItem />
         </li>
-        <li className="mr-6">
+        <li className="mr-4">
           <LocaleDropdownNavbarItem />
         </li>
-        <li className="mr-6">
+        <li className="mr-4">
           <Toggle
             checked={colorModeToggle.isDarkTheme}
             onChange={colorModeToggle.toggle}
           />
         </li>
+        {/* <iframe src="https://ghbtns.com/github-btn.html?user=XCharts-Team&amp;repo=XCharts&amp;type=star&amp;count=true&amp;size=large" width="160" height="30" title="GitHub Stars"></iframe> */}
       </ul>
       <div
         className="inline-block desktop:hidden cursor-pointer"

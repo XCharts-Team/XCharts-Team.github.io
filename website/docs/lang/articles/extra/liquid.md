@@ -61,27 +61,48 @@ XCharts的付费扩展图表 - 水位图。
 
 ## API
 
+### Liquid
+
+> class in XCharts.Runtime.Liquids / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie),[INeedSerieContainer](https://xcharts-team.github.io/docs/api#ineedseriecontainer)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static Serie AddDefaultSerie(BaseChart chart, string serieName)|
+
 ### LiquidChart
 
-> XCharts.Runtime.Liquids.LiquidChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Liquids / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
 水位图
+
+### Vessel
+
+> class in XCharts.Runtime.Liquids / 继承自: [MainComponent](https://xcharts-team.github.io/docs/api#maincomponent),[ISerieContainer](https://xcharts-team.github.io/docs/api#iseriecontainer),[IUpdateRuntimeData](https://xcharts-team.github.io/docs/api#iupdateruntimedata)
+
+容器组件。 一般用于LiquidChart。一个Chart中可以有多个Vessel，Serie中用vesselIndex来对应。
+
+|方法|版本|描述|
+|--|--|--|
+|IsPointerEnter()||public bool IsPointerEnter()|
+|UpdateRuntimeData()||public void UpdateRuntimeData(BaseChart chart)|
 
 ### VesselContext
 
-> XCharts.Runtime.Liquids.VesselContext : [MainComponentContext](https://xcharts-team.github.io/docs/api#maincomponentcontext)
+> class in XCharts.Runtime.Liquids / 继承自: [MainComponentContext](https://xcharts-team.github.io/docs/api#maincomponentcontext)
+
 
 ## 配置项手册
 
 ### Liquid
 
-> XCharts.Runtime.Liquids.Liquid : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
+> class in XCharts.Runtime.Liquids / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
 
 ```mdx-code-block
 <APITable name="Liquid">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |waveHeight|10f||波高。
 |waveLength|20f||波长。为0-1小数时指直线的百分比。
@@ -94,7 +115,7 @@ XCharts的付费扩展图表 - 水位图。
 
 ### Vessel
 
-> XCharts.Runtime.Liquids.Vessel : [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent), [ISerieContainer](https://xcharts-team.github.io/docs/configuration#iseriecontainer), [IUpdateRuntimeData](https://xcharts-team.github.io/docs/configuration#iupdateruntimedata)
+> class in XCharts.Runtime.Liquids / 继承自: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent), [ISerieContainer](https://xcharts-team.github.io/docs/configuration#iseriecontainer), [IUpdateRuntimeData](https://xcharts-team.github.io/docs/configuration#iupdateruntimedata)
 
 容器组件。 一般用于LiquidChart。一个Chart中可以有多个Vessel，Serie中用vesselIndex来对应。
 
@@ -102,8 +123,7 @@ XCharts的付费扩展图表 - 水位图。
 <APITable name="Vessel">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||是否显示容器组件。 [defaut: true]
 |shape|||容器形状。 [default: Shape.Circle]<br/>`Vessel.Shape`:<br/>- `Circle`: 圆形<br/>- `Rect`: 正方形。<br/>- `Triangle`: 三角形。<br/>- `Diamond`: 菱形。<br/>|

@@ -74,15 +74,32 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ## API
 
+### Bar3D
+
+> class in XCharts.Runtime.Bar3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie),[INeedSerieContainer](https://xcharts-team.github.io/docs/api#ineedseriecontainer)
+
+3D柱图。支持立方柱和圆柱。可水平排列和垂直排列。
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static Bar3D AddDefaultSerie(BaseChart chart, string serieName)|
+|ConvertSerie()||public static Bar3D ConvertSerie(Serie serie)|
+
 ### Bar3DChart
 
-> XCharts.Runtime.Bar3Ds.Bar3DChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Bar3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
+
+### Bar3DStyle
+
+> class in XCharts.Runtime.Bar3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
 
 ## 配置项手册
 
 ### Bar3D
 
-> XCharts.Runtime.Bar3Ds.Bar3D : [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
+> class in XCharts.Runtime.Bar3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
 
 3D柱图。支持立方柱和圆柱。可水平排列和垂直排列。
 
@@ -90,8 +107,7 @@ XCharts的付费扩展图表 - 3D柱图。
 <APITable name="Bar3D">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |bar3DType||v3.1.0|<br/>`Bar3DType`:<br/>- `Cube`: 立方柱。<br/>- `Cylinder`: 圆柱。<br/>|
 |bar3DStyle||| [Bar3DStyle](#bar3dstyle)|
@@ -102,14 +118,13 @@ XCharts的付费扩展图表 - 3D柱图。
 
 ### Bar3DStyle
 
-> XCharts.Runtime.Bar3Ds.Bar3DStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Bar3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 ```mdx-code-block
 <APITable name="Bar3DStyle">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||
 |verticalArrange|false||是否垂直排列。

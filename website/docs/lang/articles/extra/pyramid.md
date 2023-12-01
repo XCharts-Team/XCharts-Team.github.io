@@ -52,22 +52,36 @@ XCharts付费扩展图表 - 金字塔。
 
 ## API
 
+### Pyramid
+
+> class in XCharts.Runtime.Pyramids / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+
 ### PyramidChart
 
-> XCharts.Runtime.Pyramids.PyramidChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Pyramids / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
+
+### PyramidStyle
+
+> class in XCharts.Runtime.Pyramids / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
 
 ## 配置项手册
 
 ### Pyramid
 
-> XCharts.Runtime.Pyramids.Pyramid : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Pyramids / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Pyramid">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |pyramidStyle||| [PyramidStyle](#pyramidstyle)|
 
@@ -77,14 +91,13 @@ XCharts付费扩展图表 - 金字塔。
 
 ### PyramidStyle
 
-> XCharts.Runtime.Pyramids.PyramidStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Pyramids / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 ```mdx-code-block
 <APITable name="PyramidStyle">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||
 |3D|true||

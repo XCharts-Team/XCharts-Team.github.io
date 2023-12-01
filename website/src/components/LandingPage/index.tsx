@@ -25,15 +25,18 @@ const DesktopUserStories = (props) => {
             A charting and data visualization library for Unity.
           </h1>
         </div>
-        <div className="text-brand-cyan flex items-center max-w-[908px] mt-2">
+        <div className="text-brand-cyan flex items-center max-w-[908px] mt-4">
           <h1 className={clsx('text-brand-cyan-gradients font-bold writeincsstitle_dmMY')}>
             Unity数据可视化图表插件。
           </h1>
         </div>
         {/* <iframe src="https://ghbtns.com/github-btn.html?user=XCharts-Team&amp;repo=XCharts&amp;type=star&amp;count=true&amp;size=large" width="160" height="30" title="GitHub Stars"></iframe> */}
-        <div className='myrow_J5ak mt-10'>
-            <button className="bg-brand-cyan py-2 px-3 rounded font-bold text-white hover:bg-brand-cyan-dar">
+        <div className='myrow_J5ak mt-4'>
+            <button className="bg-brand-cyan py-2 px-3 mt-4 rounded font-bold text-white hover:bg-brand-cyan-dar mr-2">
                 <h3><a href="/docs">快速入门</a></h3>
+            </button>
+            <button className="bg-brand-cyan py-2 px-3 mt-4 rounded font-bold text-white hover:bg-brand-cyan-dar">
+                <h3><a href="/examples">查看Demo</a></h3>
             </button>
         </div>
       </div>

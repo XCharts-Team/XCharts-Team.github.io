@@ -75,17 +75,29 @@ XCharts的付费扩展图表 - 3D饼图。
 
 ## API
 
+### Pie3D
+
+> class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static Serie AddDefaultSerie(BaseChart chart, string serieName)|
+|ConvertSerie()||public static Pie3D ConvertSerie(Serie serie)|
+
 ### Pie3DChart
 
-> XCharts.Runtime.Pie3Ds.Pie3DChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Pie3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
 3D饼图。
 
 ### Pie3DSlice
 
-> XCharts.Runtime.Pie3Ds.Pie3DSlice
+> class in XCharts.Runtime.Pie3Ds
+
 3D饼图的切块。
 
-|public method|since|description|
+|方法|版本|描述|
 |--|--|--|
 |Contains()||public bool Contains(float angle)|
 |IsInPolygon()||public bool IsInPolygon(Vector2 p)|
@@ -95,18 +107,23 @@ XCharts的付费扩展图表 - 3D饼图。
 |Pie3DSlice()||public Pie3DSlice()|
 |UpdateValue()||public void UpdateValue(int index, float start, float end, bool startSide, bool endSide, float maxHig)|
 
+### Pie3DStyle
+
+> class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
+3D饼图样式。
+
 ## 配置项手册
 
 ### Pie3D
 
-> XCharts.Runtime.Pie3Ds.Pie3D : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Pie3D">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |pie3DStyle||| [Pie3DStyle](#pie3dstyle)|
 
@@ -116,7 +133,7 @@ XCharts的付费扩展图表 - 3D饼图。
 
 ### Pie3DStyle
 
-> XCharts.Runtime.Pie3Ds.Pie3DStyle : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 3D饼图样式。
 
@@ -124,8 +141,7 @@ XCharts的付费扩展图表 - 3D饼图。
 <APITable name="Pie3DStyle">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||
 |ellipseMinorAxis|0.65f||椭圆的短轴长度。当为0-1的浮点数时为长轴的百分比。

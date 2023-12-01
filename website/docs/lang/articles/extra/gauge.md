@@ -77,22 +77,76 @@ XCharts付费扩展图表 - 仪表盘。
 
 ## API
 
+### Gauge
+
+> class in XCharts.Runtime.Gauges / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+|ClearComponentDirty()||public override void ClearComponentDirty()|
+|ClearVerticesDirty()||public override void ClearVerticesDirty()|
+|GetPointerColor()||public Color32 GetPointerColor(ThemeStyle theme, int colorIndex, float angle, Color32 dataColor)|
+
+### GaugeAnchor
+
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
+
+|方法|版本|描述|
+|--|--|--|
+|GetPosition()||public Vector3 GetPosition(Vector3 center, float radius)|
+
+### GaugeAxis
+
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
+仪表盘轴线相关设置。
+
+|方法|版本|描述|
+|--|--|--|
+|AddLabelObject()||public void AddLabelObject(ChartLabel label)|
+|ClearLabelObject()||public void ClearLabelObject()|
+|GaugeAxis()||public GaugeAxis()|
+|GetLabelObject()||public ChartLabel GetLabelObject(int index)|
+|GetStageColor()||public Color32 GetStageColor(float rate)|
+|GetStageColorByAngle()||public Color32 GetStageColorByAngle(float angle)|
+|SetLabelObjectActive()||public void SetLabelObjectActive(bool flag)|
+|SetLabelObjectPosition()||public void SetLabelObjectPosition(int index, Vector3 pos)|
+|SetLabelObjectText()||public void SetLabelObjectText(int index, string text)|
+
+### GaugeAxisLine
+
+> class in XCharts.Runtime.Gauges / 继承自: [BaseLine](https://xcharts-team.github.io/docs/api#baseline)
+
+
+|方法|版本|描述|
+|--|--|--|
+|GaugeAxisLine()||public GaugeAxisLine(bool show) : base(show)|
+
 ### GaugeChart
 
-> XCharts.Runtime.Gauges.GaugeChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Gauges / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
+
+### GaugePointer
+
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
+仪表盘指针相关设置。
 
 ## 配置项手册
 
 ### Gauge
 
-> XCharts.Runtime.Gauges.Gauge : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Gauges / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Gauge">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |rangeDataMode|false|v3.6.0|数值是否为范围数据。启用该模式后，data中的每个值都是一个数组，数组中的第一个值为起始值，第二个值为结束值。指针只有一个，数据绘制为环形。
 |loop|false|v3.6.0|数值是否循环。可用在钟表图。
@@ -106,14 +160,13 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugeAnchor
 
-> XCharts.Runtime.Gauges.GaugeAnchor : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 ```mdx-code-block
 <APITable name="GaugeAnchor">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||是否显示指针固定点。
 |showAbove|true||固定点是否显示在指针上面。
@@ -131,7 +184,7 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugeAxis
 
-> XCharts.Runtime.Gauges.GaugeAxis : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘轴线相关设置。
 
@@ -139,8 +192,7 @@ XCharts付费扩展图表 - 仪表盘。
 <APITable name="GaugeAxis">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||
 |type|||<br/>`GaugeAxisType`:<br/>- `None`: 仪表盘类型<br/>- `Section`: 分段<br/>- `Progress`: 进度<br/>|
@@ -158,14 +210,13 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugeAxisLine
 
-> XCharts.Runtime.Gauges.GaugeAxisLine : [BaseLine](https://xcharts-team.github.io/docs/configuration#baseline)
+> class in XCharts.Runtime.Gauges / 继承自: [BaseLine](https://xcharts-team.github.io/docs/configuration#baseline)
 
 ```mdx-code-block
 <APITable name="GaugeAxisLine">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |backgroundColor|Color32(230, 235, 248, 255)||进度条背景颜色。
 |stageColor|||阶段颜色。
@@ -177,7 +228,7 @@ XCharts付费扩展图表 - 仪表盘。
 
 ### GaugePointer
 
-> XCharts.Runtime.Gauges.GaugePointer : [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+> class in XCharts.Runtime.Gauges / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 仪表盘指针相关设置。
 
@@ -185,8 +236,7 @@ XCharts付费扩展图表 - 仪表盘。
 <APITable name="GaugePointer">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |show|true||是否显示指针。
 |length|0.6f||指针长度。可以是绝对值，也可以是相对于半径的百分比（0-1的浮点数）。

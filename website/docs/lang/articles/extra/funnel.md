@@ -58,22 +58,31 @@ XCharts的付费扩展图表 - 漏斗图。
 
 ## API
 
+### Funnel
+
+> class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+
 ### FunnelChart
 
-> XCharts.Runtime.Funnels.FunnelChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Funnels / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
 
 ## 配置项手册
 
 ### Funnel
 
-> XCharts.Runtime.Funnels.Funnel : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Funnel">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |rectEnd||v3.3.0|是否最后以矩形结束。默认false以三角形结束。
 |dynamicHeight||v3.3.0|是否映射为动态高度。当设置为 'true' 时，漏斗图每个条目（图表元素）的高度和 y 轴字段对应数值成正比。

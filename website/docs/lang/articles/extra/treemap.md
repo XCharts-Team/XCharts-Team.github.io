@@ -29,6 +29,10 @@ XCharts付费扩展图表 - 矩形树图。
 
 ## 日志
 
+### v3.6.2
+
+* (2023.11.08) 修复`ItemStyle`设置`borderColor`后边框绘制异常的问题
+
 ### v3.6.1
 
 * (2023.06.08) 发布`v3.6.1`版本
@@ -52,22 +56,39 @@ XCharts付费扩展图表 - 矩形树图。
 
 ## API
 
+### Treemap
+
+> class in XCharts.Runtime.Treemaps / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+
+
+|方法|版本|描述|
+|--|--|--|
+|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+|CanGoUpALevel()||public bool CanGoUpALevel()<br/>是否可以返回上一层 |
+|GetLevelItemStyle()||public ItemStyle GetLevelItemStyle(int level)|
+|GetLevelLabel()||public LabelStyle GetLevelLabel(int level)|
+|GetLevelUpperLabel()||public LabelStyle GetLevelUpperLabel(int level)|
+|GoUpALevel()||public void GoUpALevel()<br/>返回上一层 |
+|OnDataUpdate()||public override void OnDataUpdate()|
+|SetSelectedSerieData()||public bool SetSelectedSerieData(string serieDataName)<br/>设置选中（要展示的）的数据名 |
+|SetSelectedSerieData()||public void SetSelectedSerieData(SerieData serieData)|
+
 ### TreemapChart
 
-> XCharts.Runtime.Treemaps.TreemapChart : [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+> class in XCharts.Runtime.Treemaps / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+
 
 ## 配置项手册
 
 ### Treemap
 
-> XCharts.Runtime.Treemaps.Treemap : [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+> class in XCharts.Runtime.Treemaps / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 ```mdx-code-block
 <APITable name="Treemap">
 ```
 
-
-|field|default|since|comment|
+|参数|默认|版本|描述|
 |--|--|--|--|
 |leafDepth|0||默认显示的几层节点。默认为0时表示尽可能展示多层节点，设置大于0时，下钻功能开启，需要点击后才展示子节点。
 |visualDimension|0||用于计算占比的数据维数。
