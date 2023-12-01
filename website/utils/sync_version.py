@@ -153,6 +153,6 @@ if __name__ == "__main__":
     version = sys.argv[4]
     print("xchartsPath", xchartsPath)
     print("websitePath", websitePath)
-    print("demoPath", websitePath)
+    print("demoPath", demoPath)
     print("version", version)
     sync_version(xchartsPath, websitePath, demoPath, version)

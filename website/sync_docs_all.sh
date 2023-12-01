@@ -4,7 +4,7 @@ set -x
 
 XCHARTS_WEBSITE=$(cd $(dirname $0) && pwd)
 XCHARTS_MAIN=$XCHARTS_WEBSITE/../../XCharts/Assets/XCharts
-XCHARTS_DEMO=$XCHARTS_WEBSITE/../../xcharts-demo.github.io
+XCHARTS_DEMO=$XCHARTS_WEBSITE/../../Xcharts-Demo/WebGL
 
 cd $XCHARTS_WEBSITE
 yarn install
