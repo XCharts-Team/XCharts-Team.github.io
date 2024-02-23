@@ -33,19 +33,18 @@ XCharts付费扩展图表 - 桑基图。
 
 > class in XCharts.Runtime.Sankeys / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
+桑基图是一种特殊的流图（可以看作是有向无环图）。 它主要用来表示原材料、能量等如何从最初形式经过中间过程的加工或转化达到最终状态。
 
 |API|版本|描述|
 |--|--|--|
 |AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+|GetLevelItemStyle()||public ItemStyle GetLevelItemStyle(int depth)|
+|GetLevelLabel()||public LabelStyle GetLevelLabel(int depth)|
+|GetLevelLineStyle()||public LineStyle GetLevelLineStyle(int depth)|
 
 ### SankeyChart
 
 > class in XCharts.Runtime.Sankeys / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
-
-
-### SankeyStyle
-
-> class in XCharts.Runtime.Sankeys / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
 
 
 ## 配置项手册
@@ -54,38 +53,20 @@ XCharts付费扩展图表 - 桑基图。
 
 > class in XCharts.Runtime.Sankeys / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
+桑基图是一种特殊的流图（可以看作是有向无环图）。 它主要用来表示原材料、能量等如何从最初形式经过中间过程的加工或转化达到最终状态。
+
 ```mdx-code-block
 <APITable name="Sankey">
 ```
 
 |参数|默认|版本|描述|
 |--|--|--|--|
-|sankeyStyle||| [SankeyStyle](#sankeystyle)|
-
-```mdx-code-block
-</APITable>
-```
-
-### SankeyStyle
-
-> class in XCharts.Runtime.Sankeys / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
-
-```mdx-code-block
-<APITable name="SankeyStyle">
-```
-
-|参数|默认|版本|描述|
-|--|--|--|--|
-|show|true||
-|3D|true||
-|drawTop|true||
-|bottomPointRate|0.5f||3D模式下，底部中点占金字塔宽度的比例
-|leftPointRate|0.1f||3D模式下，底部左边点占金字塔高度的比例
-|rightPointRate|0.1f||3D模式下，底部右边点占金字塔高度的比例
-|leftColorOpacity|0.9f||3D模式下，金字塔左边的颜色透明度
-|rightColorOpacity|0.7f||3D模式下，金字塔右边的颜色透明度
-|topColorOpacity|0.99f||3D模式下，金字塔顶部的颜色透明度
-|labelLineMargin|10f||Label标签距离右边的距离
+|nodeAlign|||节点对齐方式。<br/>`Sankey.NodeAlign`:<br/>- `Top`: 顶部对齐<br/>- `Center`: 居中对齐<br/>- `Bottom`: 底部对齐<br/>|
+|nodeWidth|20||节点的宽度。
+|nodeGap|8||节点的间距。
+|draggable|||是否可拖拽。
+|curveness|0.5f||线条的弯曲程度。
+|levelStyle|||层级样式。
 
 ```mdx-code-block
 </APITable>

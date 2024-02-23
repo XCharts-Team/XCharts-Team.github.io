@@ -20,6 +20,10 @@ XCharts付费扩展图表 - 仪表盘。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-GaugeChart-Demo](https://github.com/XCharts-Team/XCharts-GaugeChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -30,6 +34,10 @@ XCharts付费扩展图表 - 仪表盘。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.10.0
+
+* (2024.01.21) 增加`Gauge`的更多创建默认图表的快捷方式和API
 
 ### v3.9.0
 
@@ -84,6 +92,7 @@ XCharts付费扩展图表 - 仪表盘。
 
 > class in XCharts.Runtime.Gauges / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
+仪表盘系列数据。
 
 |API|版本|描述|
 |--|--|--|
@@ -132,6 +141,19 @@ XCharts付费扩展图表 - 仪表盘。
 
 > class in XCharts.Runtime.Gauges / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
+仪表盘。
+
+|API|版本|描述|
+|--|--|--|
+|DefaultBarometerGaugeChart()||public void DefaultBarometerGaugeChart()<br/>生成气压计仪表盘。 |
+|DefaultClockGaugeChart()||public void DefaultClockGaugeChart()<br/>生成时钟仪表盘。 |
+|DefaultMultipleGaugeChart()||public void DefaultMultipleGaugeChart()<br/>生成多仪表盘。 |
+|DefaultProgressGaugeChart()||public void DefaultProgressGaugeChart()<br/>生成进度仪表盘。 |
+|DefaultRangeClockGaugeChart()||public void DefaultRangeClockGaugeChart()|
+|DefaultSectionGaugeChart()||public void DefaultSectionGaugeChart()<br/>生成分段仪表盘。 |
+|UpdateClockTime()||public void UpdateClockTime()<br/>更新时钟时间。 |
+|UpdateClockTime()||public void UpdateClockTime(double hour, double minute, double second)<br/>更新时钟时间。 |
+|UpdatePointerValue()||public void UpdatePointerValue(double value)<br/>更新指针值。 |
 
 ### GaugePointer
 
@@ -144,6 +166,8 @@ XCharts付费扩展图表 - 仪表盘。
 ### Gauge
 
 > class in XCharts.Runtime.Gauges / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+
+仪表盘系列数据。
 
 ```mdx-code-block
 <APITable name="Gauge">

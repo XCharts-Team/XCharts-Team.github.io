@@ -19,6 +19,10 @@ XCharts付费扩展图表 - 甘特图。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-GanttChart-Demo](https://github.com/XCharts-Team/XCharts-GanttChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -29,6 +33,10 @@ XCharts付费扩展图表 - 甘特图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.10.0
+
+* (2024.01.21) 增加`Gantt`的更多创建默认图表的快捷方式和API
 
 ### v3.9.0
 
@@ -68,7 +76,9 @@ XCharts付费扩展图表 - 甘特图。
 
 |API|版本|描述|
 |--|--|--|
+|AddDefaultCategorySerie()||public static void AddDefaultCategorySerie(BaseChart chart, string serieName)|
 |AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+|AddDefaultValueSerie()||public static void AddDefaultValueSerie(BaseChart chart, string serieName)|
 
 ### GanttChart
 
@@ -77,6 +87,10 @@ XCharts付费扩展图表 - 甘特图。
 
 |API|版本|描述|
 |--|--|--|
+|DefaultCategoryAxisGanttChart()||public void DefaultCategoryAxisGanttChart()<br/>生成默认的类目轴甘特图。 |
+|DefaultMonomialGroupGanttChart()||public void DefaultMonomialGroupGanttChart()<br/>生成默认的单维度分组甘特图。 |
+|DefaultMultinomialGroupGanttChart()||public void DefaultMultinomialGroupGanttChart()<br/>生成默认的多维度分组甘特图。 |
+|DefaultValueAxisGanttChart()||public void DefaultValueAxisGanttChart()<br/>生成默认的数值轴甘特图。 |
 |GetSeriesMinMaxValue()||public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)|
 |InitAxisRuntimeData()||public override void InitAxisRuntimeData(Axis axis)|
 |OnBeginDrag()||public override void OnBeginDrag(PointerEventData eventData)|

@@ -19,6 +19,10 @@ XCharts的付费扩展图表 - 水位图。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-LiquidChart-Demo](https://github.com/XCharts-Team/XCharts-LiquidChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -29,6 +33,10 @@ XCharts的付费扩展图表 - 水位图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.10.0
+
+* (2024.01.21) 增加`Liquid`的更多创建默认图表的快捷方式和API
 
 ### v3.9.0
 
@@ -80,6 +88,12 @@ XCharts的付费扩展图表 - 水位图。
 > class in XCharts.Runtime.Liquids / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 水位图
+
+|API|版本|描述|
+|--|--|--|
+|DefaultCapsuleLiquidChart()||public void DefaultCapsuleLiquidChart()<br/>generate default capsule liquid chart. 生成默认的胶囊形水位图。 |
+|DefaultRectLiquidChart()||public void DefaultRectLiquidChart()<br/>generate default rect liquid chart. 生成默认的矩形水位图。 |
+|DefaultRoundRectLiquidChart()||public void DefaultRoundRectLiquidChart()<br/>generate default round rect liquid chart. 生成默认的圆角矩形水位图。 |
 
 ### Vessel
 

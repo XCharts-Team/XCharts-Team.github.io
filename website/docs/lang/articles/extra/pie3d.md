@@ -19,6 +19,10 @@ XCharts的付费扩展图表 - 3D饼图。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-Pie3DChart-Demo](https://github.com/XCharts-Team/XCharts-Pie3DChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -29,6 +33,14 @@ XCharts的付费扩展图表 - 3D饼图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.10.0
+
+* (2023.01.16) 增加`XCharts`上的更多菜单栏快捷方式，一键创建多种3D饼图
+* (2023.12.17) 增加`Pie3DStyle`的`drawSplitSide`设置是否绘制分割面
+* (2023.12.16) 增加`Border`描边支持
+* (2023.12.15) 增加`Serie`的`label`可指示在边缘的支持
+* (2023.12.10) 增加`Serie`的`minShowLabel`可隐藏小于指定值的`label`
 
 ### v3.9.0
 
@@ -85,6 +97,7 @@ XCharts的付费扩展图表 - 3D饼图。
 
 > class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
+3D饼图系列。
 
 |API|版本|描述|
 |--|--|--|
@@ -96,6 +109,12 @@ XCharts的付费扩展图表 - 3D饼图。
 > class in XCharts.Runtime.Pie3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 3D饼图。
+
+|API|版本|描述|
+|--|--|--|
+|DefaultAutoHeightPie3DChart()||public void DefaultAutoHeightPie3DChart()<br/>生成默认3D自动高度饼图。 |
+|DefaultDonutPie3DChart()||public void DefaultDonutPie3DChart()<br/>生成默认3D甜甜圈饼图。 |
+|DefaultEllipsePie3DChart()||public void DefaultEllipsePie3DChart()<br/>生成默认2D椭圆饼图。 |
 
 ### Pie3DSlice
 
@@ -125,6 +144,8 @@ XCharts的付费扩展图表 - 3D饼图。
 
 > class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
+3D饼图系列。
+
 ```mdx-code-block
 <APITable name="Pie3D">
 ```
@@ -153,10 +174,11 @@ XCharts的付费扩展图表 - 3D饼图。
 |ellipseMinorAxis|0.65f||椭圆的短轴长度。当为0-1的浮点数时为长轴的百分比。
 |pieMaxHeight|20f||饼图厚度。
 |pieAutoHeight|false||是否自动根据比例计算厚度。
-|selectedOffset|Vector2(0.1f, 0.5f)||The offset of selected pie slice. 被选中状态的饼图块的额外偏移。
+|selectedOffset|Vector2(0.1f, 0.5f)||被选中状态的饼图块的额外偏移。
 |peripherySideColorRate|0.8f||饼图切块的侧面颜色。
 |startSideColorRate|0.7f||饼图切块的起始面颜色（顺时针）。
 |endSideColorRate|0.65f||饼图切块的结束面颜色（顺时针）。
+|drawSplitSide|true|v3.10.0|是否绘制分割面。当pieAutoHeight为true时，该值无效。
 
 ```mdx-code-block
 </APITable>

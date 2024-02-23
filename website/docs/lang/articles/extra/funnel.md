@@ -19,6 +19,10 @@ XCharts的付费扩展图表 - 漏斗图。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-FunnelChart-Demo](https://github.com/XCharts-Team/XCharts-FunnelChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -76,6 +80,11 @@ XCharts的付费扩展图表 - 漏斗图。
 
 > class in XCharts.Runtime.Funnels / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
+漏斗图。适用于流程流量分析。
+
+|API|版本|描述|
+|--|--|--|
+|DefaultHorizonalFunnelChart()||public void DefaultHorizonalFunnelChart()<br/>生成默认的横向漏斗图。 |
 
 ## 配置项手册
 

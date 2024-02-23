@@ -19,6 +19,10 @@ XCharts的付费扩展图表 - 3D柱图。
 
 扩展图表，需付费购买后才获得使用许可。
 
+## 示例
+
+Demo仓库：[XCharts-Bar3DChart-Demo](https://github.com/XCharts-Team/XCharts-Bar3DChart-Demo)
+
 ## 教程
 
 [扩展图表如何导入Demo项目或导入自己项目](https://github.com/XCharts-Team/XCharts-Demo)
@@ -29,6 +33,14 @@ XCharts的付费扩展图表 - 3D柱图。
 [配置项手册](#配置项手册)  
 
 ## 日志
+
+### v3.10.0
+
+* (2023.12.16) 增加`Bar3D`的更多默认图表快捷方式和API
+* (2023.12.16) 增加`Bar3DStyle`的`borderDash`是否绘制虚线边框
+* (2023.12.16) 增加`Bar3DStyle`的`occludedAreaBorderDash`是否绘制遮挡区域的虚线边框
+* (2023.12.16) 增加`Bar3DStyle`的`occludedAreaBorder`是否绘制遮挡区域的边框
+* (2023.12.16) 增加`Border`边框绘制支持
 
 ### v3.8.0
 
@@ -90,6 +102,12 @@ XCharts的付费扩展图表 - 3D柱图。
 > class in XCharts.Runtime.Bar3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 
+|API|版本|描述|
+|--|--|--|
+|DefaultCylinderChart()||public void DefaultCylinderChart(){<br/>生成默认的圆柱体图。 |
+|DefaultGroupedCubeChart()||public void DefaultGroupedCubeChart()<br/>默认分组3D柱状图。 |
+|DefaultStackedCubeChart()||public void DefaultStackedCubeChart()<br/>默认堆叠分组3D柱状图。 |
+
 ### Bar3DStyle
 
 > class in XCharts.Runtime.Bar3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
@@ -140,6 +158,9 @@ XCharts的付费扩展图表 - 3D柱图。
 |topColor||v3.6.0|
 |bottomColor||v3.6.0|
 |sideColor||v3.6.0|
+|occludedAreaBorder||v3.10.0|是否显示遮挡区域的边框。
+|occludedAreaBorderDash||v3.10.0|是否显示遮挡区域的虚线边框。
+|borderDash||v3.10.0|是否显示虚线边框。
 
 ```mdx-code-block
 </APITable>
