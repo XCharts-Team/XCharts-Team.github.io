@@ -34,9 +34,13 @@ Demo仓库：[XCharts-Pie3DChart-Demo](https://github.com/XCharts-Team/XCharts-P
 
 ## 日志
 
+### v3.10.1
+
+* (2024.02.28) 修复`Pie3D`在动画过程中可能出现绘制异常的问题
+
 ### v3.10.0
 
-* (2023.01.16) 增加`XCharts`上的更多菜单栏快捷方式，一键创建多种3D饼图
+* (2024.01.16) 增加`XCharts`上的更多菜单栏快捷方式，一键创建多种3D饼图
 * (2023.12.17) 增加`Pie3DStyle`的`drawSplitSide`设置是否绘制分割面
 * (2023.12.16) 增加`Border`描边支持
 * (2023.12.15) 增加`Serie`的`label`可指示在边缘的支持
