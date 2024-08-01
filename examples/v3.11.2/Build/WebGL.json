@@ -1,7 +1,7 @@
 {
 "companyName": "XCharts",
 "productName": "XCharts",
-"productVersion": "3.10.1",
+"productVersion": "3.11.1",
 "dataUrl": "WebGL.data.unityweb",
 "wasmCodeUrl": "WebGL.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL.wasm.framework.unityweb",
