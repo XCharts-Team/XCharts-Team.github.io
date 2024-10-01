@@ -34,6 +34,11 @@ Demo仓库：[XCharts-GanttChart-Demo](https://github.com/XCharts-Team/XCharts-G
 
 ## 日志
 
+### v3.12.0
+
+* (2024.09.30) 发布`v3.12.0`版本
+* (2024.09.30) 更新文档
+
 ### v3.11.0
 
 * (2024.06.16) 发布`v3.11.0`版本
@@ -75,80 +80,190 @@ Demo仓库：[XCharts-GanttChart-Demo](https://github.com/XCharts-Team/XCharts-G
 
 ### Gantt
 
-> class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
+#### Gantt.AddDefaultCategorySerie
 
-|API|版本|描述|
-|--|--|--|
-|AddDefaultCategorySerie()||public static void AddDefaultCategorySerie(BaseChart chart, string serieName)|
-|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
-|AddDefaultValueSerie()||public static void AddDefaultValueSerie(BaseChart chart, string serieName)|
+public static void AddDefaultCategorySerie(BaseChart chart, string serieName)  
+
+#### Gantt.AddDefaultSerie
+
+public static void AddDefaultSerie(BaseChart chart, string serieName)  
+
+#### Gantt.AddDefaultValueSerie
+
+public static void AddDefaultValueSerie(BaseChart chart, string serieName)  
 
 ### GanttChart
 
-> class in XCharts.Runtime.Gantts / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+class in XCharts.Runtime.Gantts / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
+#### GanttChart.aliginingValue
 
-|API|版本|描述|
-|--|--|--|
-|DefaultCategoryAxisGanttChart()||public void DefaultCategoryAxisGanttChart()<br/>生成默认的类目轴甘特图。 |
-|DefaultMonomialGroupGanttChart()||public void DefaultMonomialGroupGanttChart()<br/>生成默认的单维度分组甘特图。 |
-|DefaultMultinomialGroupGanttChart()||public void DefaultMultinomialGroupGanttChart()<br/>生成默认的多维度分组甘特图。 |
-|DefaultValueAxisGanttChart()||public void DefaultValueAxisGanttChart()<br/>生成默认的数值轴甘特图。 |
-|GetSeriesMinMaxValue()||public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)|
-|InitAxisRuntimeData()||public override void InitAxisRuntimeData(Axis axis)|
-|OnBeginDrag()||public override void OnBeginDrag(PointerEventData eventData)|
-|OnDrag()||public override void OnDrag(PointerEventData eventData)|
-|OnEndDrag()||public override void OnEndDrag(PointerEventData eventData)|
-|OnPointerClick()||public override void OnPointerClick(PointerEventData eventData)|
+public double aliginingValue  
+
+#### GanttChart.runtimeBeginDrag
+
+public bool runtimeBeginDrag  
+
+#### GanttChart.runtimeDragLeft
+
+public bool runtimeDragLeft  
+
+#### GanttChart.runtimeDragSerie
+
+public Serie runtimeDragSerie  
+
+#### GanttChart.runtimeDragSerieData
+
+public SerieData runtimeDragSerieData  
+
+#### GanttChart.runtimeIsAlgining
+
+public bool runtimeIsAlgining  
+
+#### GanttChart.runtimeIsDragSerie
+
+public bool runtimeIsDragSerie  
+
+#### GanttChart.DefaultCategoryAxisGanttChart
+
+public void DefaultCategoryAxisGanttChart()  
+生成默认的类目轴甘特图。
+
+#### GanttChart.DefaultMonomialGroupGanttChart
+
+public void DefaultMonomialGroupGanttChart()  
+生成默认的单维度分组甘特图。
+
+#### GanttChart.DefaultMultinomialGroupGanttChart
+
+public void DefaultMultinomialGroupGanttChart()  
+生成默认的多维度分组甘特图。
+
+#### GanttChart.DefaultValueAxisGanttChart
+
+public void DefaultValueAxisGanttChart()  
+生成默认的数值轴甘特图。
+
+#### GanttChart.GetSeriesMinMaxValue
+
+public override void GetSeriesMinMaxValue(Axis axis, int axisIndex, out double tempMinValue, out double tempMaxValue)  
+
+#### GanttChart.InitAxisRuntimeData
+
+public override void InitAxisRuntimeData(Axis axis)  
+
+#### GanttChart.OnBeginDrag
+
+public override void OnBeginDrag(PointerEventData eventData)  
+
+#### GanttChart.OnDrag
+
+public override void OnDrag(PointerEventData eventData)  
+
+#### GanttChart.OnEndDrag
+
+public override void OnEndDrag(PointerEventData eventData)  
+
+#### GanttChart.OnPointerClick
+
+public override void OnPointerClick(PointerEventData eventData)  
 
 ### GanttStyle
 
-> class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/api#maincomponent)
+class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/api#maincomponent)
 
+### GanttType
+
+class in XCharts.Runtime.Gantts
+
+可选：
+
+- `Monomial`: 单项甘特图。每个数据项都是单独的一条进度。
+- `Multinomial`: 多项甘特图。每个数据项只是一条进度里的一段。
 
 ## 配置项手册
 
 ### Gantt
 
-> class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+class in XCharts.Runtime.Gantts / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
-```mdx-code-block
-<APITable name="Gantt">
-```
+#### Gantt.disableDrag
 
-|参数|默认|版本|描述|
-|--|--|--|--|
-|disableDrag|||
-
-```mdx-code-block
-</APITable>
-```
+`bool`
 
 ### GanttStyle
 
-> class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
+class in XCharts.Runtime.Gantts / 继承自: [MainComponent](https://xcharts-team.github.io/docs/configuration#maincomponent)
 
-```mdx-code-block
-<APITable name="GanttStyle">
-```
+#### GanttStyle.aliginLine
 
-|参数|默认|版本|描述|
-|--|--|--|--|
-|show|true||
-|ganttType|||甘特图类型。<br/>`GanttType`:<br/>- `Monomial`: 单项甘特图。每个数据项都是单独的一条进度。<br/>- `Multinomial`: 多项甘特图。每个数据项只是一条进度里的一段。<br/>|
-|invert|true||
-|dragEnable|true||是否可以拖拽甘特图。
-|dragSensitivity|1f||拖拽的灵敏度。
-|dragRangeMin|0||拖拽最小值限制。
-|dragRangeMax|0||拖拽最大值限制。
-|autoAdsorbAlignline|true||拖拽结束后是否自动吸附到对齐线。
-|alignlineDataIndex|1||显示对齐线的数据项索引。
-|showAlignlineRange|10f||显示对齐线的范围。
-|aliginLine|||对齐线样式。
-|splitArea|||
+`LineStyle`
 
-```mdx-code-block
-</APITable>
-```
+对齐线样式。
 
+#### GanttStyle.alignlineDataIndex
+
+`int` `1`
+
+显示对齐线的数据项索引。
+
+#### GanttStyle.autoAdsorbAlignline
+
+`bool` `true`
+
+拖拽结束后是否自动吸附到对齐线。
+
+#### GanttStyle.dragEnable
+
+`bool` `true`
+
+是否可以拖拽甘特图。
+
+#### GanttStyle.dragRangeMax
+
+`double` `0`
+
+拖拽最大值限制。
+
+#### GanttStyle.dragRangeMin
+
+`double` `0`
+
+拖拽最小值限制。
+
+#### GanttStyle.dragSensitivity
+
+`float` `1f`
+
+拖拽的灵敏度。
+
+#### GanttStyle.ganttType
+
+[GanttType](#gantttype)
+
+甘特图类型。
+
+可选：
+
+- `Monomial`: 单项甘特图。每个数据项都是单独的一条进度。
+- `Multinomial`: 多项甘特图。每个数据项只是一条进度里的一段。
+
+#### GanttStyle.invert
+
+`bool` `true`
+
+#### GanttStyle.show
+
+`bool` `true`
+
+#### GanttStyle.showAlignlineRange
+
+`float` `10f`
+
+显示对齐线的范围。
+
+#### GanttStyle.splitArea
+
+`AxisSplitArea`

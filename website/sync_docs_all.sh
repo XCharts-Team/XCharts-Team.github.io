@@ -9,5 +9,5 @@ XCHARTS_DEMO=$XCHARTS_WEBSITE/../../XCharts-Demo/WebGL
 cd $XCHARTS_WEBSITE
 yarn install
 
-python3 utils/sync_version.py $XCHARTS_MAIN $XCHARTS_WEBSITE $XCHARTS_DEMO v3.11.2
+python3 utils/sync_version.py $XCHARTS_MAIN $XCHARTS_WEBSITE $XCHARTS_DEMO v3.12.0
 python3 utils/sync_version.py $XCHARTS_MAIN $XCHARTS_WEBSITE $XCHARTS_DEMO master
