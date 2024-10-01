@@ -34,6 +34,11 @@ Demo仓库：[XCharts-Pie3DChart-Demo](https://github.com/XCharts-Team/XCharts-P
 
 ## 日志
 
+### v3.12.0
+
+* (2024.09.30) 发布`v3.12.0`版本
+* (2024.09.30) 更新文档
+
 ### v3.11.0
 
 * (2024.06.16) 发布`v3.11.0`版本
@@ -103,92 +108,189 @@ Demo仓库：[XCharts-Pie3DChart-Demo](https://github.com/XCharts-Team/XCharts-P
 
 ### Pie3D
 
-> class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
 3D饼图系列。
 
-|API|版本|描述|
-|--|--|--|
-|AddDefaultSerie()||public static Serie AddDefaultSerie(BaseChart chart, string serieName)|
-|ConvertSerie()||public static Pie3D ConvertSerie(Serie serie)|
+#### Pie3D.defaultColorBy
+
+public override SerieColorBy defaultColorBy  
+
+#### Pie3D.AddDefaultSerie
+
+public static Serie AddDefaultSerie(BaseChart chart, string serieName)  
+
+#### Pie3D.ConvertSerie
+
+public static Pie3D ConvertSerie(Serie serie)  
 
 ### Pie3DChart
 
-> class in XCharts.Runtime.Pie3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+class in XCharts.Runtime.Pie3Ds / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 3D饼图。
 
-|API|版本|描述|
-|--|--|--|
-|DefaultAutoHeightPie3DChart()||public void DefaultAutoHeightPie3DChart()<br/>生成默认3D自动高度饼图。 |
-|DefaultDonutPie3DChart()||public void DefaultDonutPie3DChart()<br/>生成默认3D甜甜圈饼图。 |
-|DefaultEllipsePie3DChart()||public void DefaultEllipsePie3DChart()<br/>生成默认2D椭圆饼图。 |
+#### Pie3DChart.DefaultAutoHeightPie3DChart
+
+public void DefaultAutoHeightPie3DChart()  
+生成默认3D自动高度饼图。
+
+#### Pie3DChart.DefaultDonutPie3DChart
+
+public void DefaultDonutPie3DChart()  
+生成默认3D甜甜圈饼图。
+
+#### Pie3DChart.DefaultEllipsePie3DChart
+
+public void DefaultEllipsePie3DChart()  
+生成默认2D椭圆饼图。
 
 ### Pie3DSlice
 
-> class in XCharts.Runtime.Pie3Ds
+class in XCharts.Runtime.Pie3Ds
 
 3D饼图的切块。
 
-|API|版本|描述|
-|--|--|--|
-|Contains()||public bool Contains(float angle)|
-|IsInPolygon()||public bool IsInPolygon(Vector2 p)|
-|IsInSidePolygon()||public bool IsInSidePolygon(Vector2 p)|
-|IsInStartOrEndSide()||public bool IsInStartOrEndSide(Vector2 p)|
-|IsInTopPolygon()||public bool IsInTopPolygon(Vector2 p)|
-|Pie3DSlice()||public Pie3DSlice()|
-|UpdateValue()||public void UpdateValue(int index, float start, float end, bool startSide, bool endSide, float maxHig)|
+#### Pie3DSlice.Contains
+
+public bool Contains(float angle)  
+
+#### Pie3DSlice.IsInPolygon
+
+public bool IsInPolygon(Vector2 p)  
+
+#### Pie3DSlice.IsInSidePolygon
+
+public bool IsInSidePolygon(Vector2 p)  
+
+#### Pie3DSlice.IsInStartOrEndSide
+
+public bool IsInStartOrEndSide(Vector2 p)  
+
+#### Pie3DSlice.IsInTopPolygon
+
+public bool IsInTopPolygon(Vector2 p)  
+
+#### Pie3DSlice.Pie3DSlice
+
+public Pie3DSlice()  
+
+#### Pie3DSlice.UpdateValue
+
+public void UpdateValue(int index, float start, float end, bool startSide, bool endSide, float maxHig)  
 
 ### Pie3DStyle
 
-> class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
 
 3D饼图样式。
+
+#### Pie3DStyle.drawSplitSide
+
+public bool drawSplitSide  
+是否绘制分割面。当pieAutoHeight为true时，该值无效。
+
+#### Pie3DStyle.ellipseMinorAxis
+
+public float ellipseMinorAxis  
+椭圆的短轴长度。当为0-1的浮点数时为长轴的百分比。
+
+#### Pie3DStyle.endSideColorRate
+
+public float endSideColorRate  
+饼图切块的结束面颜色（顺时针）。
+
+#### Pie3DStyle.peripherySideColorRate
+
+public float peripherySideColorRate  
+饼图切块的侧面颜色。
+
+#### Pie3DStyle.pieAutoHeight
+
+public bool pieAutoHeight  
+是否自动根据比例计算厚度。
+
+#### Pie3DStyle.pieMaxHeight
+
+public float pieMaxHeight  
+饼图厚度。
+
+#### Pie3DStyle.selectedOffset
+
+public Vector2 selectedOffset  
+被选中状态的饼图块的额外偏移。
+
+#### Pie3DStyle.startSideColorRate
+
+public float startSideColorRate  
+饼图切块的起始面颜色（顺时针）。
 
 ## 配置项手册
 
 ### Pie3D
 
-> class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+class in XCharts.Runtime.Pie3Ds / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
 3D饼图系列。
 
-```mdx-code-block
-<APITable name="Pie3D">
-```
+#### Pie3D.pie3DStyle
 
-|参数|默认|版本|描述|
-|--|--|--|--|
-|pie3DStyle||| [Pie3DStyle](#pie3dstyle)|
-
-```mdx-code-block
-</APITable>
-```
+[Pie3DStyle](#pie3dstyle)
 
 ### Pie3DStyle
 
-> class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+class in XCharts.Runtime.Pie3Ds / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
 
 3D饼图样式。
 
-```mdx-code-block
-<APITable name="Pie3DStyle">
-```
+#### Pie3DStyle.drawSplitSide
 
-|参数|默认|版本|描述|
-|--|--|--|--|
-|show|true||
-|ellipseMinorAxis|0.65f||椭圆的短轴长度。当为0-1的浮点数时为长轴的百分比。
-|pieMaxHeight|20f||饼图厚度。
-|pieAutoHeight|false||是否自动根据比例计算厚度。
-|selectedOffset|Vector2(0.1f, 0.5f)||被选中状态的饼图块的额外偏移。
-|peripherySideColorRate|0.8f||饼图切块的侧面颜色。
-|startSideColorRate|0.7f||饼图切块的起始面颜色（顺时针）。
-|endSideColorRate|0.65f||饼图切块的结束面颜色（顺时针）。
-|drawSplitSide|true|v3.10.0|是否绘制分割面。当pieAutoHeight为true时，该值无效。
+`bool` `true` `v3.10.0`
 
-```mdx-code-block
-</APITable>
-```
+是否绘制分割面。当pieAutoHeight为true时，该值无效。
 
+#### Pie3DStyle.ellipseMinorAxis
+
+`float` `0.65f`
+
+椭圆的短轴长度。当为0-1的浮点数时为长轴的百分比。
+
+#### Pie3DStyle.endSideColorRate
+
+`float` `0.65f`
+
+饼图切块的结束面颜色（顺时针）。
+
+#### Pie3DStyle.peripherySideColorRate
+
+`float` `0.8f`
+
+饼图切块的侧面颜色。
+
+#### Pie3DStyle.pieAutoHeight
+
+`bool` `false`
+
+是否自动根据比例计算厚度。
+
+#### Pie3DStyle.pieMaxHeight
+
+`float` `20f`
+
+饼图厚度。
+
+#### Pie3DStyle.selectedOffset
+
+`Vector2` `Vector2(0.1f, 0.5f)`
+
+被选中状态的饼图块的额外偏移。
+
+#### Pie3DStyle.show
+
+`bool` `true`
+
+#### Pie3DStyle.startSideColorRate
+
+`float` `0.7f`
+
+饼图切块的起始面颜色（顺时针）。

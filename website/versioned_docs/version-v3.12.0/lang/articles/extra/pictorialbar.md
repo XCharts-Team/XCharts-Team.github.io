@@ -33,6 +33,11 @@ Demo仓库：[XCharts-PictorialBarChart-Demo](https://github.com/XCharts-Team/XC
 
 ## 日志
 
+### v3.12.0
+
+* (2024.09.30) 发布`v3.12.0`版本
+* (2024.09.30) 更新文档
+
 ### v3.11.0
 
 * (2024.06.16) 发布`v3.11.0`版本
@@ -87,22 +92,30 @@ Demo仓库：[XCharts-PictorialBarChart-Demo](https://github.com/XCharts-Team/XC
 
 ### PictorialBar
 
-> class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie),[INeedSerieContainer](https://xcharts-team.github.io/docs/api#ineedseriecontainer)
+class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie),[INeedSerieContainer](https://xcharts-team.github.io/docs/api#ineedseriecontainer)
 
+#### PictorialBar.containerIndex
 
-|API|版本|描述|
-|--|--|--|
-|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
-|ConvertSerie()||public static PictorialBar ConvertSerie(Serie serie)|
+public int containerIndex  
+
+#### PictorialBar.containterInstanceId
+
+public int containterInstanceId  
+
+#### PictorialBar.AddDefaultSerie
+
+public static void AddDefaultSerie(BaseChart chart, string serieName)  
+
+#### PictorialBar.ConvertSerie
+
+public static PictorialBar ConvertSerie(Serie serie)  
 
 ### PictorialBarChart
 
-> class in XCharts.Runtime.PictorialBars / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
-
+class in XCharts.Runtime.PictorialBars / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 ## 配置项手册
 
 ### PictorialBar
 
-> class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)
-
+class in XCharts.Runtime.PictorialBars / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie), [INeedSerieContainer](https://xcharts-team.github.io/docs/configuration#ineedseriecontainer)

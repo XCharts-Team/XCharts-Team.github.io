@@ -34,6 +34,11 @@ Demo仓库：[XCharts-FunnelChart-Demo](https://github.com/XCharts-Team/XCharts-
 
 ## 日志
 
+### v3.12.0
+
+* (2024.09.30) 发布`v3.12.0`版本
+* (2024.09.30) 更新文档
+
 ### v3.11.0
 
 * (2024.06.16) 发布`v3.11.0`版本
@@ -73,39 +78,45 @@ Demo仓库：[XCharts-FunnelChart-Demo](https://github.com/XCharts-Team/XCharts-
 
 ### Funnel
 
-> class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
+class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/api#serie)
 
+#### Funnel.defaultColorBy
 
-|API|版本|描述|
-|--|--|--|
-|AddDefaultSerie()||public static void AddDefaultSerie(BaseChart chart, string serieName)|
+public override SerieColorBy defaultColorBy  
+
+#### Funnel.useSortData
+
+public override bool useSortData  
+
+#### Funnel.AddDefaultSerie
+
+public static void AddDefaultSerie(BaseChart chart, string serieName)  
 
 ### FunnelChart
 
-> class in XCharts.Runtime.Funnels / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
+class in XCharts.Runtime.Funnels / 继承自: [BaseChart](https://xcharts-team.github.io/docs/api#basechart)
 
 漏斗图。适用于流程流量分析。
 
-|API|版本|描述|
-|--|--|--|
-|DefaultHorizonalFunnelChart()||public void DefaultHorizonalFunnelChart()<br/>生成默认的横向漏斗图。 |
+#### FunnelChart.DefaultHorizonalFunnelChart
+
+public void DefaultHorizonalFunnelChart()  
+生成默认的横向漏斗图。
 
 ## 配置项手册
 
 ### Funnel
 
-> class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
+class in XCharts.Runtime.Funnels / 继承自: [Serie](https://xcharts-team.github.io/docs/configuration#serie)
 
-```mdx-code-block
-<APITable name="Funnel">
-```
+#### Funnel.dynamicHeight
 
-|参数|默认|版本|描述|
-|--|--|--|--|
-|rectEnd||v3.3.0|是否最后以矩形结束。默认false以三角形结束。
-|dynamicHeight||v3.3.0|是否映射为动态高度。当设置为 'true' 时，漏斗图每个条目（图表元素）的高度和 y 轴字段对应数值成正比。
+`bool` `v3.3.0`
 
-```mdx-code-block
-</APITable>
-```
+是否映射为动态高度。当设置为 'true' 时，漏斗图每个条目（图表元素）的高度和 y 轴字段对应数值成正比。
 
+#### Funnel.rectEnd
+
+`bool` `v3.3.0`
+
+是否最后以矩形结束。默认false以三角形结束。
