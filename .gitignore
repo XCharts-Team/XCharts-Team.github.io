@@ -1,17 +1,13 @@
-# IDEs
-.vscode
-
-/website/build/
-
-# Node
-node_modules/
+# Dependencies
+/node_modules
 
 # Production
+/build
+/utils/__pycache__
 
 # Generated files
 .docusaurus
 .cache-loader
-.flatdocs
 
 # Misc
 .DS_Store
@@ -21,10 +17,8 @@ node_modules/
 .env.production.local
 __pycache__
 
+*.pyc
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-sync_build_to_pages.sh
-
-# website/src/pages/api/

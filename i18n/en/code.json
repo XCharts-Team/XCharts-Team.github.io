@@ -1,0 +1,41 @@
+{
+  "theme.text.Docs":{
+    "message": "Docs"
+  },
+  "theme.text.Demo":{
+    "message": "Demo"
+  },
+  "theme.text.Blog":{
+    "message": "Blog"
+  },
+  "theme.text.More": {
+    "message": "More"
+  },
+  "theme.text.Community": {
+    "message": "Community"
+  },
+  "tagline": {
+    "message": "A charting and data visualization library for Unity."
+  },
+  "tutorial.5min": {
+    "message": "XCharts Tutorial - 5min ⏱️"
+  },
+  "feature1.title": {
+    "message": "Easy to Use"
+  },
+  "feature1.desc": {
+    "message": "XCharts was designed from the outset to be easy to install and use in Unity for creating charts."
+  },
+  "feature2.title": {
+    "message": "Powerful"
+  },
+  "feature2.desc": {
+    "message": "XCharts supports line, bar, pie, radar, scatter, heatmap, ring, candlestick, polar, parallel coordinates,3d line, 3d pie, 3d bar, 3d pyramid, funnel, gauge, liquid, pictorialbar, gantt, treemap, sankey and graph chart."
+  },
+  "feature3.title": {
+    "message": "Configurable"
+  },
+  "feature3.desc": {
+    "message": "XCharts offers a variety of components and configurations, allowing you to achieve the desired chart effects by simply and quickly adjusting the configurations."
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "item.label.Docs": {
+        "message": "文档"
+    },
+    "item.label.Demo": {
+        "message": "示例"
+    },
+    "item.label.Blog": {
+        "message": "博客"
+    },
+    "item.label.Support": {
+        "message": "订阅"
+    },
+    "item.label.More": {
+        "message": "更多"
+    },
+    "item.label.Tutorial": {
+        "message": "教程"
+    },
+    "item.label.Community": {
+        "message": "社区"
+    }
+}

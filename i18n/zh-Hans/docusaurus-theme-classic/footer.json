@@ -1,0 +1,14 @@
+{
+  "link.title.Docs": {
+    "message": "文档"
+  },
+  "link.title.Community": {
+    "message": "社区"
+  },
+  "link.title.More": {
+    "message": "更多"
+  },
+  "link.item.label.Tutorial": {
+    "message": "教程"
+  }
+}

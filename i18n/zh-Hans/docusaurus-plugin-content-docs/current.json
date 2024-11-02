@@ -1,0 +1,12 @@
+{
+    "version.label": {
+      "message": "Next",
+      "description": "The label for version current"
+    },
+    "sidebar.tutorialSidebar.category.Extra UI": {
+      "message": "扩展组件"
+    },
+    "sidebar.tutorialSidebar.category.Extra Charts": {
+      "message": "扩展图表"
+    }
+  }
