@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5937],{69319:function(e){e.exports="/en/api/v3.6.0/"}}]);
