@@ -24,7 +24,7 @@
     "message": "Easy to Use"
   },
   "feature1.desc": {
-    "message": "XCharts was designed from the outset to be easy to install and use in Unity for creating charts."
+    "message": "XCharts is committed to providing Unity developers and creatives with a powerful yet simple-to-use chart library for quickly implementing a variety of chart effects."
   },
   "feature2.title": {
     "message": "Powerful"
@@ -36,6 +36,6 @@
     "message": "Configurable"
   },
   "feature3.desc": {
-    "message": "XCharts offers a variety of components and configurations, allowing you to achieve the desired chart effects by simply and quickly adjusting the configurations."
+    "message": "XCharts offers a wealth of components and configuration options, supporting customization of chart effects and expansion of chart types through various aspects such as configuration and code."
   }
 }

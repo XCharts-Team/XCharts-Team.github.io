@@ -189,7 +189,7 @@ def sync_version(xchartsPath, websitePath, demoPath, version):
         _copy_extra_docs(xchartsPath, websitePath, zh_path, "zh")
         _copy_ui_docs(xchartsPath, websitePath, en_path, "en")
         _copy_ui_docs(xchartsPath, websitePath, zh_path, "zh")
-        # _copy_demo(websitePath, demoPath, "master")
+        _copy_demo(websitePath, demoPath, "master")
     else:
         prefixPath = "versioned_docs/version-{0}".format(version)
         srcPath = websitePath + "/docs"
