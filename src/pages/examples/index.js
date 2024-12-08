@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import './style.css';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 let data;
 
@@ -9,8 +10,10 @@ const UntiyComponent = (props) => {
   if (!props.data && typeof (props.data) != "undefined" && props.data != 0) {
     props.data = 'master';
   }
-  props.data = 'examples/master';
-  createScript('examples/TemplateData/UnityProgress.js', () => { });
+  const masterBaseUrl = useBaseUrl('/examples/master');
+  const examplesBaseUrl = useBaseUrl('/examples');
+  props.data = masterBaseUrl;
+  createScript(examplesBaseUrl + '/TemplateData/UnityProgress.js', () => { });
   createScript(props.data + '/Build/UnityLoader.js', () => {
     var unityInstance = UnityLoader.instantiate("unityContainer", props.data + "/Build/WebGL.json", { onProgress: UnityProgress });
     var fullscreen = document.getElementsByClassName("fullscreen")[0];
