@@ -25,6 +25,10 @@ Extension charts require a paid purchase to obtain a usage license.
 
 ## Changelog
 
+### v3.13.0
+
+* (2024.12.28) Updated the `HelpDoc` URL
+
 ### v3.12.0
 
 * (2024.09.30) Released version `v3.12.0`

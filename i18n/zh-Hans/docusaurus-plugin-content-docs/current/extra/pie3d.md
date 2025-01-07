@@ -43,6 +43,10 @@ Demo仓库：[XCharts-Pie3DChart-Demo](https://github.com/XCharts-Team/XCharts-P
 
 # 日志
 
+### v3.13.0
+
+* (2024.12.27) 增加`SymbolStyle`的`size2`参数支持长方形标记
+
 ### v3.12.0
 
 * (2024.09.30) 发布`v3.12.0`版本
