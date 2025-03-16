@@ -76,7 +76,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/docs/changelog#v3120', label: 'v3.13.0', position: 'left' },
+        { to: '/docs/changelog#v3140', label: 'v3.14.0', position: 'left' },
         // { type: 'search', position: 'right' },
         {
           type: 'docSidebar',
