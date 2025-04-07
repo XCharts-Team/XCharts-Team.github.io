@@ -160,7 +160,7 @@ def _copy_ui_docs(xchartsPath, websitePath, prefixPath, lang):
         docPath = dirPath + "/" + docFolder
         for dirpath, dirnames, filenames in os.walk(docPath):
             for filename in filenames:
-                if filename.endswith(".md") and filename.startswith("ui_"):
+                if filename.endswith(".md"):# and filename.startswith("ui_"):
                     srcPath = os.path.join(dirpath, filename)
                     dstPath = os.path.join(extraPath, filename)
                     util.fileCopy(srcPath, dstPath)
