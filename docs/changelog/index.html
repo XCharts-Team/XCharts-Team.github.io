@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="XCharts" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.9980e2f6.css">
-<script src="/assets/js/runtime~main.ade483c6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.aaf66c78.js" defer="defer"></script>
 <script src="/assets/js/main.fe3cbb36.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -88,6 +88,8 @@
 <a href="#v010">v0.1.0</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="master">master<a href="#master" class="hash-link" aria-label="master的直接链接" title="master的直接链接">​</a></h2>
 <ul>
+<li>(2025.04.07) 修复<code>Gantt</code>甘特图在有多维数据时计算的时间区间不准确的问题</li>
+<li>(2025.04.07) 优化<code>Axis</code>的<code>Time</code>时间轴支持设置Custom和ceilRate</li>
 <li>(2025.04.07) 修复<code>GridCoord</code>在设置背景色且Serie开启Clip时会覆盖图表的问题</li>
 <li>(2025.04.07) 修复<code>Gantt</code>甘特图年份大于2038时显示异常的问题</li>
 <li>(2025.04.07) 修复<code>Axis</code>的<code>Time</code>时间轴无法显示大于2038的年份的问题</li>
@@ -119,7 +121,7 @@
 <li>(2025.03.07) 增加<code>Animation</code>的<code>speed</code>可指定动画速度</li>
 <li>(2025.03.06) 优化<code>Animation</code>的新增动画表现</li>
 <li>(2025.03.04) 修复<code>Treemap</code>的<code>label</code>显示异常的问题</li>
-<li>(2025.03.02) 增 加<code>Tooltip</code>的<code>columnGapWidths</code>参数设置列文本间隙距离</li>
+<li>(2025.03.02) 增加<code>Tooltip</code>的<code>columnGapWidths</code>参数设置列文本间隙距离</li>
 <li>(2025.03.01) 优化<code>Comment</code>的组件刷新</li>
 <li>(2025.02.23) 增加<code>Axis</code>的<code>Label</code>的<code>formatter</code>支持{index}{index-1}{-index}{-index-1}通配符</li>
 <li>(2025.02.23) 增加<code>Bar</code>的<code>realtimeSort</code>支持实时排序</li>
@@ -173,7 +175,7 @@
 <li>(2024.11.26) 修复<code>Tooltip</code>在特殊情况下可能会超出屏幕显示不完整的问题</li>
 <li>(2024.11.24) 修复<code>UITable</code>在拖拽时也会点选的问题</li>
 <li>(2024.11.22) 修复<code>Time</code>时间轴在开启<code>Animation</code>时动态变更效果异常的问题</li>
-<li>(2024.11.18) 优化<code>Line</code>在数据点过密时有更好的绘制效果</li>
+<li>(2024.11.18) 优化<code>Line</code>在数据点过密时有更好的 绘制效果</li>
 <li>(2024.11.16) 修复<code>Animation</code>无法通过代码开启的问题 (#334)</li>
 <li>(2024.11.13) 修复<code>DataZoom</code>的start和end在代码动态修改时图表不刷新的问题</li>
 <li>(2024.11.05) 修复<code>Title</code>设置隐藏后运行还显示的问题</li>
@@ -251,7 +253,7 @@
 <li>(2024.04.15) 优化<code>GridCoord</code>在开启<code>GridLayout</code>时也显示<code>Left</code> <code>Right</code> <code>Top</code> <code>Bottom</code>参数 (#316)</li>
 <li>(2024.04.14) 修复<code>Tooltip</code>的<code>Cross</code>在开启<code>DataZoom</code>的情况下<code>label</code>位置不正确的问题 (#315)</li>
 <li>(2024.04.12) 修复<code>Candlesticks</code>效果不对的问题 (#313)</li>
-<li>(2024.03.20) 增加<code>Tooltip</code>的<code>triggerOn</code>设置触发条件</li>
+<li>(2024.03.20) 增加<code>Tooltip</code>的<code>triggerOn</code>设置  触发条件</li>
 <li>(2024.03.19) 修复<code>Pie</code>在设置<code>ItemStyle</code>的<code>opacity</code>时颜色不对的问题 (#309)</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="v3102">v3.10.2<a href="#v3102" class="hash-link" aria-label="v3.10.2的直接链接" title="v3.10.2的直接链接">​</a></h2>
@@ -339,7 +341,7 @@
 <li>(2023.11.16) 取消<code>Legend</code>的<code>formatter</code>，用<code>LabelStyle</code>的代替</li>
 <li>(2023.11.14) 完善<code>LabelStyle</code>的<code>formatter</code>的注释和文档(#291)</li>
 <li>(2023.11.14) 增加<code>UITable</code>的<code>GetData()</code>和<code>GetContent()</code>接口</li>
-<li>(2023.11.12) 增加<code>UITable</code>的<code>onTableClick</code>点击表  格回调</li>
+<li>(2023.11.12) 增加<code>UITable</code>的<code>onTableClick</code>点击表格回调</li>
 <li>(2023.11.11) 重构<code>UITable</code>的<code>SeparatorStyle</code>，可分开设置行列的分割线</li>
 <li>(2023.11.11) 修复<code>Documentation</code>部分注释生成文档不完整的问题 (#290)</li>
 <li>(2023.11.11) 修复<code>Legend</code>的<code>formatter</code>在数据变更时没有自动刷新的问题</li>
@@ -406,7 +408,7 @@
 <li>(2023.08.14) 修复<code>XCharts</code>本地开启<code>TextMeshPro</code>和 <code>NewInputSystem</code>后更新版本会报错的问题 (#272)</li>
 <li>(2023.08.12) 修复<code>Chart</code>在运行时被删除时会异常报错的问题 (#269)</li>
 <li>(2023.08.11) 修复<code>DataZoom</code>开启时可能会导致无法添加数据的问题</li>
-<li>(2023.08.11) 修复<code>SerieData</code>单独设置<code>ItemStyle</code>的<code>itemFormatter</code>不生效的问题</li>
+<li>(2023.08.11) 修复<code>SerieData</code>单独设置<code>ItemStyle</code>的<code>itemFormatter</code>  不生效的问题</li>
 <li>(2023.08.10) 优化<code>BarChart</code>在<code>Tooltip</code>的<code>Trigger</code>为<code>Item</code>时的表现</li>
 <li>(2023.08.09) 增加<code>Axis</code>可通过设置<code>IconStyle</code>的<code>color</code>为<code>clear</code>来实现动态图标颜色的支持</li>
 <li>(2023.08.08) 增加<code>Pie</code>对<code>LabelLine</code>的<code>lineEndX</code>的支持</li>
@@ -529,10 +531,10 @@
 <li>(2022.11.29) 修复<code>Tooltip</code>指示的<code>Serie</code>数据项索引异常的问题</li>
 <li>(2022.11.27) 优化<code>Axis</code>的<code>AxisName</code>的偏移设置</li>
 <li>(2022.11.27) 优化<code>Comment</code>的位置，用<code>Location代替Position</code></li>
-<li>(2022.11.27) 优化<code>Tooltip</code>的<code>LineStyle</code>支持设置<code>Shadow</code>时的颜色</li>
+<li>(2022.11.27) 优化<code>Tooltip</code>的<code>LineStyle</code> 支持设置<code>Shadow</code>时的颜色</li>
 <li>(2022.11.27) 调整<code>Documentation</code>文档结构</li>
 <li>(2022.11.26) 优化<code>LabelLine</code>的<code>symbol</code>默认不显示</li>
-<li>(2022.11.26)   修复<code>LineChart</code>在<code>XY</code>都为数值轴时添加无序数据显示异常的问题</li>
+<li>(2022.11.26) 修复<code>LineChart</code>在<code>XY</code>都为数值轴时添加无序数据显示异常的问题</li>
 <li>(2022.11.26) 修复<code>DataZoom</code>从右往左框选时异常的问题</li>
 <li>(2022.11.20) 调整<code>UdpateXAxisIcon()</code>接口重命名为<code>UpdateXAxisIcon()</code> (#235)</li>
 <li>(2022.11.12) 增加<code>Pie</code>的<code>LabelLine</code>支持<code>Symbol</code></li>
@@ -631,7 +633,7 @@
 </ul>
 <p>日志详情：</p>
 <ul>
-<li>(2022.08.16) 发布<code>v3.2.0</code>版本</li>
+<li>(2022.08.16) 发布<code>v3.2.0</code> 版本</li>
 <li>(2022.08.15) 优化<code>Smooth</code>贝塞尔曲线算法</li>
 <li>(2022.08.13) 修复<code>DataZoom</code>组件开启时图表显示效果可能不正确的问题</li>
 <li>(2022.08.11) 优化<code>Tooltip</code>支持<code>ignoreDataDefaultContent</code></li>
@@ -679,9 +681,9 @@
 <li>(2022.07.04) 修复<code>Axis</code>在设置<code>offset</code>后<code>Tick</code>绘制位置异常的问题 (#209)</li>
 <li>(2022.07.03) 优化<code>AxisLabel</code>的<code>formatterFunction</code>自定义委托</li>
 <li>(2022.07.03) 增加<code>AxisName</code>的<code>onZero</code>参数支持设置坐标轴名称位置是否和Y轴0刻度一致 (#207)</li>
-<li>(2022.07.02) 修复<code>PieChart</code>用代码动态创建时<code>Legend</code>不正常的问题 (#206)</li>
+<li>(2022.07.02) 修复<code>PieChart</code>用代码动态创建时<code>Legend</code>不正常的问 题 (#206)</li>
 <li>(2022.07.02) 修复<code>YAxis</code>的<code>AxisLabel</code>设置<code>onZero</code>不生效的问题</li>
-<li>(2022.07.02) 修复<code>AxisLabel</code>代码设置<code>distance</code>属性后一  直刷新的问题</li>
+<li>(2022.07.02) 修复<code>AxisLabel</code>代码设置<code>distance</code>属性后一直刷新的问题</li>
 <li>(2022.06.30) 修复<code>Runtime</code>下代码创建图表时组件无法初始化的问题</li>
 <li>(2022.06.29) 增加<code>Tooltip</code>的<code>itemFormatter</code>支持{c0}显示各维度数据 (#205)</li>
 <li>(2022.06.28) 优化<code>Pie</code>设置<code>avoidLabelOverlap</code>时的文本表现 (#56)</li>
@@ -701,7 +703,7 @@
 <ul>
 <li>(2022.06.16) 发布<code>v3.0.1</code>版本</li>
 <li>(2022.06.16) 修复<code>Inspector</code>上部分<code>foldout</code>箭头点击无法展开的问题</li>
-<li>(2022.06.15) 优化<code>Doc</code>自动生成，完善代码注释和配置项手册文档</li>
+<li>(2022.06.15) 优化<code>Doc</code> 自动生成，完善代码注释和配置项手册文档</li>
 <li>(2022.06.14) 优化<code>SerieLabelStyle</code>，支持动态调整<code>Icon</code></li>
 <li>(2022.06.13) 优化<code>Background</code>背景设置</li>
 <li>(2022.06.10) 增加<code>Legend</code>的<code>AxisLabel</code>支持<code>autoColor</code></li>
@@ -814,7 +816,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="v270">v2.7.0<a href="#v270" class="hash-link" aria-label="v2.7.0的直接链接" title="v2.7.0的直接链接">​</a></h2>
 <ul>
 <li>(2022.03.20) 发布<code>v2.7.0</code>版本</li>
-<li>(2022.02.21) 修复<code>Chart</code>的<code>chartName</code>重复检测问题 #183</li>
+<li>(2022.02.21) 修复<code>Chart</code>的<code>chartName</code>重复检测问  题 #183</li>
 <li>(2022.02.17) 修复<code>Axis</code>的<code>SplitLine</code>可能会显示在坐标系外的问题 #181</li>
 <li>(2022.02.08) 修复数据全0时{d}显示不正确的问题</li>
 <li>(2022.02.08) 修复<code>YAxis</code>的<code>AxisLabel</code>的<code>onZero</code>参数不生效的问题</li>
@@ -863,7 +865,7 @@
 <li>(2021.08.14) 增加<code>Legend</code>的<code>textAutoColor</code>设置文本颜色和<code>Serie</code>一致 (#163)</li>
 <li>(2021.08.12) 优化<code>BarChart</code>设置<code>Corner</code>时正负柱条圆角对称</li>
 <li>(2021.08.03) 优化<code>Serie</code>的数据全为0时Y轴不显示的问题</li>
-<li>(2021.07.29) 修复<code>Serie</code>开启<code>ignore</code>时被忽略的数据还会参与计算的问题 (#161)</li>
+<li>(2021.07.29) 修复<code>Serie</code>开启<code>ignore</code>时被忽略的数据还会参与 计算的问题 (#161)</li>
 <li>(2021.07.29) 完善<code>BarChart</code>的<code>Zebra</code>斑马柱图渐变支持</li>
 <li>(2021.07.26) 修复<code>TextMeshPro Enable</code>时找不到<code>XCharts</code>路径的问题 (#160)</li>
 </ul>
@@ -920,7 +922,7 @@
 <li>(2021.06.12) 增加<code>IconStyle</code>的<code>align</code>参数设置图标的水平对齐</li>
 <li>(2021.06.12) 完善<code>Theme</code>主题导入 (#148)</li>
 <li>(2021.06.10) 修复<code>Unity</code>版本兼容问题 (#154)</li>
-<li>(2021.06.05) 完 善<code>CandlestickChart</code>对<code>inverse</code>的支持 (#152)</li>
+<li>(2021.06.05) 完善<code>CandlestickChart</code>对<code>inverse</code>的支持 (#152)</li>
 <li>(2021.06.04) 修复<code>Gauge</code>在最小值为负数时指针指示位置异常的问题 (#153)</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="v220">v2.2.0<a href="#v220" class="hash-link" aria-label="v2.2.0的直接链接" title="v2.2.0的直接链接">​</a></h2>
@@ -963,9 +965,9 @@
 <ul>
 <li>(2021.04.07) 发布<code>v2.1.0</code>版本</li>
 <li>(2021.03.31) 优化和重构<code>Theme</code>，解决引用相同或丢失的问题 #118</li>
-<li>(2021.03.30) 优化<code>Tooltip</code>支持设置不同的类目轴数据 #129</li>
+<li>(2021.03.30) 优化<code>Tooltip</code>支持设置  不同的类目轴数据 #129</li>
 <li>(2021.03.29) 优化自定义绘制回调接口，增加<code>onCustomDrawBeforeSerie</code>、<code>onCustomDrawAfterSerie</code>和<code>onCustomDrawTop</code></li>
-<li>(2021.03.25) 增 加<code>GanttChart</code>甘特图</li>
+<li>(2021.03.25) 增加<code>GanttChart</code>甘特图</li>
 <li>(2021.03.22) 增加<code>Theme</code>的<code>Unbind</code>按钮用于解绑复制图表时的主题 #118</li>
 <li>(2021.03.18) 修复<code>Inspector</code>下<code>Foldout</code>后的勾选框无法选中的问题</li>
 <li>(2021.03.18) 修复<code>BarChart</code>在<code>0</code>数值时显示异常的问题</li>
@@ -1011,7 +1013,7 @@
 <li>(2020.12.18) 修复<code>Animation</code>不启用时更新数据会导致图表一直刷新的问题</li>
 <li>(2020.12.01) 修复<code>Unity2020</code>上新创建的图表无法正常绘制的问题</li>
 <li>(2020.11.22) 发布<code>v1.6.2</code>版本</li>
-<li>(2020.11.22) 修复<code>LineChart</code>在数据过于密集时折线绘制异常的问题 #99</li>
+<li>(2020.11.22) 修复<code>LineChart</code>在数据过 于密集时折线绘制异常的问题 #99</li>
 <li>(2020.11.21) 修复<code>LineChart</code>的刻度位置在<code>alignWithLabel</code>为<code>true</code>时可能异常的问题</li>
 <li>(2020.11.21) 修复<code>Unity5</code>兼容报错的问题</li>
 <li>(2020.11.13) 完善<code>RadarChart</code>的<code>Indicator</code>对<code>\n</code>换行的支持</li>
@@ -1096,9 +1098,9 @@
 <li>(2020.05.22) 发布<code>v1.5.0</code>版本</li>
 <li>(2020.05.21) 增加<code>圆角柱图</code>支持渐变</li>
 <li>(2020.05.21) 增加<code>Background</code>背景组件</li>
-<li>(2020.05.19) 隐藏<code>Hierarchy</code>试图下自动生成的子节点</li>
+<li>(2020.05.19) 隐藏<code>Hierarchy</code>试图  下自动生成的子节点</li>
 <li>(2020.05.18) 增加<code>chartName</code>属性可指定图表的别称，可通过<code>XChartMgr.Instance.GetChart(chartName)</code>获取图表</li>
-<li>(2020.05.16) 增加部分鼠标事 件回调</li>
+<li>(2020.05.16) 增加部分鼠标事件回调</li>
 <li>(2020.05.15) 优化自带例子，<code>Demo</code>改名为<code>Example</code></li>
 <li>(2020.05.13) 增加<code>Serie</code>的<code>large</code>和<code>largeThreshold</code>参数配置折线图和柱状图的性能模式</li>
 <li>(2020.05.13) 完善Demo，增加性能演示Demo</li>
@@ -1202,9 +1204,9 @@
 <ul>
 <li>(2019.11.12) 发布<code>v1.0.5</code>版本</li>
 <li>(2019.11.12) 修复<code>2018.3</code>以下版本打开项目报错的问题</li>
-<li>(2019.11.12) 增加<code>IconStyle</code>子组件，优化<code>SerieData</code>的图标配置</li>
+<li>(2019.11.12) 增加<code>IconStyle</code> 子组件，优化<code>SerieData</code>的图标配置</li>
 <li>(2019.11.11) 修复<code>Serie</code>的图标显示在上层遮挡<code>Label</code>的问题</li>
-<li>(2019.11.11) 修复饼图当数据过小时视觉引导线 会穿透的的问题</li>
+<li>(2019.11.11) 修复饼图当数据过小时视觉引导线会穿透的的问题</li>
 <li>(2019.11.09) 修复饼图添加数据时<code>Label</code>异常的问题</li>
 <li>(2019.11.09) 优化结构，分离为<code>XCharts</code>和<code>XChartsDemo</code>两部分</li>
 </ul>

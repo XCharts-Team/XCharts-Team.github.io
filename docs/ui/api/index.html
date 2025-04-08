@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="XCharts" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.9980e2f6.css">
-<script src="/assets/js/runtime~main.ade483c6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.aaf66c78.js" defer="defer"></script>
 <script src="/assets/js/main.fe3cbb36.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -435,16 +435,18 @@
 <p>public TableSeparatorStyle separatorStyle<br>
 <!-- -->分割线样式。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableaddcolumn">UITable.AddColumn<a href="#uitableaddcolumn" class="hash-link" aria-label="UITable.AddColumn的直接链接" title="UITable.AddColumn的直接链接">​</a></h3>
-<p>public void AddColumn(string title, List&lt;double&gt; data)<br>
+<p>public void AddColumn(string columnName, List&lt;double&gt; columnData)<br>
 <!-- -->添加一列double类型数据。</p>
-<p>public void AddColumn(string title, List&lt;Sprite&gt; data)<br>
+<p>public void AddColumn(string columnName, List&lt;Sprite&gt; columnData)<br>
 <!-- -->添加一列Sprite类型数据。</p>
-<p>public void AddColumn(string title, List&lt;string&gt; data)<br>
+<p>public void AddColumn(string columnName, List&lt;string&gt; columnData)<br>
 <!-- -->添加一列string类型数据。</p>
-<p>public void AddColumn(string title, params double[] data)<br>
+<p>public void AddColumn(string columnName, params double[] colummnData)<br>
 <!-- -->添加一列double类型数据。</p>
-<p>public void AddColumn(string title, params Sprite[] data)<br>
+<p>public void AddColumn(string columnName, params Sprite[] columnData)<br>
 <!-- -->添加一列Sprite类型数据。</p>
+<p>public void AddColumn(string columnName, params string[] columnData)<br>
+<!-- -->添加一列string类型数据。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableaddrow">UITable.AddRow<a href="#uitableaddrow" class="hash-link" aria-label="UITable.AddRow的直接链接" title="UITable.AddRow的直接链接">​</a></h3>
 <p>public void AddRow(List&lt;double&gt; row)</p>
 <blockquote>
@@ -517,7 +519,7 @@
 <p>public void UpdateCell(int row, int column, double value)<br>
 <!-- -->更新一个单元格数据。</p>
 <p>public void UpdateCell(int row, int column, Sprite value)<br>
-<!-- -->更新一个单元格数据。</p>
+<!-- -->更 新一个单元格数据。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableupdatecolumn">UITable.UpdateColumn<a href="#uitableupdatecolumn" class="hash-link" aria-label="UITable.UpdateColumn的直接链接" title="UITable.UpdateColumn的直接链接">​</a></h3>
 <p>public void UpdateColumn(int columnIndex, List&lt;double&gt; column)<br>
 <!-- -->更新指定索引的列数据。</p>
