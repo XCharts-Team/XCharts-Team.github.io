@@ -726,20 +726,23 @@ public TableSeparatorStyle separatorStyle
 
 ### UITable.AddColumn
 
-public void AddColumn(string title, List&lt;double&gt; data)  
+public void AddColumn(string columnName, List&lt;double&gt; columnData)  
 添加一列double类型数据。
 
-public void AddColumn(string title, List&lt;Sprite&gt; data)  
+public void AddColumn(string columnName, List&lt;Sprite&gt; columnData)  
 添加一列Sprite类型数据。
 
-public void AddColumn(string title, List&lt;string&gt; data)  
+public void AddColumn(string columnName, List&lt;string&gt; columnData)  
 添加一列string类型数据。
 
-public void AddColumn(string title, params double[] data)  
+public void AddColumn(string columnName, params double[] colummnData)  
 添加一列double类型数据。
 
-public void AddColumn(string title, params Sprite[] data)  
+public void AddColumn(string columnName, params Sprite[] columnData)  
 添加一列Sprite类型数据。
+
+public void AddColumn(string columnName, params string[] columnData)  
+添加一列string类型数据。
 
 
 ### UITable.AddRow

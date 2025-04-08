@@ -726,19 +726,22 @@ the style of separator.
 
 ### UITable.AddColumn
 
-public void AddColumn(string title, List&lt;double&gt; data)  
+public void AddColumn(string columnName, List&lt;double&gt; columnData)  
 add a column data.
 
-public void AddColumn(string title, List&lt;Sprite&gt; data)  
+public void AddColumn(string columnName, List&lt;Sprite&gt; columnData)  
 add a column data.
 
-public void AddColumn(string title, List&lt;string&gt; data)  
+public void AddColumn(string columnName, List&lt;string&gt; columnData)  
 add a column data.
 
-public void AddColumn(string title, params double[] data)  
+public void AddColumn(string columnName, params double[] colummnData)  
 add a column data.
 
-public void AddColumn(string title, params Sprite[] data)  
+public void AddColumn(string columnName, params Sprite[] columnData)  
+add a column data.
+
+public void AddColumn(string columnName, params string[] columnData)  
 add a column data.
 
 
