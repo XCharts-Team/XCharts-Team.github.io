@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ui/configuration" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">Configuration | XCharts</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://github.com/en/img/xcharts-social-card.png"><meta data-rh="true" name="twitter:image" content="https://github.com/en/img/xcharts-social-card.png"><meta data-rh="true" property="og:url" content="https://github.com/en/docs/ui/configuration"><meta data-rh="true" property="og:locale" content="en_GB"><meta data-rh="true" property="og:locale:alternate" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Configuration | XCharts"><meta data-rh="true" name="description" content="FillStyle"><meta data-rh="true" property="og:description" content="FillStyle"><link data-rh="true" rel="icon" href="/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://github.com/en/docs/ui/configuration"><link data-rh="true" rel="alternate" href="https://github.com/en/docs/ui/configuration" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://github.com/docs/ui/configuration" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://github.com/docs/ui/configuration" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://6YGEX22RUU-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/en/blog/rss.xml" title="XCharts RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/en/blog/atom.xml" title="XCharts Atom Feed">
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="XCharts" href="/en/opensearch.xml"><link rel="stylesheet" href="/en/assets/css/styles.9980e2f6.css">
+<script src="/en/assets/js/runtime~main.b288b5de.js" defer="defer"></script>
+<script src="/en/assets/js/main.d56a5865.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/en/"><div class="navbar__logo"><img src="/en/img/logo.svg" alt="XCharts Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/en/img/logo.svg" alt="XCharts Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">XCharts</b></a><a class="navbar__item navbar__link" href="/en/docs/changelog#v3140">v3.14.0</a></div><div class="navbar__items navbar__items--right"><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/en/docs/about">Docs</a><a class="navbar__item navbar__link" href="/en/examples">Demo</a><a class="navbar__item navbar__link" href="/en/blog">Blog</a><a class="navbar__item navbar__link" href="/en/docs/support">Support</a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>English</a><ul class="dropdown__menu"><li><a href="/en/docs/ui/configuration" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="en-GB">English</a></li><li><a href="/docs/ui/configuration" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh-Hans">简体中文</a></li></ul></div><a href="https://github.com/XCharts-Team/XCharts" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/about">About XCharts</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/tutorial01">Getting Started</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/configuration">Configuration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/api">API</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/faq">FAQ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/support">Support</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/en/docs/changelog">Changelog</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/en/docs/ui">Extra UI</a><button aria-label="Collapse sidebar category &#x27;Extra UI&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/en/docs/ui/api">API</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/en/docs/ui/changelog">Update Log</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/en/docs/ui/configuration">Configuration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/en/docs/ui/ui_statistic">UIStatistic</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/en/docs/ui/ui_table">UITable</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/en/docs/category/extra-charts">Extra Charts</a><button aria-label="Expand sidebar category &#x27;Extra Charts&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/en/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/en/docs/ui"><span itemprop="name">Extra UI</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Configuration</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Configuration</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyle">FillStyle<a href="#fillstyle" class="hash-link" aria-label="Direct link to FillStyle" title="Direct link to FillStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>Style of fill.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyleautooffset">FillStyle.autoOffset<a href="#fillstyleautooffset" class="hash-link" aria-label="Direct link to FillStyle.autoOffset" title="Direct link to FillStyle.autoOffset">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to automatically offset the fill position. When true, it will automatically indent left and right according to the displayed text or slider size.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstylebackground">FillStyle.background<a href="#fillstylebackground" class="hash-link" aria-label="Direct link to FillStyle.background" title="Direct link to FillStyle.background">​</a></h3>
+<p><code>Background</code></p>
+<p>Background style.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstylecolor">FillStyle.color<a href="#fillstylecolor" class="hash-link" aria-label="Direct link to FillStyle.color" title="Direct link to FillStyle.color">​</a></h3>
+<p><code>Color32</code> <code>Color32(145, 202, 255, 255)</code></p>
+<p>Fill color.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyleheight">FillStyle.height<a href="#fillstyleheight" class="hash-link" aria-label="Direct link to FillStyle.height" title="Direct link to FillStyle.height">​</a></h3>
+<p><code>float</code> <code>5f</code></p>
+<p>Height of fill. Higher priority than top and bottom. Represents the width of the ring in the circular progress bar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstylelocation">FillStyle.location<a href="#fillstylelocation" class="hash-link" aria-label="Direct link to FillStyle.location" title="Direct link to FillStyle.location">​</a></h3>
+<p><code>Location</code></p>
+<p>Location of fill.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyleradius">FillStyle.radius<a href="#fillstyleradius" class="hash-link" aria-label="Direct link to FillStyle.radius" title="Direct link to FillStyle.radius">​</a></h3>
+<p><code>float</code> <code>0f</code></p>
+<p>Fill radius. Only valid in circular progress bar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyleroundcap">FillStyle.roundCap<a href="#fillstyleroundcap" class="hash-link" aria-label="Direct link to FillStyle.roundCap" title="Direct link to FillStyle.roundCap">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to use round cap. Only valid in circular progress bar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyleshow">FillStyle.show<a href="#fillstyleshow" class="hash-link" aria-label="Direct link to FillStyle.show" title="Direct link to FillStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to show fill.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstyletocolor">FillStyle.toColor<a href="#fillstyletocolor" class="hash-link" aria-label="Direct link to FillStyle.toColor" title="Direct link to FillStyle.toColor">​</a></h3>
+<p><code>Color32</code> <code>Color32(0, 0, 0, 0)</code></p>
+<p>To color.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="fillstylewidth">FillStyle.width<a href="#fillstylewidth" class="hash-link" aria-label="Direct link to FillStyle.width" title="Direct link to FillStyle.width">​</a></h3>
+<p><code>float</code></p>
+<p>Width of fill.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="itablecell">ITableCell<a href="#itablecell" class="hash-link" aria-label="Direct link to ITableCell" title="Direct link to ITableCell">​</a></h2>
+<p>class in XCharts.Runtime.UI / Subclasses: <a href="#tablecell">TableCell</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sliderhandlestyle">SliderHandleStyle<a href="#sliderhandlestyle" class="hash-link" aria-label="Direct link to SliderHandleStyle" title="Direct link to SliderHandleStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>Style of handle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sliderhandlestylegradientcolor">SliderHandleStyle.gradientColor<a href="#sliderhandlestylegradientcolor" class="hash-link" aria-label="Direct link to SliderHandleStyle.gradientColor" title="Direct link to SliderHandleStyle.gradientColor">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>Whether to use gradient color.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sliderhandlestyleshow">SliderHandleStyle.show<a href="#sliderhandlestyleshow" class="hash-link" aria-label="Direct link to SliderHandleStyle.show" title="Direct link to SliderHandleStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to show handle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sliderhandlestylesymbol">SliderHandleStyle.symbol<a href="#sliderhandlestylesymbol" class="hash-link" aria-label="Direct link to SliderHandleStyle.symbol" title="Direct link to SliderHandleStyle.symbol">​</a></h3>
+<p><code>SymbolStyle</code></p>
+<p>Style of symbol.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="slidermarkstyle">SliderMarkStyle<a href="#slidermarkstyle" class="hash-link" aria-label="Direct link to SliderMarkStyle" title="Direct link to SliderMarkStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>Style of mark.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="slidermarkstyleincluded">SliderMarkStyle.included<a href="#slidermarkstyleincluded" class="hash-link" aria-label="Direct link to SliderMarkStyle.included" title="Direct link to SliderMarkStyle.included">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to include in the range. When true, the mark is displayed as the progress bar color, otherwise it is displayed as the background color.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="slidermarkstylelabel">SliderMarkStyle.label<a href="#slidermarkstylelabel" class="hash-link" aria-label="Direct link to SliderMarkStyle.label" title="Direct link to SliderMarkStyle.label">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>Style of label.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="slidermarkstyleshow">SliderMarkStyle.show<a href="#slidermarkstyleshow" class="hash-link" aria-label="Direct link to SliderMarkStyle.show" title="Direct link to SliderMarkStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to show mark.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="slidermarkstylesymbol">SliderMarkStyle.symbol<a href="#slidermarkstylesymbol" class="hash-link" aria-label="Direct link to SliderMarkStyle.symbol" title="Direct link to SliderMarkStyle.symbol">​</a></h3>
+<p><code>SymbolStyle</code></p>
+<p>Style of symbol.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstyle">TableCarouselStyle<a href="#tablecarouselstyle" class="hash-link" aria-label="Direct link to TableCarouselStyle" title="Direct link to TableCarouselStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>The table carousel style.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstylehoverpause">TableCarouselStyle.hoverPause<a href="#tablecarouselstylehoverpause" class="hash-link" aria-label="Direct link to TableCarouselStyle.hoverPause" title="Direct link to TableCarouselStyle.hoverPause">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether to pause when hover.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstylemode">TableCarouselStyle.mode<a href="#tablecarouselstylemode" class="hash-link" aria-label="Direct link to TableCarouselStyle.mode" title="Direct link to TableCarouselStyle.mode">​</a></h3>
+<p><a href="#tablecarouselmode">TableCarouselMode</a></p>
+<p>The play mode of carousel.</p>
+<p>Options:</p>
+<ul>
+<li><code>Loop</code>: play loop.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstylepause">TableCarouselStyle.pause<a href="#tablecarouselstylepause" class="hash-link" aria-label="Direct link to TableCarouselStyle.pause" title="Direct link to TableCarouselStyle.pause">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>pause carousel.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstyleshow">TableCarouselStyle.show<a href="#tablecarouselstyleshow" class="hash-link" aria-label="Direct link to TableCarouselStyle.show" title="Direct link to TableCarouselStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstylespeed">TableCarouselStyle.speed<a href="#tablecarouselstylespeed" class="hash-link" aria-label="Direct link to TableCarouselStyle.speed" title="Direct link to TableCarouselStyle.speed">​</a></h3>
+<p><code>float</code> <code>100</code></p>
+<p>The carousel speed.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstyletype">TableCarouselStyle.type<a href="#tablecarouselstyletype" class="hash-link" aria-label="Direct link to TableCarouselStyle.type" title="Direct link to TableCarouselStyle.type">​</a></h3>
+<p><a href="#tablecarouseltype">TableCarouselType</a></p>
+<p>The carousel type.</p>
+<p>Options:</p>
+<ul>
+<li><code>Pixel</code>: pixel carousel.</li>
+<li><code>Row</code>: single row carousel.</li>
+<li><code>Page</code>: page carousel.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecarouselstylewaittime">TableCarouselStyle.waitTime<a href="#tablecarouselstylewaittime" class="hash-link" aria-label="Direct link to TableCarouselStyle.waitTime" title="Direct link to TableCarouselStyle.waitTime">​</a></h3>
+<p><code>int</code> <code>2000</code></p>
+<p>wait time of carousel (ms).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablecell">TableCell<a href="#tablecell" class="hash-link" aria-label="Direct link to TableCell" title="Direct link to TableCell">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a>, <a href="#itablecell">ITableCell</a></p>
+<p>表格的单元格数据。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecellboolvalue">TableCell.boolValue<a href="#tablecellboolvalue" class="hash-link" aria-label="Direct link to TableCell.boolValue" title="Direct link to TableCell.boolValue">​</a></h3>
+<p><code>bool</code></p>
+<p>the bool data. when type is Bool.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecelldoublevalue">TableCell.doubleValue<a href="#tablecelldoublevalue" class="hash-link" aria-label="Direct link to TableCell.doubleValue" title="Direct link to TableCell.doubleValue">​</a></h3>
+<p><code>double</code></p>
+<p>the double data. when type is Double.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecellgameobjectvalue">TableCell.gameObjectValue<a href="#tablecellgameobjectvalue" class="hash-link" aria-label="Direct link to TableCell.gameObjectValue" title="Direct link to TableCell.gameObjectValue">​</a></h3>
+<p><code>GameObject</code></p>
+<p>the gameobject data. when type is GameObject.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecellshow">TableCell.show<a href="#tablecellshow" class="hash-link" aria-label="Direct link to TableCell.show" title="Direct link to TableCell.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the cell is visible.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecellspritevalue">TableCell.spriteValue<a href="#tablecellspritevalue" class="hash-link" aria-label="Direct link to TableCell.spriteValue" title="Direct link to TableCell.spriteValue">​</a></h3>
+<p><code>Sprite</code></p>
+<p>the sprite data. when type is Sprite.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecellstringvalue">TableCell.stringValue<a href="#tablecellstringvalue" class="hash-link" aria-label="Direct link to TableCell.stringValue" title="Direct link to TableCell.stringValue">​</a></h3>
+<p><code>string</code></p>
+<p>the string data. when type is String.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecelltype">TableCell.type<a href="#tablecelltype" class="hash-link" aria-label="Direct link to TableCell.type" title="Direct link to TableCell.type">​</a></h3>
+<p><a href="#datatype">DataType</a></p>
+<p>the type of the cell data.</p>
+<p>Options:</p>
+<ul>
+<li><code>GameObject</code>:</li>
+<li><code>String</code>:</li>
+<li><code>Double</code>:</li>
+<li><code>Bool</code>:</li>
+<li><code>Sprite</code>:</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumn">TableColumn<a href="#tablecolumn" class="hash-link" aria-label="Direct link to TableColumn" title="Direct link to TableColumn">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>列表头内容和样式。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumncontent">TableColumn.content<a href="#tablecolumncontent" class="hash-link" aria-label="Direct link to TableColumn.content" title="Direct link to TableColumn.content">​</a></h3>
+<p><code>string</code></p>
+<p>the content of the column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumndatalabelstyle">TableColumn.dataLabelStyle<a href="#tablecolumndatalabelstyle" class="hash-link" aria-label="Direct link to TableColumn.dataLabelStyle" title="Direct link to TableColumn.dataLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>the style of the column header. default not enabled, but use the defaultHeaderLabelStyle of TableColumnHeaderStyle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderlabelstyle">TableColumn.headerLabelStyle<a href="#tablecolumnheaderlabelstyle" class="hash-link" aria-label="Direct link to TableColumn.headerLabelStyle" title="Direct link to TableColumn.headerLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>the style of the column header. default not enabled, but use the defaultHeaderLabelStyle of TableColumnHeaderStyle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnshow">TableColumn.show<a href="#tablecolumnshow" class="hash-link" aria-label="Direct link to TableColumn.show" title="Direct link to TableColumn.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the column is visible.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnwidth">TableColumn.width<a href="#tablecolumnwidth" class="hash-link" aria-label="Direct link to TableColumn.width" title="Direct link to TableColumn.width">​</a></h3>
+<p><code>float</code> <code>0f</code></p>
+<p>the width of the column. when width is 0, the width is average.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyle">TableColumnHeaderStyle<a href="#tablecolumnheaderstyle" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle" title="Direct link to TableColumnHeaderStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>the style of the table column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstylebackground">TableColumnHeaderStyle.background<a href="#tablecolumnheaderstylebackground" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.background" title="Direct link to TableColumnHeaderStyle.background">​</a></h3>
+<p><code>ImageStyle</code></p>
+<p>the background style of the column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstylebackgroundcolor">TableColumnHeaderStyle.backgroundColor<a href="#tablecolumnheaderstylebackgroundcolor" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.backgroundColor" title="Direct link to TableColumnHeaderStyle.backgroundColor">​</a></h3>
+<p><code>Color32</code></p>
+<p>the background color of the column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyleborderstyle">TableColumnHeaderStyle.borderStyle<a href="#tablecolumnheaderstyleborderstyle" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.borderStyle" title="Direct link to TableColumnHeaderStyle.borderStyle">​</a></h3>
+<p><code>BorderStyle</code> <code>v3.10.0</code></p>
+<p>the border style of the column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyledefaultlabelstyle">TableColumnHeaderStyle.defaultLabelStyle<a href="#tablecolumnheaderstyledefaultlabelstyle" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.defaultLabelStyle" title="Direct link to TableColumnHeaderStyle.defaultLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyleheight">TableColumnHeaderStyle.height<a href="#tablecolumnheaderstyleheight" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.height" title="Direct link to TableColumnHeaderStyle.height">​</a></h3>
+<p><code>float</code> <code>50f</code></p>
+<p>the height of the column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyleopaque">TableColumnHeaderStyle.opaque<a href="#tablecolumnheaderstyleopaque" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.opaque" title="Direct link to TableColumnHeaderStyle.opaque">​</a></h3>
+<p><code>bool</code> <code>true</code> <code>v3.10.0</code></p>
+<p>whether the column header is opaque.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnheaderstyleshow">TableColumnHeaderStyle.show<a href="#tablecolumnheaderstyleshow" class="hash-link" aria-label="Direct link to TableColumnHeaderStyle.show" title="Direct link to TableColumnHeaderStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the column header is visible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstyle">TableColumnStyle<a href="#tablecolumnstyle" class="hash-link" aria-label="Direct link to TableColumnStyle" title="Direct link to TableColumnStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>The style of table column.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstylecolumnbackgroundcolors">TableColumnStyle.columnBackgroundColors<a href="#tablecolumnstylecolumnbackgroundcolors" class="hash-link" aria-label="Direct link to TableColumnStyle.columnBackgroundColors" title="Direct link to TableColumnStyle.columnBackgroundColors">​</a></h3>
+<p><code>List&lt;Color32&gt;</code></p>
+<p>the background color of column.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstylecolumnwidth">TableColumnStyle.columnWidth<a href="#tablecolumnstylecolumnwidth" class="hash-link" aria-label="Direct link to TableColumnStyle.columnWidth" title="Direct link to TableColumnStyle.columnWidth">​</a></h3>
+<p><code>float</code> <code>0f</code></p>
+<p>the width of column. default 0, auto width. if set, it will be used first.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstyledefaultlabelstyle">TableColumnStyle.defaultLabelStyle<a href="#tablecolumnstyledefaultlabelstyle" class="hash-link" aria-label="Direct link to TableColumnStyle.defaultLabelStyle" title="Direct link to TableColumnStyle.defaultLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>the default style of the column label.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstylemincolumnwidth">TableColumnStyle.minColumnWidth<a href="#tablecolumnstylemincolumnwidth" class="hash-link" aria-label="Direct link to TableColumnStyle.minColumnWidth" title="Direct link to TableColumnStyle.minColumnWidth">​</a></h3>
+<p><code>float</code> <code>100f</code></p>
+<p>the min width of column.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablecolumnstyleshow">TableColumnStyle.show<a href="#tablecolumnstyleshow" class="hash-link" aria-label="Direct link to TableColumnStyle.show" title="Direct link to TableColumnStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the column is visible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablerow">TableRow<a href="#tablerow" class="hash-link" aria-label="Direct link to TableRow" title="Direct link to TableRow">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>the row data of the table.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowdata">TableRow.data<a href="#tablerowdata" class="hash-link" aria-label="Direct link to TableRow.data" title="Direct link to TableRow.data">​</a></h3>
+<p><code>List&lt;TableCell&gt;</code></p>
+<p>the data list of the row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheight">TableRow.height<a href="#tablerowheight" class="hash-link" aria-label="Direct link to TableRow.height" title="Direct link to TableRow.height">​</a></h3>
+<p><code>float</code></p>
+<p>the height of the row. default 0, auto height.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowname">TableRow.name<a href="#tablerowname" class="hash-link" aria-label="Direct link to TableRow.name" title="Direct link to TableRow.name">​</a></h3>
+<p><code>string</code></p>
+<p>the name of the row. can be used to display in the row header, use wildcard {name}.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowshow">TableRow.show<a href="#tablerowshow" class="hash-link" aria-label="Direct link to TableRow.show" title="Direct link to TableRow.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the row is visible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheaderstyle">TableRowHeaderStyle<a href="#tablerowheaderstyle" class="hash-link" aria-label="Direct link to TableRowHeaderStyle" title="Direct link to TableRowHeaderStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>the style of the table row header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheaderstylebackgroundcolor">TableRowHeaderStyle.backgroundColor<a href="#tablerowheaderstylebackgroundcolor" class="hash-link" aria-label="Direct link to TableRowHeaderStyle.backgroundColor" title="Direct link to TableRowHeaderStyle.backgroundColor">​</a></h3>
+<p><code>Color32</code></p>
+<p>the background color of the row header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheaderstylelabelstyle">TableRowHeaderStyle.labelStyle<a href="#tablerowheaderstylelabelstyle" class="hash-link" aria-label="Direct link to TableRowHeaderStyle.labelStyle" title="Direct link to TableRowHeaderStyle.labelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>the style of the row header label.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheaderstyleshow">TableRowHeaderStyle.show<a href="#tablerowheaderstyleshow" class="hash-link" aria-label="Direct link to TableRowHeaderStyle.show" title="Direct link to TableRowHeaderStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the row header is visible.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowheaderstylewidth">TableRowHeaderStyle.width<a href="#tablerowheaderstylewidth" class="hash-link" aria-label="Direct link to TableRowHeaderStyle.width" title="Direct link to TableRowHeaderStyle.width">​</a></h3>
+<p><code>float</code> <code>100f</code></p>
+<p>the width of the row header.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstyle">TableRowStyle<a href="#tablerowstyle" class="hash-link" aria-label="Direct link to TableRowStyle" title="Direct link to TableRowStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>The style of table row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstyleborderstyle">TableRowStyle.borderStyle<a href="#tablerowstyleborderstyle" class="hash-link" aria-label="Direct link to TableRowStyle.borderStyle" title="Direct link to TableRowStyle.borderStyle">​</a></h3>
+<p><code>BorderStyle</code> <code>v3.10.0</code></p>
+<p>the border style of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstyleminrowheight">TableRowStyle.minRowHeight<a href="#tablerowstyleminrowheight" class="hash-link" aria-label="Direct link to TableRowStyle.minRowHeight" title="Direct link to TableRowStyle.minRowHeight">​</a></h3>
+<p><code>float</code> <code>30f</code></p>
+<p>the min height of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstylerowbackgroundcolors">TableRowStyle.rowBackgroundColors<a href="#tablerowstylerowbackgroundcolors" class="hash-link" aria-label="Direct link to TableRowStyle.rowBackgroundColors" title="Direct link to TableRowStyle.rowBackgroundColors">​</a></h3>
+<p><code>List&lt;Color32&gt;</code></p>
+<p>the background color of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstylerowgap">TableRowStyle.rowGap<a href="#tablerowstylerowgap" class="hash-link" aria-label="Direct link to TableRowStyle.rowGap" title="Direct link to TableRowStyle.rowGap">​</a></h3>
+<p><code>float</code> <code>0f</code></p>
+<p>the gap of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstylerowheight">TableRowStyle.rowHeight<a href="#tablerowstylerowheight" class="hash-link" aria-label="Direct link to TableRowStyle.rowHeight" title="Direct link to TableRowStyle.rowHeight">​</a></h3>
+<p><code>float</code> <code>0f</code></p>
+<p>the height of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablerowstyleshow">TableRowStyle.show<a href="#tablerowstyleshow" class="hash-link" aria-label="Direct link to TableRowStyle.show" title="Direct link to TableRowStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the row is visible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstyle">TableScrollbarStyle<a href="#tablescrollbarstyle" class="hash-link" aria-label="Direct link to TableScrollbarStyle" title="Direct link to TableScrollbarStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>the style of the table carousel.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstylebackgroundcolor">TableScrollbarStyle.backgroundColor<a href="#tablescrollbarstylebackgroundcolor" class="hash-link" aria-label="Direct link to TableScrollbarStyle.backgroundColor" title="Direct link to TableScrollbarStyle.backgroundColor">​</a></h3>
+<p><code>Color32</code></p>
+<p>the background color of the scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstyleborderstyle">TableScrollbarStyle.borderStyle<a href="#tablescrollbarstyleborderstyle" class="hash-link" aria-label="Direct link to TableScrollbarStyle.borderStyle" title="Direct link to TableScrollbarStyle.borderStyle">​</a></h3>
+<p><code>BorderStyle</code> <code>v3.10.0</code></p>
+<p>the border style of the scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstylecolor">TableScrollbarStyle.color<a href="#tablescrollbarstylecolor" class="hash-link" aria-label="Direct link to TableScrollbarStyle.color" title="Direct link to TableScrollbarStyle.color">​</a></h3>
+<p><code>Color32</code></p>
+<p>the color of the scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstylehorizontal">TableScrollbarStyle.horizontal<a href="#tablescrollbarstylehorizontal" class="hash-link" aria-label="Direct link to TableScrollbarStyle.horizontal" title="Direct link to TableScrollbarStyle.horizontal">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>whether to show the horizontal scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstyleshow">TableScrollbarStyle.show<a href="#tablescrollbarstyleshow" class="hash-link" aria-label="Direct link to TableScrollbarStyle.show" title="Direct link to TableScrollbarStyle.show">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>whether the scrollbar is enable.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstylevertical">TableScrollbarStyle.vertical<a href="#tablescrollbarstylevertical" class="hash-link" aria-label="Direct link to TableScrollbarStyle.vertical" title="Direct link to TableScrollbarStyle.vertical">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the vertical scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tablescrollbarstylewidth">TableScrollbarStyle.width<a href="#tablescrollbarstylewidth" class="hash-link" aria-label="Direct link to TableScrollbarStyle.width" title="Direct link to TableScrollbarStyle.width">​</a></h3>
+<p><code>float</code> <code>10</code></p>
+<p>the width of the scrollbar.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstyle">TableSeparatorStyle<a href="#tableseparatorstyle" class="hash-link" aria-label="Direct link to TableSeparatorStyle" title="Direct link to TableSeparatorStyle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#childcomponent" target="_blank" rel="noopener noreferrer">ChildComponent</a></p>
+<p>the style of the table separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstylehorizontal">TableSeparatorStyle.horizontal<a href="#tableseparatorstylehorizontal" class="hash-link" aria-label="Direct link to TableSeparatorStyle.horizontal" title="Direct link to TableSeparatorStyle.horizontal">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the horizontal separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstylehorizontalcolor">TableSeparatorStyle.horizontalColor<a href="#tableseparatorstylehorizontalcolor" class="hash-link" aria-label="Direct link to TableSeparatorStyle.horizontalColor" title="Direct link to TableSeparatorStyle.horizontalColor">​</a></h3>
+<p><code>Color32</code> <code>Color.clear</code></p>
+<p>the color of horizontal separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstylehorizontalcolumn">TableSeparatorStyle.horizontalColumn<a href="#tableseparatorstylehorizontalcolumn" class="hash-link" aria-label="Direct link to TableSeparatorStyle.horizontalColumn" title="Direct link to TableSeparatorStyle.horizontalColumn">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the horizontal separator of the header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstylehorizontalwidth">TableSeparatorStyle.horizontalWidth<a href="#tableseparatorstylehorizontalwidth" class="hash-link" aria-label="Direct link to TableSeparatorStyle.horizontalWidth" title="Direct link to TableSeparatorStyle.horizontalWidth">​</a></h3>
+<p><code>float</code> <code>1f</code></p>
+<p>the width of horizontal separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstyleshow">TableSeparatorStyle.show<a href="#tableseparatorstyleshow" class="hash-link" aria-label="Direct link to TableSeparatorStyle.show" title="Direct link to TableSeparatorStyle.show">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstylevertical">TableSeparatorStyle.vertical<a href="#tableseparatorstylevertical" class="hash-link" aria-label="Direct link to TableSeparatorStyle.vertical" title="Direct link to TableSeparatorStyle.vertical">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the vertical separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstyleverticalcolor">TableSeparatorStyle.verticalColor<a href="#tableseparatorstyleverticalcolor" class="hash-link" aria-label="Direct link to TableSeparatorStyle.verticalColor" title="Direct link to TableSeparatorStyle.verticalColor">​</a></h3>
+<p><code>Color32</code> <code>Color.clear</code></p>
+<p>the color of vertical separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstyleverticalcolumn">TableSeparatorStyle.verticalColumn<a href="#tableseparatorstyleverticalcolumn" class="hash-link" aria-label="Direct link to TableSeparatorStyle.verticalColumn" title="Direct link to TableSeparatorStyle.verticalColumn">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether to show the vertical separator of the header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tableseparatorstyleverticalwidth">TableSeparatorStyle.verticalWidth<a href="#tableseparatorstyleverticalwidth" class="hash-link" aria-label="Direct link to TableSeparatorStyle.verticalWidth" title="Direct link to TableSeparatorStyle.verticalWidth">​</a></h3>
+<p><code>float</code> <code>1f</code></p>
+<p>the width of vertical separator.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uiimage">UIImage<a href="#uiimage" class="hash-link" aria-label="Direct link to UIImage" title="Direct link to UIImage">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<p>ui component of image. 图片UI组件。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uislider">UISlider<a href="#uislider" class="hash-link" aria-label="Direct link to UISlider" title="Direct link to UISlider">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<blockquote>
+<p>Since <code>v3.13.0</code></p>
+</blockquote>
+<p>ui component of slider.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uisliderfillstyle">UISlider.fillStyle<a href="#uisliderfillstyle" class="hash-link" aria-label="Direct link to UISlider.fillStyle" title="Direct link to UISlider.fillStyle">​</a></h3>
+<p><a href="#fillstyle">FillStyle</a></p>
+<p>Style of fill.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uisliderhandlestyle">UISlider.handleStyle<a href="#uisliderhandlestyle" class="hash-link" aria-label="Direct link to UISlider.handleStyle" title="Direct link to UISlider.handleStyle">​</a></h3>
+<p><a href="#sliderhandlestyle">SliderHandleStyle</a></p>
+<p>Style of handle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uisliderinteractable">UISlider.interactable<a href="#uisliderinteractable" class="hash-link" aria-label="Direct link to UISlider.interactable" title="Direct link to UISlider.interactable">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether the slider is interactable.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidermarknames">UISlider.markNames<a href="#uislidermarknames" class="hash-link" aria-label="Direct link to UISlider.markNames" title="Direct link to UISlider.markNames">​</a></h3>
+<p><code>List&lt;string&gt;</code></p>
+<p>Names of marks. When specified with mark values, the mark and text are displayed at the specified position.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidermarkstyle">UISlider.markStyle<a href="#uislidermarkstyle" class="hash-link" aria-label="Direct link to UISlider.markStyle" title="Direct link to UISlider.markStyle">​</a></h3>
+<p><a href="#slidermarkstyle">SliderMarkStyle</a></p>
+<p>Style of mark.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidermarkvalues">UISlider.markValues<a href="#uislidermarkvalues" class="hash-link" aria-label="Direct link to UISlider.markValues" title="Direct link to UISlider.markValues">​</a></h3>
+<p><code>List&lt;float&gt;</code></p>
+<p>Values of marks. When specified with mark names, the mark and text are displayed at the specified position.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidermax">UISlider.max<a href="#uislidermax" class="hash-link" aria-label="Direct link to UISlider.max" title="Direct link to UISlider.max">​</a></h3>
+<p><code>float</code> <code>100</code></p>
+<p>Maximum value. The slider value cannot be greater than the maximum value.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidermin">UISlider.min<a href="#uislidermin" class="hash-link" aria-label="Direct link to UISlider.min" title="Direct link to UISlider.min">​</a></h3>
+<p><code>float</code> <code>0</code></p>
+<p>Minimum value. The slider value cannot be less than the minimum value.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uisliderstep">UISlider.step<a href="#uisliderstep" class="hash-link" aria-label="Direct link to UISlider.step" title="Direct link to UISlider.step">​</a></h3>
+<p><code>float</code> <code>1</code></p>
+<p>Step size. The value of the slider will change by step size.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidervalue">UISlider.value<a href="#uislidervalue" class="hash-link" aria-label="Direct link to UISlider.value" title="Direct link to UISlider.value">​</a></h3>
+<p><code>float[]</code></p>
+<p>Current value of the slider. This is a two-dimensional array. When it is a range value type, the two values represent the minimum and maximum values respectively, and when it is other types, only the second value is used.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uislidervaluetype">UISlider.valueType<a href="#uislidervaluetype" class="hash-link" aria-label="Direct link to UISlider.valueType" title="Direct link to UISlider.valueType">​</a></h3>
+<p><a href="#uislidervaluetype">UISlider.ValueType</a></p>
+<p>Type of value. Support default value, range value, enum value.</p>
+<p>Options:</p>
+<ul>
+<li><code>Default</code>: Default value.</li>
+<li><code>Range</code>: Range value.</li>
+<li><code>Enum</code>: Enum value.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uistatistic">UIStatistic<a href="#uistatistic" class="hash-link" aria-label="Direct link to UIStatistic" title="Direct link to UIStatistic">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<p>Statistical value UI component. Used to display statistical values. Suitable for highlighting specific numbers/groups of numbers or presenting statistical data with descriptions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatisticanimationstyle">UIStatistic.animationStyle<a href="#uistatisticanimationstyle" class="hash-link" aria-label="Direct link to UIStatistic.animationStyle" title="Direct link to UIStatistic.animationStyle">​</a></h3>
+<p><code>AnimationStyle</code></p>
+<p>The start animation.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatisticitemgap">UIStatistic.itemGap<a href="#uistatisticitemgap" class="hash-link" aria-label="Direct link to UIStatistic.itemGap" title="Direct link to UIStatistic.itemGap">​</a></h3>
+<p><code>float</code> <code>5</code></p>
+<p>The gap between the title and value.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatisticlocation">UIStatistic.location<a href="#uistatisticlocation" class="hash-link" aria-label="Direct link to UIStatistic.location" title="Direct link to UIStatistic.location">​</a></h3>
+<p><code>Location</code></p>
+<p>The location of text.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatistictitle">UIStatistic.title<a href="#uistatistictitle" class="hash-link" aria-label="Direct link to UIStatistic.title" title="Direct link to UIStatistic.title">​</a></h3>
+<p><code>string</code></p>
+<p>The title of statistic.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatistictitlelabelstyle">UIStatistic.titleLabelStyle<a href="#uistatistictitlelabelstyle" class="hash-link" aria-label="Direct link to UIStatistic.titleLabelStyle" title="Direct link to UIStatistic.titleLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>The style of title label.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatistictype">UIStatistic.type<a href="#uistatistictype" class="hash-link" aria-label="Direct link to UIStatistic.type" title="Direct link to UIStatistic.type">​</a></h3>
+<p><a href="#uistatistictype">UIStatistic.Type</a></p>
+<p>The type of statistic.</p>
+<p>Options:</p>
+<ul>
+<li><code>Default</code>: default type. display text.</li>
+<li><code>Countdown</code>: countdown type. Automatic countdown. At this time, value is used as seconds.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatisticvalue">UIStatistic.value<a href="#uistatisticvalue" class="hash-link" aria-label="Direct link to UIStatistic.value" title="Direct link to UIStatistic.value">​</a></h3>
+<p><code>double</code></p>
+<p>value of statistic.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uistatisticvaluelabelstyle">UIStatistic.valueLabelStyle<a href="#uistatisticvaluelabelstyle" class="hash-link" aria-label="Direct link to UIStatistic.valueLabelStyle" title="Direct link to UIStatistic.valueLabelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>The style of value label.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uitable">UITable<a href="#uitable" class="hash-link" aria-label="Direct link to UITable" title="Direct link to UITable">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<p>表格UI组件。 用于展  示行列数据。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableborderstyle">UITable.borderStyle<a href="#uitableborderstyle" class="hash-link" aria-label="Direct link to UITable.borderStyle" title="Direct link to UITable.borderStyle">​</a></h3>
+<p><code>BorderStyle</code></p>
+<p>the border style of table.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablecarouselstyle">UITable.carouselStyle<a href="#uitablecarouselstyle" class="hash-link" aria-label="Direct link to UITable.carouselStyle" title="Direct link to UITable.carouselStyle">​</a></h3>
+<p><a href="#tablecarouselstyle">TableCarouselStyle</a></p>
+<p>the style of carousel.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablecolumnheaderstyle">UITable.columnHeaderStyle<a href="#uitablecolumnheaderstyle" class="hash-link" aria-label="Direct link to UITable.columnHeaderStyle" title="Direct link to UITable.columnHeaderStyle">​</a></h3>
+<p><a href="#tablecolumnheaderstyle">TableColumnHeaderStyle</a></p>
+<p>the default style of column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablecolumns">UITable.columns<a href="#uitablecolumns" class="hash-link" aria-label="Direct link to UITable.columns" title="Direct link to UITable.columns">​</a></h3>
+<p><code>List&lt;TableColumn&gt;</code></p>
+<p>the style of column header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablecolumnstyle">UITable.columnStyle<a href="#uitablecolumnstyle" class="hash-link" aria-label="Direct link to UITable.columnStyle" title="Direct link to UITable.columnStyle">​</a></h3>
+<p><a href="#tablecolumnstyle">TableColumnStyle</a></p>
+<p>the column style of table.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitabledata">UITable.data<a href="#uitabledata" class="hash-link" aria-label="Direct link to UITable.data" title="Direct link to UITable.data">​</a></h3>
+<p><code>List&lt;TableRow&gt;</code></p>
+<p>the data of table.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablerowheaderstyle">UITable.rowHeaderStyle<a href="#uitablerowheaderstyle" class="hash-link" aria-label="Direct link to UITable.rowHeaderStyle" title="Direct link to UITable.rowHeaderStyle">​</a></h3>
+<p><a href="#tablerowheaderstyle">TableRowHeaderStyle</a></p>
+<p>the style of row header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablerowstyle">UITable.rowStyle<a href="#uitablerowstyle" class="hash-link" aria-label="Direct link to UITable.rowStyle" title="Direct link to UITable.rowStyle">​</a></h3>
+<p><a href="#tablerowstyle">TableRowStyle</a></p>
+<p>the style of row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablescrollbarstyle">UITable.scrollbarStyle<a href="#uitablescrollbarstyle" class="hash-link" aria-label="Direct link to UITable.scrollbarStyle" title="Direct link to UITable.scrollbarStyle">​</a></h3>
+<p><a href="#tablescrollbarstyle">TableScrollbarStyle</a></p>
+<p>the style of scrollbar.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablescrollsensitivity">UITable.scrollSensitivity<a href="#uitablescrollsensitivity" class="hash-link" aria-label="Direct link to UITable.scrollSensitivity" title="Direct link to UITable.scrollSensitivity">​</a></h3>
+<p><code>float</code> <code>10f</code></p>
+<p>the scroll sensitivity.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableselectcolor">UITable.selectColor<a href="#uitableselectcolor" class="hash-link" aria-label="Direct link to UITable.selectColor" title="Direct link to UITable.selectColor">​</a></h3>
+<p><code>Color32</code></p>
+<p>the color of selected row, column, cell.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableselectheadercolor">UITable.selectHeaderColor<a href="#uitableselectheadercolor" class="hash-link" aria-label="Direct link to UITable.selectHeaderColor" title="Direct link to UITable.selectHeaderColor">​</a></h3>
+<p><code>Color32</code></p>
+<p>the color of selected header.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitableseparatorstyle">UITable.separatorStyle<a href="#uitableseparatorstyle" class="hash-link" aria-label="Direct link to UITable.separatorStyle" title="Direct link to UITable.separatorStyle">​</a></h3>
+<p><a href="#tableseparatorstyle">TableSeparatorStyle</a></p>
+<p>the style of separator.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablesupportdrag">UITable.supportDrag<a href="#uitablesupportdrag" class="hash-link" aria-label="Direct link to UITable.supportDrag" title="Direct link to UITable.supportDrag">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>whether the table support drag.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablesupportscroll">UITable.supportScroll<a href="#uitablesupportscroll" class="hash-link" aria-label="Direct link to UITable.supportScroll" title="Direct link to UITable.supportScroll">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the table support scroll.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitablesupportselect">UITable.supportSelect<a href="#uitablesupportselect" class="hash-link" aria-label="Direct link to UITable.supportSelect" title="Direct link to UITable.supportSelect">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>whether the table support select. select row, column, cell.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uitext">UIText<a href="#uitext" class="hash-link" aria-label="Direct link to UIText" title="Direct link to UIText">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<blockquote>
+<p>Since <code>v3.13.0</code></p>
+</blockquote>
+<p>ui component of text. UI文本组件。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitexttext">UIText.text<a href="#uitexttext" class="hash-link" aria-label="Direct link to UIText.text" title="Direct link to UIText.text">​</a></h3>
+<p><code>string</code></p>
+<p>The text content.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitexttextstyle">UIText.textStyle<a href="#uitexttextstyle" class="hash-link" aria-label="Direct link to UIText.textStyle" title="Direct link to UIText.textStyle">​</a></h3>
+<p><code>TextStyle</code></p>
+<p>The text style.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uitimepicker">UITimePicker<a href="#uitimepicker" class="hash-link" aria-label="Direct link to UITimePicker" title="Direct link to UITimePicker">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<p>时间选择UI组件。 输入或选择时间的控件。当用户需要输入一个时间，可以点击标准输入框，弹出时间面板进行选择。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggle">UIToggle<a href="#uitoggle" class="hash-link" aria-label="Direct link to UIToggle" title="Direct link to UIToggle">​</a></h2>
+<p>class in XCharts.Runtime.UI / Inherits from: <a href="https://xcharts-team.github.io/docs/configuration#uicomponent" target="_blank" rel="noopener noreferrer">UIComponent</a></p>
+<blockquote>
+<p>Since <code>v3.13.0</code></p>
+</blockquote>
+<p>ui component of toggle. UI开关组件。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggleborderstyle">UIToggle.borderStyle<a href="#uitoggleborderstyle" class="hash-link" aria-label="Direct link to UIToggle.borderStyle" title="Direct link to UIToggle.borderStyle">​</a></h3>
+<p><code>BorderStyle</code></p>
+<p>The border style of toggle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggleinteractable">UIToggle.interactable<a href="#uitoggleinteractable" class="hash-link" aria-label="Direct link to UIToggle.interactable" title="Direct link to UIToggle.interactable">​</a></h3>
+<p><code>bool</code> <code>true</code></p>
+<p>Whether the toggle is interactable.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggleison">UIToggle.isOn<a href="#uitoggleison" class="hash-link" aria-label="Direct link to UIToggle.isOn" title="Direct link to UIToggle.isOn">​</a></h3>
+<p><code>bool</code> <code>false</code></p>
+<p>Whether the toggle is on.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitogglelabelstyle">UIToggle.labelStyle<a href="#uitogglelabelstyle" class="hash-link" aria-label="Direct link to UIToggle.labelStyle" title="Direct link to UIToggle.labelStyle">​</a></h3>
+<p><code>LabelStyle</code></p>
+<p>The text style of toggle.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitogglemarkcolor">UIToggle.markColor<a href="#uitogglemarkcolor" class="hash-link" aria-label="Direct link to UIToggle.markColor" title="Direct link to UIToggle.markColor">​</a></h3>
+<p><code>Color32</code> <code>Color32(255, 255, 255, 255)</code></p>
+<p>The color of mark.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitogglemarkgap">UIToggle.markGap<a href="#uitogglemarkgap" class="hash-link" aria-label="Direct link to UIToggle.markGap" title="Direct link to UIToggle.markGap">​</a></h3>
+<p><code>float</code> <code>5f</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggleoffcolor">UIToggle.offColor<a href="#uitoggleoffcolor" class="hash-link" aria-label="Direct link to UIToggle.offColor" title="Direct link to UIToggle.offColor">​</a></h3>
+<p><code>Color32</code> <code>Color32(198, 198, 198, 255)</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggleoncolor">UIToggle.onColor<a href="#uitoggleoncolor" class="hash-link" aria-label="Direct link to UIToggle.onColor" title="Direct link to UIToggle.onColor">​</a></h3>
+<p><code>Color32</code> <code>Color32(83, 158, 241, 255)</code></p>
+<p>The color of toggle when it is on.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="uitoggletext">UIToggle.text<a href="#uitoggletext" class="hash-link" aria-label="Direct link to UIToggle.text" title="Direct link to UIToggle.text">​</a></h3>
+<p><code>string</code></p>
+<p>The text of toggle.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/XCharts-Team/XCharts/docs/ui/configuration.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/en/docs/ui/changelog"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Update Log</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/en/docs/ui/ui_statistic"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">UIStatistic</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#fillstyle" class="table-of-contents__link toc-highlight">FillStyle</a><ul><li><a href="#fillstyleautooffset" class="table-of-contents__link toc-highlight">FillStyle.autoOffset</a></li><li><a href="#fillstylebackground" class="table-of-contents__link toc-highlight">FillStyle.background</a></li><li><a href="#fillstylecolor" class="table-of-contents__link toc-highlight">FillStyle.color</a></li><li><a href="#fillstyleheight" class="table-of-contents__link toc-highlight">FillStyle.height</a></li><li><a href="#fillstylelocation" class="table-of-contents__link toc-highlight">FillStyle.location</a></li><li><a href="#fillstyleradius" class="table-of-contents__link toc-highlight">FillStyle.radius</a></li><li><a href="#fillstyleroundcap" class="table-of-contents__link toc-highlight">FillStyle.roundCap</a></li><li><a href="#fillstyleshow" class="table-of-contents__link toc-highlight">FillStyle.show</a></li><li><a href="#fillstyletocolor" class="table-of-contents__link toc-highlight">FillStyle.toColor</a></li><li><a href="#fillstylewidth" class="table-of-contents__link toc-highlight">FillStyle.width</a></li></ul></li><li><a href="#itablecell" class="table-of-contents__link toc-highlight">ITableCell</a></li><li><a href="#sliderhandlestyle" class="table-of-contents__link toc-highlight">SliderHandleStyle</a><ul><li><a href="#sliderhandlestylegradientcolor" class="table-of-contents__link toc-highlight">SliderHandleStyle.gradientColor</a></li><li><a href="#sliderhandlestyleshow" class="table-of-contents__link toc-highlight">SliderHandleStyle.show</a></li><li><a href="#sliderhandlestylesymbol" class="table-of-contents__link toc-highlight">SliderHandleStyle.symbol</a></li></ul></li><li><a href="#slidermarkstyle" class="table-of-contents__link toc-highlight">SliderMarkStyle</a><ul><li><a href="#slidermarkstyleincluded" class="table-of-contents__link toc-highlight">SliderMarkStyle.included</a></li><li><a href="#slidermarkstylelabel" class="table-of-contents__link toc-highlight">SliderMarkStyle.label</a></li><li><a href="#slidermarkstyleshow" class="table-of-contents__link toc-highlight">SliderMarkStyle.show</a></li><li><a href="#slidermarkstylesymbol" class="table-of-contents__link toc-highlight">SliderMarkStyle.symbol</a></li></ul></li><li><a href="#tablecarouselstyle" class="table-of-contents__link toc-highlight">TableCarouselStyle</a><ul><li><a href="#tablecarouselstylehoverpause" class="table-of-contents__link toc-highlight">TableCarouselStyle.hoverPause</a></li><li><a href="#tablecarouselstylemode" class="table-of-contents__link toc-highlight">TableCarouselStyle.mode</a></li><li><a href="#tablecarouselstylepause" class="table-of-contents__link toc-highlight">TableCarouselStyle.pause</a></li><li><a href="#tablecarouselstyleshow" class="table-of-contents__link toc-highlight">TableCarouselStyle.show</a></li><li><a href="#tablecarouselstylespeed" class="table-of-contents__link toc-highlight">TableCarouselStyle.speed</a></li><li><a href="#tablecarouselstyletype" class="table-of-contents__link toc-highlight">TableCarouselStyle.type</a></li><li><a href="#tablecarouselstylewaittime" class="table-of-contents__link toc-highlight">TableCarouselStyle.waitTime</a></li></ul></li><li><a href="#tablecell" class="table-of-contents__link toc-highlight">TableCell</a><ul><li><a href="#tablecellboolvalue" class="table-of-contents__link toc-highlight">TableCell.boolValue</a></li><li><a href="#tablecelldoublevalue" class="table-of-contents__link toc-highlight">TableCell.doubleValue</a></li><li><a href="#tablecellgameobjectvalue" class="table-of-contents__link toc-highlight">TableCell.gameObjectValue</a></li><li><a href="#tablecellshow" class="table-of-contents__link toc-highlight">TableCell.show</a></li><li><a href="#tablecellspritevalue" class="table-of-contents__link toc-highlight">TableCell.spriteValue</a></li><li><a href="#tablecellstringvalue" class="table-of-contents__link toc-highlight">TableCell.stringValue</a></li><li><a href="#tablecelltype" class="table-of-contents__link toc-highlight">TableCell.type</a></li></ul></li><li><a href="#tablecolumn" class="table-of-contents__link toc-highlight">TableColumn</a><ul><li><a href="#tablecolumncontent" class="table-of-contents__link toc-highlight">TableColumn.content</a></li><li><a href="#tablecolumndatalabelstyle" class="table-of-contents__link toc-highlight">TableColumn.dataLabelStyle</a></li><li><a href="#tablecolumnheaderlabelstyle" class="table-of-contents__link toc-highlight">TableColumn.headerLabelStyle</a></li><li><a href="#tablecolumnshow" class="table-of-contents__link toc-highlight">TableColumn.show</a></li><li><a href="#tablecolumnwidth" class="table-of-contents__link toc-highlight">TableColumn.width</a></li></ul></li><li><a href="#tablecolumnheaderstyle" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle</a><ul><li><a href="#tablecolumnheaderstylebackground" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.background</a></li><li><a href="#tablecolumnheaderstylebackgroundcolor" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.backgroundColor</a></li><li><a href="#tablecolumnheaderstyleborderstyle" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.borderStyle</a></li><li><a href="#tablecolumnheaderstyledefaultlabelstyle" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.defaultLabelStyle</a></li><li><a href="#tablecolumnheaderstyleheight" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.height</a></li><li><a href="#tablecolumnheaderstyleopaque" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.opaque</a></li><li><a href="#tablecolumnheaderstyleshow" class="table-of-contents__link toc-highlight">TableColumnHeaderStyle.show</a></li></ul></li><li><a href="#tablecolumnstyle" class="table-of-contents__link toc-highlight">TableColumnStyle</a><ul><li><a href="#tablecolumnstylecolumnbackgroundcolors" class="table-of-contents__link toc-highlight">TableColumnStyle.columnBackgroundColors</a></li><li><a href="#tablecolumnstylecolumnwidth" class="table-of-contents__link toc-highlight">TableColumnStyle.columnWidth</a></li><li><a href="#tablecolumnstyledefaultlabelstyle" class="table-of-contents__link toc-highlight">TableColumnStyle.defaultLabelStyle</a></li><li><a href="#tablecolumnstylemincolumnwidth" class="table-of-contents__link toc-highlight">TableColumnStyle.minColumnWidth</a></li><li><a href="#tablecolumnstyleshow" class="table-of-contents__link toc-highlight">TableColumnStyle.show</a></li></ul></li><li><a href="#tablerow" class="table-of-contents__link toc-highlight">TableRow</a><ul><li><a href="#tablerowdata" class="table-of-contents__link toc-highlight">TableRow.data</a></li><li><a href="#tablerowheight" class="table-of-contents__link toc-highlight">TableRow.height</a></li><li><a href="#tablerowname" class="table-of-contents__link toc-highlight">TableRow.name</a></li><li><a href="#tablerowshow" class="table-of-contents__link toc-highlight">TableRow.show</a></li></ul></li><li><a href="#tablerowheaderstyle" class="table-of-contents__link toc-highlight">TableRowHeaderStyle</a><ul><li><a href="#tablerowheaderstylebackgroundcolor" class="table-of-contents__link toc-highlight">TableRowHeaderStyle.backgroundColor</a></li><li><a href="#tablerowheaderstylelabelstyle" class="table-of-contents__link toc-highlight">TableRowHeaderStyle.labelStyle</a></li><li><a href="#tablerowheaderstyleshow" class="table-of-contents__link toc-highlight">TableRowHeaderStyle.show</a></li><li><a href="#tablerowheaderstylewidth" class="table-of-contents__link toc-highlight">TableRowHeaderStyle.width</a></li></ul></li><li><a href="#tablerowstyle" class="table-of-contents__link toc-highlight">TableRowStyle</a><ul><li><a href="#tablerowstyleborderstyle" class="table-of-contents__link toc-highlight">TableRowStyle.borderStyle</a></li><li><a href="#tablerowstyleminrowheight" class="table-of-contents__link toc-highlight">TableRowStyle.minRowHeight</a></li><li><a href="#tablerowstylerowbackgroundcolors" class="table-of-contents__link toc-highlight">TableRowStyle.rowBackgroundColors</a></li><li><a href="#tablerowstylerowgap" class="table-of-contents__link toc-highlight">TableRowStyle.rowGap</a></li><li><a href="#tablerowstylerowheight" class="table-of-contents__link toc-highlight">TableRowStyle.rowHeight</a></li><li><a href="#tablerowstyleshow" class="table-of-contents__link toc-highlight">TableRowStyle.show</a></li></ul></li><li><a href="#tablescrollbarstyle" class="table-of-contents__link toc-highlight">TableScrollbarStyle</a><ul><li><a href="#tablescrollbarstylebackgroundcolor" class="table-of-contents__link toc-highlight">TableScrollbarStyle.backgroundColor</a></li><li><a href="#tablescrollbarstyleborderstyle" class="table-of-contents__link toc-highlight">TableScrollbarStyle.borderStyle</a></li><li><a href="#tablescrollbarstylecolor" class="table-of-contents__link toc-highlight">TableScrollbarStyle.color</a></li><li><a href="#tablescrollbarstylehorizontal" class="table-of-contents__link toc-highlight">TableScrollbarStyle.horizontal</a></li><li><a href="#tablescrollbarstyleshow" class="table-of-contents__link toc-highlight">TableScrollbarStyle.show</a></li><li><a href="#tablescrollbarstylevertical" class="table-of-contents__link toc-highlight">TableScrollbarStyle.vertical</a></li><li><a href="#tablescrollbarstylewidth" class="table-of-contents__link toc-highlight">TableScrollbarStyle.width</a></li></ul></li><li><a href="#tableseparatorstyle" class="table-of-contents__link toc-highlight">TableSeparatorStyle</a><ul><li><a href="#tableseparatorstylehorizontal" class="table-of-contents__link toc-highlight">TableSeparatorStyle.horizontal</a></li><li><a href="#tableseparatorstylehorizontalcolor" class="table-of-contents__link toc-highlight">TableSeparatorStyle.horizontalColor</a></li><li><a href="#tableseparatorstylehorizontalcolumn" class="table-of-contents__link toc-highlight">TableSeparatorStyle.horizontalColumn</a></li><li><a href="#tableseparatorstylehorizontalwidth" class="table-of-contents__link toc-highlight">TableSeparatorStyle.horizontalWidth</a></li><li><a href="#tableseparatorstyleshow" class="table-of-contents__link toc-highlight">TableSeparatorStyle.show</a></li><li><a href="#tableseparatorstylevertical" class="table-of-contents__link toc-highlight">TableSeparatorStyle.vertical</a></li><li><a href="#tableseparatorstyleverticalcolor" class="table-of-contents__link toc-highlight">TableSeparatorStyle.verticalColor</a></li><li><a href="#tableseparatorstyleverticalcolumn" class="table-of-contents__link toc-highlight">TableSeparatorStyle.verticalColumn</a></li><li><a href="#tableseparatorstyleverticalwidth" class="table-of-contents__link toc-highlight">TableSeparatorStyle.verticalWidth</a></li></ul></li><li><a href="#uiimage" class="table-of-contents__link toc-highlight">UIImage</a></li><li><a href="#uislider" class="table-of-contents__link toc-highlight">UISlider</a><ul><li><a href="#uisliderfillstyle" class="table-of-contents__link toc-highlight">UISlider.fillStyle</a></li><li><a href="#uisliderhandlestyle" class="table-of-contents__link toc-highlight">UISlider.handleStyle</a></li><li><a href="#uisliderinteractable" class="table-of-contents__link toc-highlight">UISlider.interactable</a></li><li><a href="#uislidermarknames" class="table-of-contents__link toc-highlight">UISlider.markNames</a></li><li><a href="#uislidermarkstyle" class="table-of-contents__link toc-highlight">UISlider.markStyle</a></li><li><a href="#uislidermarkvalues" class="table-of-contents__link toc-highlight">UISlider.markValues</a></li><li><a href="#uislidermax" class="table-of-contents__link toc-highlight">UISlider.max</a></li><li><a href="#uislidermin" class="table-of-contents__link toc-highlight">UISlider.min</a></li><li><a href="#uisliderstep" class="table-of-contents__link toc-highlight">UISlider.step</a></li><li><a href="#uislidervalue" class="table-of-contents__link toc-highlight">UISlider.value</a></li><li><a href="#uislidervaluetype" class="table-of-contents__link toc-highlight">UISlider.valueType</a></li></ul></li><li><a href="#uistatistic" class="table-of-contents__link toc-highlight">UIStatistic</a><ul><li><a href="#uistatisticanimationstyle" class="table-of-contents__link toc-highlight">UIStatistic.animationStyle</a></li><li><a href="#uistatisticitemgap" class="table-of-contents__link toc-highlight">UIStatistic.itemGap</a></li><li><a href="#uistatisticlocation" class="table-of-contents__link toc-highlight">UIStatistic.location</a></li><li><a href="#uistatistictitle" class="table-of-contents__link toc-highlight">UIStatistic.title</a></li><li><a href="#uistatistictitlelabelstyle" class="table-of-contents__link toc-highlight">UIStatistic.titleLabelStyle</a></li><li><a href="#uistatistictype" class="table-of-contents__link toc-highlight">UIStatistic.type</a></li><li><a href="#uistatisticvalue" class="table-of-contents__link toc-highlight">UIStatistic.value</a></li><li><a href="#uistatisticvaluelabelstyle" class="table-of-contents__link toc-highlight">UIStatistic.valueLabelStyle</a></li></ul></li><li><a href="#uitable" class="table-of-contents__link toc-highlight">UITable</a><ul><li><a href="#uitableborderstyle" class="table-of-contents__link toc-highlight">UITable.borderStyle</a></li><li><a href="#uitablecarouselstyle" class="table-of-contents__link toc-highlight">UITable.carouselStyle</a></li><li><a href="#uitablecolumnheaderstyle" class="table-of-contents__link toc-highlight">UITable.columnHeaderStyle</a></li><li><a href="#uitablecolumns" class="table-of-contents__link toc-highlight">UITable.columns</a></li><li><a href="#uitablecolumnstyle" class="table-of-contents__link toc-highlight">UITable.columnStyle</a></li><li><a href="#uitabledata" class="table-of-contents__link toc-highlight">UITable.data</a></li><li><a href="#uitablerowheaderstyle" class="table-of-contents__link toc-highlight">UITable.rowHeaderStyle</a></li><li><a href="#uitablerowstyle" class="table-of-contents__link toc-highlight">UITable.rowStyle</a></li><li><a href="#uitablescrollbarstyle" class="table-of-contents__link toc-highlight">UITable.scrollbarStyle</a></li><li><a href="#uitablescrollsensitivity" class="table-of-contents__link toc-highlight">UITable.scrollSensitivity</a></li><li><a href="#uitableselectcolor" class="table-of-contents__link toc-highlight">UITable.selectColor</a></li><li><a href="#uitableselectheadercolor" class="table-of-contents__link toc-highlight">UITable.selectHeaderColor</a></li><li><a href="#uitableseparatorstyle" class="table-of-contents__link toc-highlight">UITable.separatorStyle</a></li><li><a href="#uitablesupportdrag" class="table-of-contents__link toc-highlight">UITable.supportDrag</a></li><li><a href="#uitablesupportscroll" class="table-of-contents__link toc-highlight">UITable.supportScroll</a></li><li><a href="#uitablesupportselect" class="table-of-contents__link toc-highlight">UITable.supportSelect</a></li></ul></li><li><a href="#uitext" class="table-of-contents__link toc-highlight">UIText</a><ul><li><a href="#uitexttext" class="table-of-contents__link toc-highlight">UIText.text</a></li><li><a href="#uitexttextstyle" class="table-of-contents__link toc-highlight">UIText.textStyle</a></li></ul></li><li><a href="#uitimepicker" class="table-of-contents__link toc-highlight">UITimePicker</a></li><li><a href="#uitoggle" class="table-of-contents__link toc-highlight">UIToggle</a><ul><li><a href="#uitoggleborderstyle" class="table-of-contents__link toc-highlight">UIToggle.borderStyle</a></li><li><a href="#uitoggleinteractable" class="table-of-contents__link toc-highlight">UIToggle.interactable</a></li><li><a href="#uitoggleison" class="table-of-contents__link toc-highlight">UIToggle.isOn</a></li><li><a href="#uitogglelabelstyle" class="table-of-contents__link toc-highlight">UIToggle.labelStyle</a></li><li><a href="#uitogglemarkcolor" class="table-of-contents__link toc-highlight">UIToggle.markColor</a></li><li><a href="#uitogglemarkgap" class="table-of-contents__link toc-highlight">UIToggle.markGap</a></li><li><a href="#uitoggleoffcolor" class="table-of-contents__link toc-highlight">UIToggle.offColor</a></li><li><a href="#uitoggleoncolor" class="table-of-contents__link toc-highlight">UIToggle.onColor</a></li><li><a href="#uitoggletext" class="table-of-contents__link toc-highlight">UIToggle.text</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/en/docs/tutorial01">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discordapp.com/invite/XCharts" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/monitor1394" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://gitee.com/monitor1394/unity-ugui-XCharts" target="_blank" rel="noopener noreferrer" class="footer__link-item">Gitee<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/XCharts-Team/XCharts" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 XCharts, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
