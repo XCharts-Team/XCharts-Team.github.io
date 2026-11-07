@@ -4,8 +4,8 @@
   <ShortName>XCharts</ShortName>
   <Description>Search XCharts</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://github.com/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://github.com/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://github.com/opensearch.xml" />
-  <moz:SearchForm>https://github.com/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://xcharts-team.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://xcharts-team.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://xcharts-team.github.io/opensearch.xml" />
+  <moz:SearchForm>https://xcharts-team.github.io/</moz:SearchForm>
 </OpenSearchDescription>
