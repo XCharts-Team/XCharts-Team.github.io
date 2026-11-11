@@ -2,9 +2,14 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Release version shown in the navbar and on the homepage.
+// Keep in sync with XCharts/Assets/XCharts/package.json when publishing.
+const XCHARTS_VERSION = '3.15.0';
+
 const config: Config = {
   title: 'XCharts',
-  tagline: 'tagline',
+  titleDelimiter: '·',
+  tagline: 'Unity 数据可视化图表库',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,6 +25,10 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  customFields: {
+    version: XCHARTS_VERSION,
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -67,17 +76,52 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en', 'zh'],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        docsRouteBasePath: '/docs',
+        searchBarShortcut: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 60,
+      },
+    ],
+  ],
+
   themeConfig: {
     image: 'img/xcharts-social-card.png',
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    metadata: [
+      {
+        name: 'keywords',
+        content:
+          'XCharts, Unity, UGUI, 图表, 数据可视化, chart, unity chart, unitypackage',
+      },
+    ],
     navbar: {
       title: 'XCharts',
       logo: {
         alt: 'XCharts Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-mark.png',
+        srcDark: 'img/logo-mark-dark.png',
       },
       items: [
-        { to: '/docs/changelog#v3140', label: 'v3.15.0', position: 'left' },
-        // { type: 'search', position: 'right' },
+        {
+          to: '/docs/changelog#v3150',
+          label: `v${XCHARTS_VERSION}`,
+          position: 'left',
+          className: 'navbar-version',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -104,54 +148,54 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/tutorial01',
-            },
+            {label: 'Tutorial', to: '/docs/tutorial01'},
+            {label: 'Configuration', to: '/docs/configuration'},
+            {label: 'API Reference', to: '/docs/api'},
+            {label: 'FAQ', to: '/docs/faq'},
+          ],
+        },
+        {
+          title: 'Charts',
+          items: [
+            {label: 'Extra Charts', to: '/docs/category/extra-charts'},
+            {label: 'Extra UI', to: '/docs/ui'},
+            {label: 'Changelog', to: '/docs/changelog'},
+            {label: 'About XCharts', to: '/docs/about'},
           ],
         },
         {
           title: 'Community',
           items: [
-            // {
-            //   label: 'QQ Group',
-            //   href: 'https://stackoverflow.com/questions/tagged/XCharts',
-            // },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/XCharts',
+              label: 'GitHub Issues',
+              href: 'https://github.com/XCharts-Team/XCharts/issues',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/monitor1394',
+              label: 'Gitee',
+              href: 'https://gitee.com/monitor1394/unity-ugui-XCharts',
+            },
+            {
+              label: 'Support',
+              to: '/docs/support',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Gitee',
-              href: 'https://gitee.com/monitor1394/unity-ugui-XCharts',
-            },
+            {label: 'Blog', to: '/blog'},
             {
               label: 'GitHub',
               href: 'https://github.com/XCharts-Team/XCharts',
             },
+            {
+              label: 'Releases',
+              href: 'https://github.com/XCharts-Team/XCharts/releases',
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} XCharts, Inc. Built with Docusaurus.`,
-    },
-    algolia: {
-      appId: '6YGEX22RUU',
-      apiKey: '15066da00423facdeb39bd6e082db68c',
-      indexName: 'xcharts-teamio',
-      // See https://docusaurus.io/docs/search#contextual-search
-      contextualSearch: true,
-      // searchParameters: {
-      //   facetFilters: [`language:${DefaultLocale}`]
-      // },
+      copyright: `Copyright © ${new Date().getFullYear()} XCharts. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

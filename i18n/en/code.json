@@ -1,11 +1,11 @@
 {
-  "theme.text.Docs":{
+  "theme.text.Docs": {
     "message": "Docs"
   },
-  "theme.text.Demo":{
+  "theme.text.Demo": {
     "message": "Demo"
   },
-  "theme.text.Blog":{
+  "theme.text.Blog": {
     "message": "Blog"
   },
   "theme.text.More": {
@@ -15,27 +15,321 @@
     "message": "Community"
   },
   "tagline": {
-    "message": "A charting and data visualization library for Unity."
+    "message": "A data visualization library for Unity"
   },
   "tutorial.5min": {
-    "message": "XCharts Tutorial - 5min ⏱️"
+    "message": "XCharts Tutorial — 5 min"
   },
   "feature1.title": {
-    "message": "Easy to Use"
+    "message": "Ready out of the box"
   },
   "feature1.desc": {
-    "message": "XCharts is committed to providing Unity developers and creatives with a powerful yet simple-to-use chart library for quickly implementing a variety of chart effects."
+    "message": "Attach a chart component, fill in your data, and render in UGUI. No extra textures, materials or shaders."
   },
   "feature2.title": {
     "message": "Powerful"
   },
   "feature2.desc": {
-    "message": "XCharts supports line, bar, pie, radar, scatter, heatmap, ring, candlestick, polar, parallel coordinates,3d line, 3d pie, 3d bar, 3d pyramid, funnel, gauge, liquid, pictorialbar, gantt, treemap, sankey and graph chart."
+    "message": "20+ chart types, multiple coordinate systems and rich components, with sampling for large datasets and chart composition."
   },
   "feature3.title": {
-    "message": "Configurable"
+    "message": "Fully customizable"
   },
   "feature3.desc": {
-    "message": "XCharts offers a wealth of components and configuration options, supporting customization of chart effects and expansion of chart types through various aspects such as configuration and code."
+    "message": "Themes, JSON, code and custom drawing — reshape everything from colors to brand-new chart types."
+  },
+  "feature1.tag1": {
+    "message": "Inspector setup"
+  },
+  "feature1.tag2": {
+    "message": "Live preview"
+  },
+  "feature1.tag3": {
+    "message": "Zero assets"
+  },
+  "feature2.tag1": {
+    "message": "20+ charts"
+  },
+  "feature2.tag2": {
+    "message": "Multi-axis"
+  },
+  "feature2.tag3": {
+    "message": "Large datasets"
+  },
+  "feature3.tag1": {
+    "message": "Light & dark"
+  },
+  "feature3.tag2": {
+    "message": "JSON I/O"
+  },
+  "feature3.tag3": {
+    "message": "Custom drawing"
+  },
+  "home.meta.title": {
+    "message": "Unity Data Visualization Library"
+  },
+  "home.meta.description": {
+    "message": "XCharts is a pure-code charting library for Unity UGUI with 20+ chart types, visual configuration, JSON support and an MIT license."
+  },
+  "home.hero.titlePrefix": {
+    "message": "Beautiful charts,"
+  },
+  "home.hero.titleHighlight": {
+    "message": "built for Unity"
+  },
+  "home.hero.titleSuffix": {
+    "message": ""
+  },
+  "home.hero.subtitle": {
+    "message": "Pure-code rendering, 20+ chart types, visual configuration and JSON — build production-ready charts in UGUI, fast."
+  },
+  "home.hero.ctaStart": {
+    "message": "5-minute tutorial"
+  },
+  "home.hero.ctaDemo": {
+    "message": "Live demo"
+  },
+  "home.hero.copy": {
+    "message": "Copy"
+  },
+  "home.hero.copied": {
+    "message": "Copied"
+  },
+  "home.hero.copyAria": {
+    "message": "Copy install URL"
+  },
+  "home.hero.note": {
+    "message": "MIT licensed · Pure-code rendering · TextMeshPro / Input System ready"
+  },
+  "home.stats.aria": {
+    "message": "XCharts at a glance"
+  },
+  "home.stats.charts.value": {
+    "message": "20+"
+  },
+  "home.stats.charts.label": {
+    "message": "Chart types"
+  },
+  "home.stats.time.value": {
+    "message": "5 min"
+  },
+  "home.stats.time.label": {
+    "message": "To get started"
+  },
+  "home.stats.assets.value": {
+    "message": "0"
+  },
+  "home.stats.assets.label": {
+    "message": "Extra textures / shaders"
+  },
+  "home.stats.license.value": {
+    "message": "MIT"
+  },
+  "home.stats.license.label": {
+    "message": "Open-source license"
+  },
+  "home.features.eyebrow": {
+    "message": "Why XCharts"
+  },
+  "home.features.title": {
+    "message": "Simple, powerful, yours to shape"
+  },
+  "home.features.subtitle": {
+    "message": "From a single data point to a full dashboard, XCharts covers every step."
+  },
+  "home.gallery.eyebrow": {
+    "message": "Chart types"
+  },
+  "home.gallery.title": {
+    "message": "Every chart you would expect"
+  },
+  "home.gallery.subtitle": {
+    "message": "From basic lines to 3D visuals, one API for all of them."
+  },
+  "home.gallery.filter": {
+    "message": "Filter chart types"
+  },
+  "home.gallery.all": {
+    "message": "All"
+  },
+  "home.gallery.builtin": {
+    "message": "Built-in"
+  },
+  "home.gallery.extra": {
+    "message": "Extensions"
+  },
+  "home.gallery.tag.builtin": {
+    "message": "Built-in"
+  },
+  "home.gallery.tag.extra": {
+    "message": "Extension"
+  },
+  "home.gallery.more": {
+    "message": "Also supports candlestick, heatmap, Gantt, Sankey and 20+ chart types."
+  },
+  "home.gallery.cta": {
+    "message": "Explore all charts in the demo"
+  },
+  "home.chart.line": {
+    "message": "Line"
+  },
+  "home.chart.bar": {
+    "message": "Bar"
+  },
+  "home.chart.pie": {
+    "message": "Pie / Donut"
+  },
+  "home.chart.radar": {
+    "message": "Radar"
+  },
+  "home.chart.gauge": {
+    "message": "Gauge"
+  },
+  "home.chart.funnel": {
+    "message": "Funnel"
+  },
+  "home.chart.treemap": {
+    "message": "Treemap"
+  },
+  "home.chart.pie3d": {
+    "message": "3D Pie"
+  },
+  "home.code.eyebrow": {
+    "message": "Developer experience"
+  },
+  "home.code.title": {
+    "message": "Code, JSON or Inspector — your call"
+  },
+  "home.code.subtitle": {
+    "message": "Update data at runtime, or hand configuration to designers. XCharts handles both."
+  },
+  "home.code.benefit1": {
+    "message": "Pure C# API, no third-party runtime dependencies"
+  },
+  "home.code.benefit2": {
+    "message": "Update data and styles at runtime"
+  },
+  "home.code.benefit3": {
+    "message": "Import and export JSON for your toolchain"
+  },
+  "home.code.benefit4": {
+    "message": "Light and dark themes included"
+  },
+  "home.code.cta": {
+    "message": "API reference"
+  },
+  "home.support.eyebrow": {
+    "message": "Get support"
+  },
+  "home.support.title": {
+    "message": "Open source to commercial, your choice"
+  },
+  "home.support.subtitle": {
+    "message": "Core features are free forever. Subscribe when you need extra charts or one-on-one help."
+  },
+  "home.support.oss.title": {
+    "message": "Open source"
+  },
+  "home.support.oss.price": {
+    "message": "Free"
+  },
+  "home.support.oss.desc": {
+    "message": "Everything most projects and teams need."
+  },
+  "home.support.oss.item1": {
+    "message": "All built-in charts and components"
+  },
+  "home.support.oss.item2": {
+    "message": "Full C# source"
+  },
+  "home.support.oss.item3": {
+    "message": "MIT license"
+  },
+  "home.support.oss.item4": {
+    "message": "Community support on GitHub Issues"
+  },
+  "home.support.oss.cta": {
+    "message": "Get started"
+  },
+  "home.support.pro.badge": {
+    "message": "Recommended"
+  },
+  "home.support.pro.title": {
+    "message": "Subscription"
+  },
+  "home.support.pro.price": {
+    "message": "On demand"
+  },
+  "home.support.pro.desc": {
+    "message": "Unlock extension charts and priority support."
+  },
+  "home.support.pro.item1": {
+    "message": "Extension charts and components"
+  },
+  "home.support.pro.item2": {
+    "message": "Priority technical support"
+  },
+  "home.support.pro.item3": {
+    "message": "One-on-one consulting"
+  },
+  "home.support.pro.item4": {
+    "message": "Custom development and licensing"
+  },
+  "home.support.pro.cta": {
+    "message": "View plans"
+  },
+  "home.heroVisual.eyebrow": {
+    "message": "Live data"
+  },
+  "home.heroVisual.title": {
+    "message": "Weekly active users"
+  },
+  "home.heroVisual.active": {
+    "message": "Active"
+  },
+  "home.heroVisual.new": {
+    "message": "New"
+  },
+  "home.heroVisual.range": {
+    "message": "Last 7 days"
+  },
+  "home.heroVisual.weekdays": {
+    "message": "Mon Tue Wed Thu Fri Sat Sun"
+  },
+  "home.heroVisual.tooltipLabel": {
+    "message": "Thu · Active users"
+  },
+  "home.heroVisual.floatCharts": {
+    "message": "chart types"
+  },
+  "home.heroVisual.floatConfig": {
+    "message": "ready to use"
+  },
+  "home.code.copy": {
+    "message": "Copy code"
+  },
+  "home.code.copied": {
+    "message": "Copied"
+  },
+  "home.code.copyAria": {
+    "message": "Copy the code sample"
+  },
+  "home.code.sample": {
+    "message": "// Create a line chart on a Canvas object\nvar chart = gameObject.AddComponent<LineChart>();\nchart.Init();\nchart.SetSize(580, 300);\n\nchart.AddXAxisData(\"Mon\");\nchart.AddXAxisData(\"Tue\");\nchart.AddXAxisData(\"Wed\");\n\nchart.AddData(0, 120);\nchart.AddData(0, 200);\nchart.AddData(0, 150);"
+  },
+  "home.chart.pie.center": {
+    "message": "Active share"
+  },
+  "examples.error.title": {
+    "message": "Demo failed to load"
+  },
+  "examples.error.desc": {
+    "message": "Check your connection and refresh, or download XCharts to try it locally."
+  },
+  "examples.error.cta": {
+    "message": "Download XCharts"
+  },
+  "examples.fullscreen": {
+    "message": "Full screen"
   }
 }

@@ -2,6 +2,9 @@
   "link.title.Docs": {
     "message": "文档"
   },
+  "link.title.Charts": {
+    "message": "图表"
+  },
   "link.title.Community": {
     "message": "社区"
   },
@@ -9,6 +12,45 @@
     "message": "更多"
   },
   "link.item.label.Tutorial": {
-    "message": "教程"
+    "message": "5 分钟教程"
+  },
+  "link.item.label.Configuration": {
+    "message": "配置项手册"
+  },
+  "link.item.label.API Reference": {
+    "message": "API 手册"
+  },
+  "link.item.label.FAQ": {
+    "message": "常见问题"
+  },
+  "link.item.label.Extra Charts": {
+    "message": "扩展图表"
+  },
+  "link.item.label.Extra UI": {
+    "message": "扩展组件"
+  },
+  "link.item.label.Changelog": {
+    "message": "更新日志"
+  },
+  "link.item.label.About XCharts": {
+    "message": "关于 XCharts"
+  },
+  "link.item.label.GitHub Issues": {
+    "message": "GitHub Issues"
+  },
+  "link.item.label.Gitee": {
+    "message": "Gitee"
+  },
+  "link.item.label.Support": {
+    "message": "订阅服务"
+  },
+  "link.item.label.Blog": {
+    "message": "博客"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Releases": {
+    "message": "版本发布"
   }
 }

@@ -1,26 +1,320 @@
 {
   "tagline": {
-    "message": "Unity数据可视化图表插件。"
+    "message": "Unity 数据可视化图表库"
   },
   "tutorial.5min": {
-    "message": "五分钟教程 ⏱️"
+    "message": "5 分钟快速上手"
   },
   "feature1.title": {
-    "message": "简单易用"
+    "message": "开箱即用"
   },
   "feature1.desc": {
-    "message": "XCharts致力于为Unity开发人员和创意人员提供一套强大且足够简单易用的图表库，用来快速实现各种图表效果。"
+    "message": "挂载图表组件、填入数据，即可在 UGUI 中渲染。无需额外贴图、材质或 Shader。"
   },
   "feature2.title": {
     "message": "功能强大"
   },
   "feature2.desc": {
-    "message": "XCharts支持折线图、柱状图、饼图、雷达图、散点图、热力图、环形图、K线图、极坐标、平行坐标等十几种内置图表；3D饼图、3D柱图、3D金字塔、漏斗图、仪表盘、水位图、象形柱图、甘特图、矩形树图、桑基图、3D折线图、关系图等十几种扩展图表。"
+    "message": "20+ 图表类型、多种坐标系与丰富组件，支持大数据量采样渲染和多图表组合。"
   },
   "feature3.title": {
-    "message": "任意定制"
+    "message": "自由定制"
   },
   "feature3.desc": {
-    "message": "XCharts提供了丰富的组件和配置选项，支持从配置和代码等多方面定制图表效果，扩展图表类型。"
+    "message": "主题、JSON、代码与自定义绘制四条路径，从配色到扩展图表都能按需改造。"
+  },
+  "feature1.tag1": {
+    "message": "Inspector 配置"
+  },
+  "feature1.tag2": {
+    "message": "实时预览"
+  },
+  "feature1.tag3": {
+    "message": "零资源依赖"
+  },
+  "feature2.tag1": {
+    "message": "20+ 图表"
+  },
+  "feature2.tag2": {
+    "message": "多坐标系"
+  },
+  "feature2.tag3": {
+    "message": "大数据量"
+  },
+  "feature3.tag1": {
+    "message": "明暗主题"
+  },
+  "feature3.tag2": {
+    "message": "JSON 导入导出"
+  },
+  "feature3.tag3": {
+    "message": "自定义绘制"
+  },
+  "home.meta.title": {
+    "message": "Unity 数据可视化图表库"
+  },
+  "home.meta.description": {
+    "message": "XCharts 是面向 Unity UGUI 的纯代码图表库，支持折线图、柱状图、饼图、雷达图等 20+ 图表类型，可视化配置、JSON 驱动，MIT 开源。"
+  },
+  "home.hero.titlePrefix": {
+    "message": "为 Unity 打造的"
+  },
+  "home.hero.titleHighlight": {
+    "message": "数据可视化"
+  },
+  "home.hero.titleSuffix": {
+    "message": "图表库"
+  },
+  "home.hero.subtitle": {
+    "message": "纯代码绘制 · 20+ 图表类型 · 可视化配置与 JSON 驱动，帮你在 UGUI 中快速搭建专业级图表。"
+  },
+  "home.hero.ctaStart": {
+    "message": "5 分钟快速上手"
+  },
+  "home.hero.ctaDemo": {
+    "message": "在线 Demo"
+  },
+  "home.hero.copy": {
+    "message": "复制"
+  },
+  "home.hero.copied": {
+    "message": "已复制"
+  },
+  "home.hero.copyAria": {
+    "message": "复制安装地址"
+  },
+  "home.hero.note": {
+    "message": "MIT 开源 · 纯代码渲染 · 兼容 TextMeshPro / Input System"
+  },
+  "home.stats.aria": {
+    "message": "XCharts 概览"
+  },
+  "home.stats.charts.value": {
+    "message": "20+"
+  },
+  "home.stats.charts.label": {
+    "message": "图表类型"
+  },
+  "home.stats.time.value": {
+    "message": "5 分钟"
+  },
+  "home.stats.time.label": {
+    "message": "上手时间"
+  },
+  "home.stats.assets.value": {
+    "message": "0"
+  },
+  "home.stats.assets.label": {
+    "message": "额外贴图 / Shader"
+  },
+  "home.stats.license.value": {
+    "message": "MIT"
+  },
+  "home.stats.license.label": {
+    "message": "开源协议"
+  },
+  "home.features.eyebrow": {
+    "message": "为什么选择 XCharts"
+  },
+  "home.features.title": {
+    "message": "简单，强大，随你定制"
+  },
+  "home.features.subtitle": {
+    "message": "从一行数据到一整套数据看板，XCharts 覆盖你需要的每一个环节。"
+  },
+  "home.gallery.eyebrow": {
+    "message": "图表类型"
+  },
+  "home.gallery.title": {
+    "message": "覆盖常见的数据表达"
+  },
+  "home.gallery.subtitle": {
+    "message": "从基础折线到 3D 可视化，同一套 API 全部搞定。"
+  },
+  "home.gallery.filter": {
+    "message": "筛选图表类型"
+  },
+  "home.gallery.all": {
+    "message": "全部"
+  },
+  "home.gallery.builtin": {
+    "message": "内置图表"
+  },
+  "home.gallery.extra": {
+    "message": "扩展图表"
+  },
+  "home.gallery.tag.builtin": {
+    "message": "内置"
+  },
+  "home.gallery.tag.extra": {
+    "message": "扩展"
+  },
+  "home.gallery.more": {
+    "message": "还支持 K 线、热力、甘特、桑基等 20+ 图表类型。"
+  },
+  "home.gallery.cta": {
+    "message": "在 Demo 中体验全部图表"
+  },
+  "home.chart.line": {
+    "message": "折线图"
+  },
+  "home.chart.bar": {
+    "message": "柱状图"
+  },
+  "home.chart.pie": {
+    "message": "饼图 / 环形图"
+  },
+  "home.chart.radar": {
+    "message": "雷达图"
+  },
+  "home.chart.gauge": {
+    "message": "仪表盘"
+  },
+  "home.chart.funnel": {
+    "message": "漏斗图"
+  },
+  "home.chart.treemap": {
+    "message": "矩形树图"
+  },
+  "home.chart.pie3d": {
+    "message": "3D 饼图"
+  },
+  "home.code.eyebrow": {
+    "message": "开发者体验"
+  },
+  "home.code.title": {
+    "message": "代码、JSON、Inspector，三种方式随你选"
+  },
+  "home.code.subtitle": {
+    "message": "无论是运行时动态更新，还是把配置交给策划同学，XCharts 都能接得住。"
+  },
+  "home.code.benefit1": {
+    "message": "纯 C# API，无第三方运行时依赖"
+  },
+  "home.code.benefit2": {
+    "message": "运行时动态更新数据与样式"
+  },
+  "home.code.benefit3": {
+    "message": "JSON 配置导入导出，方便接入工具链"
+  },
+  "home.code.benefit4": {
+    "message": "浅色 / 深色主题开箱即用"
+  },
+  "home.code.cta": {
+    "message": "查看 API 手册"
+  },
+  "home.support.eyebrow": {
+    "message": "获取支持"
+  },
+  "home.support.title": {
+    "message": "从开源到商业，按需选择"
+  },
+  "home.support.subtitle": {
+    "message": "核心功能永久免费；需要扩展图表或一对一支持时，可以订阅 XCharts 服务。"
+  },
+  "home.support.oss.title": {
+    "message": "开源版"
+  },
+  "home.support.oss.price": {
+    "message": "免费"
+  },
+  "home.support.oss.desc": {
+    "message": "适合大多数项目和团队，开箱即用。"
+  },
+  "home.support.oss.item1": {
+    "message": "全部内置图表与组件"
+  },
+  "home.support.oss.item2": {
+    "message": "完整 C# 源码"
+  },
+  "home.support.oss.item3": {
+    "message": "MIT 开源协议"
+  },
+  "home.support.oss.item4": {
+    "message": "GitHub Issue 社区支持"
+  },
+  "home.support.oss.cta": {
+    "message": "开始使用"
+  },
+  "home.support.pro.badge": {
+    "message": "推荐"
+  },
+  "home.support.pro.title": {
+    "message": "订阅服务"
+  },
+  "home.support.pro.price": {
+    "message": "按需订阅"
+  },
+  "home.support.pro.desc": {
+    "message": "解锁扩展图表，获得优先技术支持。"
+  },
+  "home.support.pro.item1": {
+    "message": "扩展图表与扩展组件"
+  },
+  "home.support.pro.item2": {
+    "message": "优先技术支持"
+  },
+  "home.support.pro.item3": {
+    "message": "一对一咨询"
+  },
+  "home.support.pro.item4": {
+    "message": "定制开发与授权"
+  },
+  "home.support.pro.cta": {
+    "message": "查看订阅方案"
+  },
+  "home.heroVisual.eyebrow": {
+    "message": "实时数据"
+  },
+  "home.heroVisual.title": {
+    "message": "周活跃用户"
+  },
+  "home.heroVisual.active": {
+    "message": "活跃用户"
+  },
+  "home.heroVisual.new": {
+    "message": "新增用户"
+  },
+  "home.heroVisual.range": {
+    "message": "近 7 天"
+  },
+  "home.heroVisual.weekdays": {
+    "message": "一 二 三 四 五 六 日"
+  },
+  "home.heroVisual.tooltipLabel": {
+    "message": "周四 · 活跃用户"
+  },
+  "home.heroVisual.floatCharts": {
+    "message": "图表类型"
+  },
+  "home.heroVisual.floatConfig": {
+    "message": "配置即用"
+  },
+  "home.code.copy": {
+    "message": "复制代码"
+  },
+  "home.code.copied": {
+    "message": "已复制"
+  },
+  "home.code.copyAria": {
+    "message": "复制示例代码"
+  },
+  "home.code.sample": {
+    "message": "// 在 Canvas 节点上创建折线图\nvar chart = gameObject.AddComponent<LineChart>();\nchart.Init();\nchart.SetSize(580, 300);\n\nchart.AddXAxisData(\"周一\");\nchart.AddXAxisData(\"周二\");\nchart.AddXAxisData(\"周三\");\n\nchart.AddData(0, 120);\nchart.AddData(0, 200);\nchart.AddData(0, 150);"
+  },
+  "home.chart.pie.center": {
+    "message": "活跃占比"
+  },
+  "examples.error.title": {
+    "message": "示例加载失败"
+  },
+  "examples.error.desc": {
+    "message": "请检查网络后刷新页面，或下载 XCharts 在本地体验。"
+  },
+  "examples.error.cta": {
+    "message": "下载 XCharts"
+  },
+  "examples.fullscreen": {
+    "message": "全屏显示"
   }
 }

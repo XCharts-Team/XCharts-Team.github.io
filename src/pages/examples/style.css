@@ -16,3 +16,42 @@
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
+
+.webgl-content .footer .fullscreen {
+  cursor: pointer;
+}
+
+.demo-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: min(420px, calc(100% - 40px));
+  padding: 24px 26px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 16px;
+  background: #0f192d;
+  box-shadow: 0 30px 70px -30px rgba(2, 6, 23, 0.8);
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.demo-error strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+.demo-error p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.demo-error a {
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 600;
+}

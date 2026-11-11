@@ -1,89 +1,130 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Layout from '@theme/Layout';
-import './style.css';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {translate} from '@docusaurus/Translate';
+import './style.css';
 
-let data;
+const DEMO_VERSION = 'master';
 
-const UntiyComponent = (props) => {
-  if (!props.data && typeof (props.data) != "undefined" && props.data != 0) {
-    props.data = 'master';
-  }
-  const masterBaseUrl = useBaseUrl('/examples/master');
-  const examplesBaseUrl = useBaseUrl('/examples');
-  props.data = masterBaseUrl;
-  createScript(examplesBaseUrl + '/TemplateData/UnityProgress.js', () => { });
-  createScript(props.data + '/Build/UnityLoader.js', () => {
-    var unityInstance = UnityLoader.instantiate("unityContainer", props.data + "/Build/WebGL.json", { onProgress: UnityProgress });
-    var fullscreen = document.getElementsByClassName("fullscreen")[0];
-    fullscreen.onclick = function () {
-      unityInstance.SetFullscreen(1);
+function loadScript(src, marker) {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector(`script[data-xcharts-demo="${marker}"]`)) {
+      resolve();
+      return;
     }
+
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.dataset.xchartsDemo = marker;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.body.appendChild(script);
   });
-
-  function createScript(url, callback) {
-    var oScript = document.createElement('script');
-    oScript.type = 'text/javascript';
-    oScript.async = true;
-    oScript.src = url;
-    var isIE = !-[1,];
-
-    if (isIE) {
-      alert('IE')
-      oScript.onreadystatechange = function () {
-        if (this.readyState == 'loaded' || this.readyState == 'complete') {
-          callback();
-        }
-      }
-    } else {
-      oScript.onload = function () {
-        callback();
-      }
-    }
-    document.body.appendChild(oScript);
-  }
-
-  return (
-
-    <>
-
-    </>
-
-  );
-
-};
-
-export class App extends React.Component {
-
-  render() {
-    return (
-      <Layout title="XCharts Demo" description="图表demo" noFooter={true}>
-        <>
-          <div className="webgl-content">
-            <div id="unityContainer"></div>
-            <div className="footer">
-              {/* <div className="webgl-logo"></div> */}
-              <div className="fullscreen"></div>
-              <div className="title">XCharts</div>
-            </div>
-          </div>
-
-          <BrowserOnly>
-            {() => {
-              var bool = window.location.href.indexOf("examples");
-              if (bool > 0) {
-                data = localStorage.getItem("Xcharts-Demo-Version");
-                return <UntiyComponent data={data} />
-              } else {
-                return <></>
-              }
-            }}
-          </BrowserOnly>
-        </>
-      </Layout>
-    );
-  }
 }
 
-export default App;
+function UnityDemo() {
+  const examplesBaseUrl = useBaseUrl('/examples');
+  const demoBaseUrl = useBaseUrl(`/examples/${DEMO_VERSION}`);
+  const fullscreenCleanup = useRef(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function boot() {
+      try {
+        await loadScript(
+          `${examplesBaseUrl}/TemplateData/UnityProgress.js`,
+          'unity-progress',
+        );
+        await loadScript(
+          `${demoBaseUrl}/Build/UnityLoader.js`,
+          'unity-loader',
+        );
+
+        if (cancelled) {
+          return;
+        }
+
+        if (!window.UnityLoader) {
+          throw new Error('UnityLoader is not available.');
+        }
+
+        const unityInstance = window.UnityLoader.instantiate(
+          'unityContainer',
+          `${demoBaseUrl}/Build/WebGL.json`,
+          {onProgress: window.UnityProgress},
+        );
+
+        const fullscreen = document.querySelector('.fullscreen');
+        if (fullscreen) {
+          const onFullscreen = () => unityInstance.SetFullscreen(1);
+          fullscreen.addEventListener('click', onFullscreen);
+          fullscreenCleanup.current = () =>
+            fullscreen.removeEventListener('click', onFullscreen);
+        }
+      } catch (error) {
+        if (!cancelled) {
+          console.error('[XCharts Demo]', error);
+          setFailed(true);
+        }
+      }
+    }
+
+    boot();
+
+    return () => {
+      cancelled = true;
+      if (fullscreenCleanup.current) {
+        fullscreenCleanup.current();
+        fullscreenCleanup.current = null;
+      }
+    };
+  }, [demoBaseUrl, examplesBaseUrl]);
+
+  return (
+    <>
+      {failed && (
+        <div className="demo-error" role="alert">
+          <strong>
+            {translate({id: 'examples.error.title', message: '示例加载失败'})}
+          </strong>
+          <p>
+            {translate({
+              id: 'examples.error.desc',
+              message: '请检查网络后刷新页面，或下载 XCharts 在本地体验。',
+            })}
+          </p>
+          <a
+            href="https://github.com/XCharts-Team/XCharts/releases"
+            target="_blank"
+            rel="noopener noreferrer">
+            {translate({id: 'examples.error.cta', message: '下载 XCharts'})}
+          </a>
+        </div>
+      )}
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <Layout title="XCharts Demo" description="XCharts 图表示例" noFooter={true}>
+      <div className="webgl-content">
+        <div id="unityContainer"></div>
+        <div className="footer">
+          <button
+            type="button"
+            className="fullscreen"
+            aria-label={translate({id: 'examples.fullscreen', message: '全屏显示'})}
+          />
+          <div className="title">XCharts</div>
+        </div>
+      </div>
+
+      <BrowserOnly>{() => <UnityDemo />}</BrowserOnly>
+    </Layout>
+  );
+}

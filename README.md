@@ -24,6 +24,24 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Preview search locally
+
+The local search index is generated **only during `yarn build`**, not by the dev server.
+Searching in `yarn start` shows:
+
+```text
+The search index is only available when you run docusaurus build!
+```
+
+To test search locally, build once and serve the static output:
+
+```bash
+yarn build
+yarn serve
+# or simply
+yarn preview
+```
+
 ### Deployment
 
 Pushing to `master` triggers `.github/workflows/deploy.yml`: it installs dependencies,
