@@ -226,6 +226,25 @@ public float height
 public bool opaque  
 列表头是否不透明。
 
+## TableColumnSortStyle
+
+class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
+
+> 从 `v3.16.0` 开始支持
+
+表格列排序样式。
+
+## TableColumnSortType
+
+class in XCharts.Runtime.UI
+
+表格列的排序方向。
+
+可选：
+
+- `Ascending`: 升序排序类型。
+- `Descending`: 降序排序类型。
+
 ## TableColumnStyle
 
 class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/api#childcomponent)
@@ -253,6 +272,22 @@ class in XCharts.Runtime.UI
 
 public static void ClampVectorMin(float minX, ref Vector3 p1, ref Vector3 p2, ref Vector3 p3, ref Vector3 p4)  
 
+### TableHelper.EnsureLayoutCache
+
+public static void EnsureLayoutCache(UITable table)  
+
+### TableHelper.FindColumnIndexByOffset
+
+public static int FindColumnIndexByOffset(UITable table, float offsetFromLeft)  
+
+### TableHelper.FindRowIndexAtOrBeforeOffset
+
+public static int FindRowIndexAtOrBeforeOffset(UITable table, float offsetFromTop)  
+
+### TableHelper.FindRowIndexByOffset
+
+public static int FindRowIndexByOffset(UITable table, float offsetFromTop)  
+
 ### TableHelper.GetAllColumnWidth
 
 public static float GetAllColumnWidth(UITable table)  
@@ -269,6 +304,14 @@ public static float GetAllRowHeight(UITable table)
 
 public static Color32 GetBackgroundColor(UITable table)  
 
+### TableHelper.GetCachedColumnWidth
+
+public static float GetCachedColumnWidth(UITable table, int columnIndex)  
+
+### TableHelper.GetCachedRowHeight
+
+public static float GetCachedRowHeight(UITable table, int rowIndex)  
+
 ### TableHelper.GetCarouselProgress
 
 public static float GetCarouselProgress(UITable table)  
@@ -284,6 +327,18 @@ public static Color32 GetColumnHeaderBackgroundColor(UITable table)
 ### TableHelper.GetColumnHeaderHeight
 
 public static float GetColumnHeaderHeight(UITable table)  
+
+### TableHelper.GetColumnSortColor
+
+public static Color32 GetColumnSortColor(UITable table, int columnIndex, bool active)  
+
+### TableHelper.GetColumnSortHighlightedColor
+
+public static Color32 GetColumnSortHighlightedColor(UITable table, int columnIndex)  
+
+### TableHelper.GetColumnSortStyle
+
+public static TableColumnSortStyle GetColumnSortStyle(UITable table, int columnIndex)  
 
 ### TableHelper.GetColumnWidth
 
@@ -316,7 +371,6 @@ public static Color32 GetRowHeaderBgColor(UITable table, int rowIndex)
 ### TableHelper.GetRowHeaderContent
 
 public static string GetRowHeaderContent(UITable table, int i)  
-表格帮助类。
 
 ### TableHelper.GetRowHeaderWidth
 
@@ -374,9 +428,19 @@ public static Color32 GetVerticalSeparatorColor(UITable table)
 
 public static bool IsNeedDrawColumnHeader(UITable table)  
 
+### TableHelper.IsNeedDrawColumnSort
+
+public static bool IsNeedDrawColumnSort(UITable table, int columnIndex)  
+
+
 ### TableHelper.IsNeedDrawRowHeader
 
 public static bool IsNeedDrawRowHeader(UITable table)  
+
+### TableHelper.RebuildLayoutCache
+
+public static void RebuildLayoutCache(UITable table)  
+表格帮助类。
 
 ## TableRow
 

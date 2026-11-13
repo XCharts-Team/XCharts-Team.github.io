@@ -254,6 +254,12 @@ the content of the column header.
 
 the style of the column header. default not enabled, but use the defaultHeaderLabelStyle of TableColumnHeaderStyle.
 
+### TableColumn.enableSort
+
+`bool` `false` `v3.16.0`
+
+whether to enable sort for current column.
+
 ### TableColumn.headerLabelStyle
 
 `LabelStyle`
@@ -318,6 +324,80 @@ whether the column header is opaque.
 
 whether the column header is visible.
 
+## TableColumnSortStyle
+
+class in XCharts.Runtime.UI / Inherits from: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+
+> Since `v3.16.0`
+
+The style of table column for sorting.
+
+### TableColumnSortStyle.ascendingSprite
+
+`Sprite`
+
+the ascending sprite.
+
+### TableColumnSortStyle.descendingSprite
+
+`Sprite`
+
+the descending sprite.
+
+### TableColumnSortStyle.hoverColor
+
+`Color32`
+
+the hover icon color when mouse hovers the sort area and the icon is not selected.
+
+### TableColumnSortStyle.iconGap
+
+`float` `4f`
+
+the vertical gap between up and down triangle icons.
+
+### TableColumnSortStyle.iconSize
+
+`float` `8f`
+
+the triangle icon size.
+
+### TableColumnSortStyle.normalColor
+
+`Color32`
+
+the normal icon color.
+
+### TableColumnSortStyle.rightGap
+
+`float` `8f`
+
+the right padding of sort button area in header.
+
+### TableColumnSortStyle.selectedColor
+
+`Color32` `Color32(65, 86, 225, 255)`
+
+the selected icon color.
+
+### TableColumnSortStyle.show
+
+`bool` `true`
+
+Whether to enable column sorting.
+
+### TableColumnSortStyle.spriteKeepAspect
+
+`bool` `true`
+
+whether preserve sprite aspect.
+
+### TableColumnSortStyle.useSprite
+
+`bool` `false`
+
+whether use custom sprites instead of drawing triangles.
+
 ## TableColumnStyle
 
 class in XCharts.Runtime.UI / Inherits from: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
@@ -353,6 +433,12 @@ the min width of column.
 `bool` `true`
 
 whether the column is visible.
+
+### TableColumnStyle.sortStyle
+
+[TableColumnSortStyle](#tablecolumnsortstyle) `v3.16.0`
+
+the sort style of table columns.
 
 ## TableRow
 

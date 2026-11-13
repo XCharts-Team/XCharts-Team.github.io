@@ -254,6 +254,12 @@ class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.g
 
 当前列的数据文本样式。默认不启用，而是共用TableColumnHeaderStyle的defaultDataLabelStyle。
 
+### TableColumn.enableSort
+
+`bool` `false` `v3.16.0`
+
+是否开启当前列排序。
+
 ### TableColumn.headerLabelStyle
 
 `LabelStyle`
@@ -318,6 +324,80 @@ class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.g
 
 是否显示列表头。
 
+## TableColumnSortStyle
+
+class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
+
+> 从 `v3.16.0` 开始支持
+
+表格列排序样式。
+
+### TableColumnSortStyle.ascendingSprite
+
+`Sprite`
+
+升序精灵。
+
+### TableColumnSortStyle.descendingSprite
+
+`Sprite`
+
+降序精灵。
+
+### TableColumnSortStyle.hoverColor
+
+`Color32`
+
+鼠标悬停在排序区域且图标非选中态时的悬停颜色。
+
+### TableColumnSortStyle.iconGap
+
+`float` `4f`
+
+上下三角图标之间的垂直间距。
+
+### TableColumnSortStyle.iconSize
+
+`float` `8f`
+
+三角图标大小。
+
+### TableColumnSortStyle.normalColor
+
+`Color32`
+
+图标普通状态颜色。
+
+### TableColumnSortStyle.rightGap
+
+`float` `8f`
+
+排序按钮区域距离右侧的边距。
+
+### TableColumnSortStyle.selectedColor
+
+`Color32` `Color32(65, 86, 225, 255)`
+
+图标选中颜色。
+
+### TableColumnSortStyle.show
+
+`bool` `true`
+
+是否开启列排序。
+
+### TableColumnSortStyle.spriteKeepAspect
+
+`bool` `true`
+
+是否保持精灵宽高比。
+
+### TableColumnSortStyle.useSprite
+
+`bool` `false`
+
+是否使用自定义精灵替代三角形绘制。
+
 ## TableColumnStyle
 
 class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.github.io/docs/configuration#childcomponent)
@@ -353,6 +433,12 @@ class in XCharts.Runtime.UI / 继承自: [ChildComponent](https://xcharts-team.g
 `bool` `true`
 
 是否显示列。
+
+### TableColumnStyle.sortStyle
+
+[TableColumnSortStyle](#tablecolumnsortstyle) `v3.16.0`
+
+列排序样式。
 
 ## TableRow
 

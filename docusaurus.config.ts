@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // Release version shown in the navbar and on the homepage.
 // Keep in sync with XCharts/Assets/XCharts/package.json when publishing.
-const XCHARTS_VERSION = '3.15.0';
+const XCHARTS_VERSION = '3.16.0';
 
 const config: Config = {
   title: 'XCharts',
@@ -117,7 +117,7 @@ const config: Config = {
       },
       items: [
         {
-          to: '/docs/changelog#v3150',
+          to: '/docs/changelog#v3160',
           label: `v${XCHARTS_VERSION}`,
           position: 'left',
           className: 'navbar-version',
