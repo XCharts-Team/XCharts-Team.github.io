@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xcharts-team.github.io/schema/chart-2.0.json",
+  "title": "XCharts chart 2.0 document",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "enum": [
+        "https://xcharts-team.github.io/schema/chart-2.0.json"
+      ]
+    },
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "2.0"
+      ]
+    },
+    "chartType": {
+      "type": "string"
+    },
+    "chartVersion": {
+      "type": "string"
+    },
+    "exportedAt": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "series/component entry",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "简化类型名。"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "series/component entry",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "简化类型名。"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "theme": {
+      "type": "object"
+    },
+    "settings": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "chartType",
+    "components",
+    "series"
+  ],
+  "additionalProperties": true
+}
