@@ -58,7 +58,7 @@
       }
     },
     "theme": {
-      "type": "object"
+      "$ref": "#/$defs/theme"
     },
     "settings": {
       "type": "object"
@@ -71,5 +71,124 @@
     "components",
     "series"
   ],
-  "additionalProperties": true
+  "additionalProperties": true,
+  "$defs": {
+    "specColor": {
+      "type": "object",
+      "title": "linear RGBA color",
+      "properties": {
+        "r": {
+          "type": "number"
+        },
+        "g": {
+          "type": "number"
+        },
+        "b": {
+          "type": "number"
+        },
+        "a": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "r",
+        "g",
+        "b",
+        "a"
+      ],
+      "additionalProperties": false
+    },
+    "theme": {
+      "type": "object",
+      "title": "shared theme definition",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "background": {
+          "$ref": "#/$defs/specColor"
+        },
+        "contrast": {
+          "$ref": "#/$defs/specColor"
+        },
+        "transparentBackground": {
+          "type": "boolean"
+        },
+        "colorPalette": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/specColor"
+          }
+        },
+        "fontKey": {
+          "type": "string"
+        },
+        "textureKeys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "component text style",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "textColor": {
+                "$ref": "#/$defs/specColor"
+              },
+              "textBackgroundColor": {
+                "$ref": "#/$defs/specColor"
+              },
+              "fontSize": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "serie": {
+          "type": "object",
+          "title": "serie defaults",
+          "properties": {
+            "lineWidth": {
+              "type": "number"
+            },
+            "lineSymbolSize": {
+              "type": "number"
+            },
+            "scatterSymbolSize": {
+              "type": "number"
+            },
+            "candlestickColor": {
+              "$ref": "#/$defs/specColor"
+            },
+            "candlestickColor0": {
+              "$ref": "#/$defs/specColor"
+            },
+            "candlestickBorderWidth": {
+              "type": "number"
+            },
+            "candlestickBorderColor": {
+              "$ref": "#/$defs/specColor"
+            },
+            "candlestickBorderColor0": {
+              "$ref": "#/$defs/specColor"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
 }
