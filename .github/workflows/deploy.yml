@@ -39,22 +39,27 @@ jobs:
           publish_branch: pages
           commit_message: "deploy to pages: ${{ github.sha }}"
 
-      - name: Verify published chart schema
+      - name: Verify published schemas
         run: |
           set -euo pipefail
-          url="https://xcharts-team.github.io/schema/chart-2.0.json"
-          expected="static/schema/chart-2.0.json"
-          for attempt in $(seq 1 20); do
-            if curl -fsS --max-time 20 "$url" -o /tmp/chart-2.0.live.json; then
-              if diff -q "$expected" /tmp/chart-2.0.live.json; then
-                echo "published schema matches $expected (attempt $attempt)"
-                exit 0
+          verify() {
+            local name="$1"
+            local url="https://xcharts-team.github.io/schema/${name}.json"
+            local expected="static/schema/${name}.json"
+            for attempt in $(seq 1 20); do
+              if curl -fsS --max-time 20 "$url" -o "/tmp/${name}.live.json"; then
+                if diff -q "$expected" "/tmp/${name}.live.json"; then
+                  echo "published ${name} schema matches $expected (attempt $attempt)"
+                  return 0
+                fi
+                echo "attempt $attempt: published ${name} schema differs from $expected"
+              else
+                echo "attempt $attempt: $url not reachable yet"
               fi
-              echo "attempt $attempt: published schema differs from $expected"
-            else
-              echo "attempt $attempt: $url not reachable yet"
-            fi
-            sleep 15
-          done
-          echo "published chart schema check failed" >&2
-          exit 1
+              sleep 15
+            done
+            echo "published ${name} schema check failed" >&2
+            return 1
+          }
+          verify chart-2.0
+          verify theme-2.0
